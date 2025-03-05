@@ -1,0 +1,2 @@
+#ignoring autosave file to prevent possible merge conflicts
+*.autosave
