@@ -39,7 +39,7 @@
                 "value": "Cache"
               },
               "parameters": [
-                "NewText4"
+                "Stam_full_fluff_text"
               ]
             }
           ]
@@ -182,7 +182,7 @@
                     "value": "OpacityCapability::OpacityBehavior::SetValue"
                   },
                   "parameters": [
-                    "NewText4",
+                    "Stam_full_fluff_text",
                     "Opacity",
                     "=",
                     "255"
@@ -193,7 +193,7 @@
                     "value": "Montre"
                   },
                   "parameters": [
-                    "NewText4",
+                    "Stam_full_fluff_text",
                     ""
                   ]
                 },
@@ -210,7 +210,7 @@
                     "value": "Cache"
                   },
                   "parameters": [
-                    "NewText4"
+                    "Stam_full_fluff_text"
                   ]
                 },
                 {
@@ -226,7 +226,7 @@
                     "value": "Montre"
                   },
                   "parameters": [
-                    "NewText4",
+                    "Stam_full_fluff_text",
                     ""
                   ]
                 },
@@ -243,7 +243,7 @@
                     "value": "Cache"
                   },
                   "parameters": [
-                    "NewText4"
+                    "Stam_full_fluff_text"
                   ]
                 }
               ]
@@ -1275,7 +1275,7 @@
                 "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
               },
               "parameters": [
-                "GoldGreenBar",
+                "StamBar",
                 "=",
                 "player.Stamval",
                 ""

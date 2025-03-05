@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.8141881203709929,
+    "zoomFactor": 0.6897782140104511,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -229,6 +229,40 @@
       "width": 72,
       "x": 677,
       "y": 594,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 69,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Enemy",
+      "persistentUuid": "226b8c2f-3e9e-4377-8a6d-f5b4839953d1",
+      "width": 72,
+      "x": 589,
+      "y": 503,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 69,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Enemy",
+      "persistentUuid": "7ef60eed-0898-4566-9cfd-e6fc19f115ae",
+      "width": 72,
+      "x": 806,
+      "y": 357,
       "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
@@ -922,7 +956,7 @@
       "assetStoreId": "",
       "bold": true,
       "italic": false,
-      "name": "NewText",
+      "name": "HealthText",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
@@ -962,7 +996,7 @@
     },
     {
       "assetStoreId": "060d3cb5faaf66f8306eb39a767ab608417fe366bc66f8444ccc0efcbabb78c8",
-      "name": "GoldGreenBar",
+      "name": "StamBar",
       "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
       "variables": [
         {
@@ -1057,7 +1091,7 @@
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "NewText2",
+      "name": "StaminaText",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
@@ -1097,7 +1131,7 @@
     },
     {
       "assetStoreId": "98213fe7f1e2289ef501a2e0a96ed2292535e720bfa616da42cf780d99a3c6d0",
-      "name": "BlueDotBar",
+      "name": "ManaBar",
       "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
       "variables": [],
       "effects": [],
@@ -1186,7 +1220,7 @@
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "NewText3",
+      "name": "ManaText",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
@@ -1288,7 +1322,7 @@
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "NewText4",
+      "name": "Stam_full_fluff_text",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
@@ -1338,11 +1372,76 @@
         "characterSize": 10,
         "color": "0;59;255"
       }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "NewText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "color": "0;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
+      {
+        "folderName": "UI",
+        "children": [
+          {
+            "objectName": "HealthText"
+          },
+          {
+            "objectName": "StaminaText"
+          },
+          {
+            "objectName": "Stam_full_fluff_text"
+          },
+          {
+            "objectName": "ManaText"
+          },
+          {
+            "objectName": "ManaBar"
+          },
+          {
+            "objectName": "StamBar"
+          }
+        ]
+      },
       {
         "folderName": "Enemy",
         "children": [
@@ -1361,15 +1460,6 @@
         "objectName": "Ground"
       },
       {
-        "objectName": "NewText2"
-      },
-      {
-        "objectName": "NewText4"
-      },
-      {
-        "objectName": "NewText3"
-      },
-      {
         "objectName": "Props"
       },
       {
@@ -1382,16 +1472,10 @@
         "objectName": "HeartScrollBar"
       },
       {
-        "objectName": "NewText"
-      },
-      {
-        "objectName": "GoldGreenBar"
-      },
-      {
-        "objectName": "BlueDotBar"
-      },
-      {
         "objectName": "NewSprite"
+      },
+      {
+        "objectName": "NewText"
       }
     ]
   },
