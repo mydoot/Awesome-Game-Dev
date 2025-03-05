@@ -1,0 +1,333 @@
+{
+  "associatedLayout": "Level 1",
+  "name": "Enemy",
+  "events": [
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Enemy",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Enemy_Health",
+                "Enemy.X(\"Healthbar Point\")",
+                "Enemy.Y(\"Healthbar Point\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "LinkedObjects::LinkObjects"
+              },
+              "parameters": [
+                "",
+                "Enemy",
+                "Enemy_Health"
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "Enemy_Health",
+                "Scale",
+                "=",
+                "0.65"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "BoidsMovement::BoidsMovement::MoveToObject"
+              },
+              "parameters": [
+                "Enemy",
+                "BoidsMovement",
+                "player",
+                "1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+              },
+              "parameters": [
+                "Enemy_Health",
+                "=",
+                "Enemy.Health::Health()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Enemy_Health",
+                "=",
+                "Enemy.PointX(\"Healthbar Point\")",
+                "=",
+                "Enemy.PointY(\"Healthbar Point\")"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Enemy",
+                    "player",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "player",
+                    "isdashing",
+                    "=",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Health::Health::IsDamageCooldownActive"
+                  },
+                  "parameters": [
+                    "player",
+                    "Health",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "player",
+                    "Health",
+                    "1",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "61_Hit_03.wav",
+                    "",
+                    "65",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "player",
+                    "Animation",
+                    "=",
+                    "\"Hit\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "player",
+                    "\"Hit Timer\"\n"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "disabled": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AddForceAL"
+                      },
+                      "parameters": [
+                        "player",
+                        "Enemy.AngleToObject(player)",
+                        "250",
+                        "1"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Health::Health::IsDead"
+              },
+              "parameters": [
+                "Enemy",
+                "Health",
+                "="
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Enemy",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "69_Enemy_death_01.wav",
+                "",
+                "100",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Enemy",
+                "Animation",
+                "=",
+                "\"Hit\""
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Enemy",
+                "\"Hit Timer\"",
+                ">=",
+                "0.25"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+              },
+              "parameters": [
+                "Enemy",
+                "Animation"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Enemy",
+                "Animation",
+                "=",
+                "\"Regular\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Arreter"
+              },
+              "parameters": [
+                "Enemy"
+              ]
+            },
+            {
+              "type": {
+                "value": "BoidsMovement::BoidsMovement::SetMaxAcceleration"
+              },
+              "parameters": [
+                "Enemy",
+                "BoidsMovement",
+                "50",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    }
+  ]
+}

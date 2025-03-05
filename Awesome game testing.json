@@ -1,0 +1,1711 @@
+{
+  "firstLayout": "",
+  "gdVersion": {
+    "build": 224,
+    "major": 5,
+    "minor": 5,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": true,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
+    "folderProject": true,
+    "orientation": "landscape",
+    "packageName": "com.example.gamename",
+    "pixelsRounding": true,
+    "projectUuid": "4c56b5ce-5343-4442-986f-ff9268a77cc8",
+    "scaleMode": "nearest",
+    "sizeOnStartupMode": "adaptWidth",
+    "templateSlug": "",
+    "version": "1.0.0",
+    "name": "Awesome game testing",
+    "description": "",
+    "author": "",
+    "windowWidth": 1280,
+    "windowHeight": 720,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {
+      "android-icon-144": "",
+      "android-icon-192": "",
+      "android-icon-36": "",
+      "android-icon-48": "",
+      "android-icon-72": "",
+      "android-icon-96": "",
+      "android-windowSplashScreenAnimatedIcon": "",
+      "desktop-icon-512": "",
+      "ios-icon-100": "",
+      "ios-icon-1024": "",
+      "ios-icon-114": "",
+      "ios-icon-120": "",
+      "ios-icon-144": "",
+      "ios-icon-152": "",
+      "ios-icon-167": "",
+      "ios-icon-180": "",
+      "ios-icon-20": "",
+      "ios-icon-29": "",
+      "ios-icon-40": "",
+      "ios-icon-50": "",
+      "ios-icon-57": "",
+      "ios-icon-58": "",
+      "ios-icon-60": "",
+      "ios-icon-72": "",
+      "ios-icon-76": "",
+      "ios-icon-80": "",
+      "ios-icon-87": ""
+    },
+    "loadingScreen": {
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": true
+    },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": true
+    },
+    "authorIds": [],
+    "authorUsernames": [],
+    "categories": [],
+    "playableDevices": [],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "file": "assets/MPLUS1p-Thin.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "fb2c26ad0e4883807fe0d285cbc0afc6f7888286316aca8023e700007df130b7_MPLUS1p-Thin.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Google Fonts/Japanese/fb2c26ad0e4883807fe0d285cbc0afc6f7888286316aca8023e700007df130b7_MPLUS1p-Thin.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Small Plastic Green Square Slider Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Small Plastic Green Square Slider Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/9e43ff20dd1d6788942b5161e19c979068058c02325d1c53493d966e99352b43_Small Plastic Green Square Slider Border.png",
+          "name": "Small Plastic Green Square Slider Border.png"
+        }
+      },
+      {
+        "file": "assets/Transparent.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Transparent.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/998e0aec3ae57e2bafb3d52e26ab64b10153d411f90c62198effb90b18ecd603_Transparent.png",
+          "name": "Transparent.png"
+        }
+      },
+      {
+        "file": "assets/Small Plastic Green Square Slider Thumb.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Small Plastic Green Square Slider Thumb.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/2f9378611f391b8228cac337e39ecacacd720b59716e7dd9e56cce73adb60f69_Small Plastic Green Square Slider Thumb.png",
+          "name": "Small Plastic Green Square Slider Thumb.png"
+        }
+      },
+      {
+        "file": "../../werewolf shirt.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "..\\..\\..\\Downloads\\werewolf shirt.jpg",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "werewolf shirt2.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "werewolf shirt2.jpg",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "TX Tileset Grass.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TX Tileset Grass.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "character.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "character.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/character.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "character",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "TX Tileset Stone Ground2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TX Tileset Stone Ground2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "TX Struct.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TX Struct.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "TX Props.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TX Props.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "right arm forward.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"right arm forward.png\",\"extension\":\".png\"}",
+        "name": "right arm forward.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "normal.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"normal.png\",\"extension\":\".png\"}",
+        "name": "normal.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "left arm forward.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"left arm forward.png\",\"extension\":\".png\"}",
+        "name": "left arm forward.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "normal2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "normal2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "right arm forward2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "right arm forward2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "normal3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "normal3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "left arm forward2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "left arm forward2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "right arm forward3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "right arm forward3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "normal4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "normal4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "left arm forward3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "left arm forward3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "right arm forward4.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"right arm forward4.png\",\"extension\":\".png\"}",
+        "name": "right arm forward4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "normal5.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"normal5.png\",\"extension\":\".png\"}",
+        "name": "normal5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "left arm forward4.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"left arm forward4.png\",\"extension\":\".png\"}",
+        "name": "left arm forward4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "werewolf shirt.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "werewolf shirt.jpg",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/dodging.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "dodging",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../../../../Downloads/hello-kitty.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "..\\..\\..\\..\\Downloads\\hello-kitty.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "../../../../Downloads/rowley.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "..\\..\\..\\..\\Downloads\\rowley.jpg",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "monkeything.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "monkeything.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/collision_box.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "collision_box",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/collision_box2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "collision_box2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "staff.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "staff.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Sword.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Sword.png\",\"extension\":\".png\"}",
+        "name": "Sword.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Pixel art RPG Items/Weapons/50a738319958d5049ce592a865b5684649ea0a967e152b323d1579559b224bfd_Sword.png",
+          "name": "Sword.png"
+        }
+      },
+      {
+        "file": "angry_emoji_face_300_nwm.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "angry_emoji_face_300_nwm.jpg",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/attackhitbox.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "attackhitbox",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/attackhitbox2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "attackhitbox2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/attackhitbox3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/attackhitbox3.png\"}",
+        "name": "attackhitbox3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/attackhitbox4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "attackhitbox4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "frames/Slash3_color1_frame1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "frames\\Slash3_color1_frame1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "frames/Slash3_color1_frame2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "frames\\Slash3_color1_frame2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "frames/Slash3_color1_frame3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "frames\\Slash3_color1_frame3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "frames/Slash3_color1_frame4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "frames\\Slash3_color1_frame4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "frames/Slash3_color1_frame5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "frames\\Slash3_color1_frame5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "frames/Slash3_color1_frame6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "frames\\Slash3_color1_frame6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "frames/Slash3_color1_frame7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "frames\\Slash3_color1_frame7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "frames/Slash3_color1_frame8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "frames\\Slash3_color1_frame8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "frames/Slash3_color1_frame9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "frames\\Slash3_color1_frame9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Sword2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Sword",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "sprite-sheet.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprite-sheet.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Slash_color3_frame1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slash_color3_frame1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Slash_color3_frame2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slash_color3_frame2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Slash_color3_frame3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slash_color3_frame3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Slash_color3_frame4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slash_color3_frame4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Slash_color3_frame6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slash_color3_frame6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Slash_color3_frame5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slash_color3_frame5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Slash_color3_frame7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slash_color3_frame7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Slash_color3_frame8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slash_color3_frame8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Slash_color3_frame9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slash_color3_frame9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Slash_color3_frame10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slash_color3_frame10.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Slash_color3_frame11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slash_color3_frame11.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Health_03.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Health_03.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Retro Pixelart UI/Pixel art/UI/8cddc3e3f95a217394bfcb8087304fb97b2381587c34ead5dc593ac07efabb6e_Health_03.png",
+          "name": "Health_03.png"
+        }
+      },
+      {
+        "file": "assets/Health_03_Bar01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Health_03_Bar01.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Retro Pixelart UI/Pixel art/UI/c545890e5720ac47bf1c4e103ec8b00ec5620306c5fed5005037229a52060496_Health_03_Bar01.png",
+          "name": "Health_03_Bar01.png"
+        }
+      },
+      {
+        "file": "assets/Health_03_Bar02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Health_03_Bar02.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Retro Pixelart UI/Pixel art/UI/477b57494a4febc1d9d4e891791f6d4d7921e80c1891f8e6a0dfbbc1836d8aed_Health_03_Bar02.png",
+          "name": "Health_03_Bar02.png"
+        }
+      },
+      {
+        "file": "assets/Health Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Health Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pirate Bomb Pack/Objects/Health Bar/be05a3edd8e933b925b4208a7dac931eeb66ce4e1460f60a62c121a0d37bab6e_Health Bar.png",
+          "name": "Health Bar.png"
+        }
+      },
+      {
+        "file": "assets/Scroll Empty Heart2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Scroll Empty Heart.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/f0aea5b9b3e205bd734be9061f0c8b7ecec83ee5c3e9e99d2cb2b6f1c724feb1_Scroll Empty Heart.png",
+          "name": "Scroll Empty Heart.png"
+        }
+      },
+      {
+        "file": "assets/Scroll Full Heart2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Scroll Full Heart.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/724e875009329b18b3333082c0890b142288a9d8f17a084d2982c4ff0ab4be43_Scroll Full Heart.png",
+          "name": "Scroll Full Heart.png"
+        }
+      },
+      {
+        "file": "assets/Scroll2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Scroll.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/a1f71ca4cfb367163f7e3c16fbf0f60da08de326f00249881ff1057f63789c95_Scroll.png",
+          "name": "Scroll.png"
+        }
+      },
+      {
+        "file": "assets/Copper Bar Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Copper Bar Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/1310fa26ab130bebfe59cdfa310836bfed3ca8d190cfed17a7dd3bdfe0a2a87f_Copper Bar Border.png",
+          "name": "Copper Bar Border.png"
+        }
+      },
+      {
+        "file": "assets/Framed Pixel Red Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Framed Pixel Red Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/ed31faa46e5c04883605d72470e0f3bfe1c2e679dc6a4a632ab03e105866ff8b_Framed Pixel Red Fill Bar.png",
+          "name": "Framed Pixel Red Fill Bar.png"
+        }
+      },
+      {
+        "file": "Sleeping_Emoji_2_large.webp",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sleeping_Emoji_2_large.webp",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/DotGothic16-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "561d75b195f4dfcbdf0c38511984c83680574032d6b8c3c6a436a4fd32094320_DotGothic16-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/Japanese/561d75b195f4dfcbdf0c38511984c83680574032d6b8c3c6a436a4fd32094320_DotGothic16-Regular.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/PressStart2P-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Settings.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Settings.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Retro Pixelart UI/Pixel art/UI/c5978bcc72302694345b67b3455fe181dfb94b321a91850f96463a95053ccef8_Settings.png",
+          "name": "Settings.png"
+        }
+      },
+      {
+        "file": "assets/Settings_Bar02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Settings_Bar02.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Retro Pixelart UI/Pixel art/UI/da74f07bab2fcbd148306084fcc247f0c935ad815afd2cabfac0e85ff72bc4e6_Settings_Bar02.png",
+          "name": "Settings_Bar02.png"
+        }
+      },
+      {
+        "file": "assets/Settings_Bar03.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Settings_Bar03.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Retro Pixelart UI/Pixel art/UI/e206a1b175cea9d36de5a25c6ab98fc14c19f5415fafa8fc07ecb68e03ab1a89_Settings_Bar03.png",
+          "name": "Settings_Bar03.png"
+        }
+      },
+      {
+        "file": "assets/Dark LCD Bar Fill.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dark LCD Bar Fill.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/60509113f640778fad77718ffc0f8c88e6dac6a2e5c13756da0999b27fff799e_Dark LCD Bar Fill.png",
+          "name": "Dark LCD Bar Fill.png"
+        }
+      },
+      {
+        "file": "assets/Gold bar background.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Gold bar background.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/170e9526f226a42898891871c54cd7dc7ff4f3f9242764fde54e6a4b96349d51_Gold bar background.png",
+          "name": "Gold bar background.png"
+        }
+      },
+      {
+        "file": "assets/Green LCD Bar Fill.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Green LCD Bar Fill.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/55034bb02ed0cbeede3da64dcf05d3590abee4a8fa69657ed5d461f31d2f1df0_Green LCD Bar Fill.png",
+          "name": "Green LCD Bar Fill.png"
+        }
+      },
+      {
+        "file": "assets/Dot Bar Blue Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dot Bar Blue Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/aa81b97c3211cf1e7cd040b96f5409851e3f1141c496b064157588294f09e662_Dot Bar Blue Border.png",
+          "name": "Dot Bar Blue Border.png"
+        }
+      },
+      {
+        "file": "assets/Dot Bar Blue Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dot Bar Blue Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/0f15d828199d38d229469b48c953574c22a34b8daeb8941f3eb40df01a8f7d22_Dot Bar Blue Fill Bar.png",
+          "name": "Dot Bar Blue Fill Bar.png"
+        }
+      },
+      {
+        "file": "assets/Sword.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Sword.png\",\"extension\":\".png\"}",
+        "name": "assets\\Sword.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/attackhitbox4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\attackhitbox4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/attackhitbox5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "attackhitbox5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "22_Slash_04.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "22_Slash_04.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "15_Impact_flesh_02.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "15_Impact_flesh_02.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "69_Enemy_death_01.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "69_Enemy_death_01.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "35_Miss_Evade_02.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "35_Miss_Evade_02.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "001_Hover_01.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "001_Hover_01.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "61_Hit_03.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "61_Hit_03.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      }
+    ],
+    "resourceFolders": []
+  },
+  "objects": [
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "player",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "Health",
+          "type": "number",
+          "value": 3
+        },
+        {
+          "name": "isdashing",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Stamval",
+          "type": "number",
+          "value": 3
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 3,
+          "CurrentHealth": 0,
+          "MaxHealth": 3,
+          "DamageCooldown": 1,
+          "AllowOverHealing": false,
+          "IsHealthJustDamaged": false,
+          "DamageToBeApplied": 0,
+          "HitAtLeastOnce": false,
+          "ChanceToDodge": 0,
+          "IsJustDodged": false,
+          "HealToBeApplied": 0,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 2.0247e-320,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ShieldDamageTaken": 2.0247e-320,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0
+        },
+        {
+          "name": "PathfindingObstacle",
+          "type": "PathfindingBehavior::PathfindingObstacleBehavior",
+          "cost": 2,
+          "impassable": true
+        },
+        {
+          "name": "SmoothCamera",
+          "type": "SmoothCamera::SmoothCamera",
+          "LeftwardSpeed": 0.9,
+          "RightwardSpeed": 0.9,
+          "UpwardSpeed": 0.9,
+          "DownwardSpeed": 0.9,
+          "FollowOnX": true,
+          "FollowOnY": true,
+          "FollowFreeAreaLeft": 0,
+          "FollowFreeAreaRight": 0,
+          "FollowFreeAreaTop": 0,
+          "FollowFreeAreaBottom": 0,
+          "CameraOffsetX": 0,
+          "CameraOffsetY": 0,
+          "CameraDelay": 0,
+          "ForecastTime": 0,
+          "ForecastHistoryDuration": 0,
+          "LogLeftwardSpeed": 2.0247e-320,
+          "LogRightwardSpeed": 2.0247e-320,
+          "LogDownwardSpeed": 2.0247e-320,
+          "LogUpwardSpeed": 2.0247e-320,
+          "DelayedCenterX": 2.0247e-320,
+          "DelayedCenterY": 2.0247e-320,
+          "ForecastHistoryMeanX": 2.0247e-320,
+          "ForecastHistoryMeanY": 2.0247e-320,
+          "ForecastHistoryVarianceX": 2.0247e-320,
+          "ForecastHistoryCovariance": 2.0247e-320,
+          "ForecastHistoryLinearA": 2.0247e-320,
+          "ForecastHistoryLinearB": 2.0247e-320,
+          "ForecastedX": 2.0247e-320,
+          "ForecastedY": 2.0247e-320,
+          "ProjectedNewestX": 2.0247e-320,
+          "ProjectedNewestY": 2.0247e-320,
+          "ProjectedOldestX": 2.0247e-320,
+          "ProjectedOldestY": 2.0247e-320,
+          "ForecastHistoryVarianceY": 2.0247e-320,
+          "Index": 2.0247e-320,
+          "CameraDelayCatchUpSpeed": 0,
+          "CameraExtraDelay": 2.0247e-320,
+          "WaitingSpeedXMax": 2.0247e-320,
+          "WaitingSpeedYMax": 2.0247e-320,
+          "WaitingEnd": 2.0247e-320,
+          "CameraDelayCatchUpDuration": 2.0247e-320,
+          "LeftwardSpeedMax": 9000,
+          "RightwardSpeedMax": 9000,
+          "UpwardSpeedMax": 9000,
+          "DownwardSpeedMax": 9000,
+          "OldX": 9000.000000007454,
+          "OldY": 9000.000000007454,
+          "IsCalledManually": false
+        },
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "maxSpeed": 225,
+          "acceleration": 1000000,
+          "deceleration": 1000000,
+          "rotateObject": false,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "customIsometryAngle": 30,
+          "ignoreDefaultControls": false,
+          "movementAngleOffset": 0,
+          "viewpoint": "TopDown"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "idling",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "normal2.png",
+                  "points": [
+                    {
+                      "name": "Sword",
+                      "x": 375.5,
+                      "y": 288
+                    },
+                    {
+                      "name": "Attack Pos",
+                      "x": 291.5,
+                      "y": 292
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 300,
+                    "y": 290
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 299.5,
+                    "y": 290
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 393.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 395.5,
+                        "y": 420
+                      },
+                      {
+                        "x": 26.5,
+                        "y": 420
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "walking to the right",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.12,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "normal.png",
+                  "points": [
+                    {
+                      "name": "Sword",
+                      "x": 375.5,
+                      "y": 288
+                    },
+                    {
+                      "name": "Attack Pos",
+                      "x": 291.5,
+                      "y": 292
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 300,
+                    "y": 290
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 299.5,
+                    "y": 290
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 393.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 395.5,
+                        "y": 420
+                      },
+                      {
+                        "x": 26.5,
+                        "y": 420
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "right arm forward.png",
+                  "points": [
+                    {
+                      "name": "Sword",
+                      "x": 375.5,
+                      "y": 288
+                    },
+                    {
+                      "name": "Attack Pos",
+                      "x": 291.5,
+                      "y": 292
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 300,
+                    "y": 290
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 299.5,
+                    "y": 290
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 393.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 395.5,
+                        "y": 420
+                      },
+                      {
+                        "x": 26.5,
+                        "y": 420
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "normal.png",
+                  "points": [
+                    {
+                      "name": "Sword",
+                      "x": 375.5,
+                      "y": 288
+                    },
+                    {
+                      "name": "Attack Pos",
+                      "x": 291.5,
+                      "y": 292
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 300,
+                    "y": 290
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 299.5,
+                    "y": 290
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 393.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 395.5,
+                        "y": 420
+                      },
+                      {
+                        "x": 26.5,
+                        "y": 420
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "left arm forward.png",
+                  "points": [
+                    {
+                      "name": "Sword",
+                      "x": 375.5,
+                      "y": 288
+                    },
+                    {
+                      "name": "Attack Pos",
+                      "x": 291.5,
+                      "y": 292
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 300,
+                    "y": 290
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 299.5,
+                    "y": 290
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 393.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 395.5,
+                        "y": 420
+                      },
+                      {
+                        "x": 26.5,
+                        "y": 420
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "walking to the left",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.12,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "normal5.png",
+                  "points": [
+                    {
+                      "name": "Sword",
+                      "x": 375.5,
+                      "y": 288
+                    },
+                    {
+                      "name": "Attack Pos",
+                      "x": 291.5,
+                      "y": 292
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 300,
+                    "y": 290
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 299.5,
+                    "y": 290
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 393.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 395.5,
+                        "y": 420
+                      },
+                      {
+                        "x": 26.5,
+                        "y": 420
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "right arm forward4.png",
+                  "points": [
+                    {
+                      "name": "Sword",
+                      "x": 375.5,
+                      "y": 288
+                    },
+                    {
+                      "name": "Attack Pos",
+                      "x": 291.5,
+                      "y": 292
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 300,
+                    "y": 290
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 299.5,
+                    "y": 290
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 393.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 395.5,
+                        "y": 420
+                      },
+                      {
+                        "x": 26.5,
+                        "y": 420
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "normal5.png",
+                  "points": [
+                    {
+                      "name": "Sword",
+                      "x": 375.5,
+                      "y": 288
+                    },
+                    {
+                      "name": "Attack Pos",
+                      "x": 291.5,
+                      "y": 292
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 300,
+                    "y": 290
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 299.5,
+                    "y": 290
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 393.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 395.5,
+                        "y": 420
+                      },
+                      {
+                        "x": 26.5,
+                        "y": 420
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "left arm forward4.png",
+                  "points": [
+                    {
+                      "name": "Sword",
+                      "x": 375.5,
+                      "y": 288
+                    },
+                    {
+                      "name": "Attack Pos",
+                      "x": 291.5,
+                      "y": 292
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 300,
+                    "y": 290
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 299.5,
+                    "y": 290
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 393.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 395.5,
+                        "y": 420
+                      },
+                      {
+                        "x": 26.5,
+                        "y": 420
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "attacking",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": []
+            }
+          ]
+        },
+        {
+          "name": "dodging",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "monkeything.png",
+                  "points": [
+                    {
+                      "name": "Sword",
+                      "x": 375.5,
+                      "y": 288
+                    },
+                    {
+                      "name": "Attack Pos",
+                      "x": 291.5,
+                      "y": 292
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 300,
+                    "y": 290
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 299.5,
+                    "y": 290
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 393.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 395.5,
+                        "y": 420
+                      },
+                      {
+                        "x": 26.5,
+                        "y": 420
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Hit",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "werewolf shirt2.jpg",
+                  "points": [
+                    {
+                      "name": "Sword",
+                      "x": 375.5,
+                      "y": 288
+                    },
+                    {
+                      "name": "Attack Pos",
+                      "x": 291.5,
+                      "y": 292
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 300,
+                    "y": 290
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 299.5,
+                    "y": 290
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 393.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 395.5,
+                        "y": 420
+                      },
+                      {
+                        "x": 26.5,
+                        "y": 420
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "player"
+      }
+    ]
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/level-1"
+    }
+  ],
+  "externalEvents": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/player"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/enemy"
+    }
+  ],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspriteslider"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/smoothcamera"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/boidsmovement"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/pixelperfectmovement"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritecontinuousbar"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/health"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/tiledunitsbar"
+    }
+  ],
+  "externalLayouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/ui"
+    }
+  ]
+}
