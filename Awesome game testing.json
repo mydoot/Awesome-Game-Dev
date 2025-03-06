@@ -987,6 +987,38 @@
         "name": "idling2.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "staff 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "staff 2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "staff 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "staff 1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "weapons master.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "weapons master.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "weapons master close up.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "weapons master close up.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

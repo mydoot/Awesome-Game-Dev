@@ -157,7 +157,7 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "Sword",
+      "name": "staff",
       "persistentUuid": "48013e13-f3dc-4a3c-be01-86ea37dfb80e",
       "width": 0,
       "x": 559,
@@ -269,7 +269,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "9ac194a100fb1f24d54c0f218f3c38836f6a2766577309235412efc381676af6",
-      "name": "Sword",
+      "name": "staff",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [
@@ -283,17 +283,17 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "Sword",
+          "name": "staff",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.025,
+              "timeBetweenFrames": 0.2,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\Sword.png",
+                  "image": "staff 2.png",
                   "points": [
                     {
                       "name": "Hitbox Spawn",
@@ -315,20 +315,62 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 193,
+                        "y": 54
                       },
                       {
-                        "x": 16,
-                        "y": 0
+                        "x": 369,
+                        "y": 54
                       },
                       {
-                        "x": 16,
-                        "y": 16
+                        "x": 369,
+                        "y": 494
                       },
                       {
-                        "x": 0,
-                        "y": 16
+                        "x": 193,
+                        "y": 494
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "staff 1.png",
+                  "points": [
+                    {
+                      "name": "Hitbox Spawn",
+                      "x": 2.5,
+                      "y": 8
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 2,
+                    "y": 14
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 2,
+                    "y": 14
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 193,
+                        "y": 54
+                      },
+                      {
+                        "x": 369,
+                        "y": 54
+                      },
+                      {
+                        "x": 369,
+                        "y": 494
+                      },
+                      {
+                        "x": 193,
+                        "y": 494
                       }
                     ]
                   ]
@@ -1338,6 +1380,114 @@
         "characterSize": 10,
         "color": "0;59;255"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "weapons_master",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "lil guy",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "weapons master.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 33,
+                        "y": 2
+                      },
+                      {
+                        "x": 459,
+                        "y": 2
+                      },
+                      {
+                        "x": 459,
+                        "y": 498
+                      },
+                      {
+                        "x": 33,
+                        "y": 498
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "close up",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "weapons master close up.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 33,
+                        "y": 2
+                      },
+                      {
+                        "x": 459,
+                        "y": 2
+                      },
+                      {
+                        "x": 459,
+                        "y": 498
+                      },
+                      {
+                        "x": 33,
+                        "y": 498
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1387,7 +1537,7 @@
         "objectName": "Props"
       },
       {
-        "objectName": "Sword"
+        "objectName": "staff"
       },
       {
         "objectName": "AttackAnimation"
@@ -1397,6 +1547,9 @@
       },
       {
         "objectName": "NewSprite"
+      },
+      {
+        "objectName": "weapons_master"
       }
     ]
   },
