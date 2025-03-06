@@ -1035,6 +1035,30 @@
         "name": "forest witch close up.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/House.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "House.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Platformer Pack/Building/25a026f33b5e093c8924530e3c5d5cb269192d57720b1ae766d8350f1d1f5667_House.png",
+          "name": "House.png"
+        }
+      },
+      {
+        "file": "assets/House tall foreground.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "House tall foreground.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Platformer Pack/Building/86cd1f21406274903810c5bbd5364b5375703132099f6b9b80bf7e08b2dc1c04_House tall foreground.png",
+          "name": "House tall foreground.png"
+        }
       }
     ],
     "resourceFolders": []
