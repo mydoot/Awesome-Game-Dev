@@ -915,6 +915,78 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "dodge 5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "dodge 5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "dodge 4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "dodge 4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "dodge 3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "dodge 3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "dodge 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "dodge 2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "dodge 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "dodge 1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "idling 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "idling 2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "idling 3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "idling 3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "idling 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "idling 1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "idling2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "idling2.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1058,11 +1130,152 @@
           "directions": [
             {
               "looping": true,
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.2,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "normal2.png",
+                  "image": "idling 1.png",
+                  "points": [
+                    {
+                      "name": "Sword",
+                      "x": 375.5,
+                      "y": 288
+                    },
+                    {
+                      "name": "Attack Pos",
+                      "x": 291.5,
+                      "y": 292
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 300,
+                    "y": 290
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 299.5,
+                    "y": 290
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 393.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 395.5,
+                        "y": 420
+                      },
+                      {
+                        "x": 26.5,
+                        "y": 420
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "idling 2.png",
+                  "points": [
+                    {
+                      "name": "Sword",
+                      "x": 375.5,
+                      "y": 288
+                    },
+                    {
+                      "name": "Attack Pos",
+                      "x": 291.5,
+                      "y": 292
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 300,
+                    "y": 290
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 299.5,
+                    "y": 290
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 393.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 395.5,
+                        "y": 420
+                      },
+                      {
+                        "x": 26.5,
+                        "y": 420
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "idling 1.png",
+                  "points": [
+                    {
+                      "name": "Sword",
+                      "x": 375.5,
+                      "y": 288
+                    },
+                    {
+                      "name": "Attack Pos",
+                      "x": 291.5,
+                      "y": 292
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 300,
+                    "y": 290
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 299.5,
+                    "y": 290
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 393.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 395.5,
+                        "y": 420
+                      },
+                      {
+                        "x": 26.5,
+                        "y": 420
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "idling 3.png",
                   "points": [
                     {
                       "name": "Sword",
@@ -1531,11 +1744,246 @@
             {
               "looping": false,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.17,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "monkeything.png",
+                  "image": "dodge 1.png",
+                  "points": [
+                    {
+                      "name": "Sword",
+                      "x": 375.5,
+                      "y": 288
+                    },
+                    {
+                      "name": "Attack Pos",
+                      "x": 291.5,
+                      "y": 292
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 300,
+                    "y": 290
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 299.5,
+                    "y": 290
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 393.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 395.5,
+                        "y": 420
+                      },
+                      {
+                        "x": 26.5,
+                        "y": 420
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "dodge 2.png",
+                  "points": [
+                    {
+                      "name": "Sword",
+                      "x": 375.5,
+                      "y": 288
+                    },
+                    {
+                      "name": "Attack Pos",
+                      "x": 291.5,
+                      "y": 292
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 300,
+                    "y": 290
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 299.5,
+                    "y": 290
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 393.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 395.5,
+                        "y": 420
+                      },
+                      {
+                        "x": 26.5,
+                        "y": 420
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "dodge 3.png",
+                  "points": [
+                    {
+                      "name": "Sword",
+                      "x": 375.5,
+                      "y": 288
+                    },
+                    {
+                      "name": "Attack Pos",
+                      "x": 291.5,
+                      "y": 292
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 300,
+                    "y": 290
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 299.5,
+                    "y": 290
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 393.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 395.5,
+                        "y": 420
+                      },
+                      {
+                        "x": 26.5,
+                        "y": 420
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "dodge 4.png",
+                  "points": [
+                    {
+                      "name": "Sword",
+                      "x": 375.5,
+                      "y": 288
+                    },
+                    {
+                      "name": "Attack Pos",
+                      "x": 291.5,
+                      "y": 292
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 300,
+                    "y": 290
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 299.5,
+                    "y": 290
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 393.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 395.5,
+                        "y": 420
+                      },
+                      {
+                        "x": 26.5,
+                        "y": 420
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "dodge 5.png",
+                  "points": [
+                    {
+                      "name": "Sword",
+                      "x": 375.5,
+                      "y": 288
+                    },
+                    {
+                      "name": "Attack Pos",
+                      "x": 291.5,
+                      "y": 292
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 300,
+                    "y": 290
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 299.5,
+                    "y": 290
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 26,
+                        "y": 0
+                      },
+                      {
+                        "x": 393.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 395.5,
+                        "y": 420
+                      },
+                      {
+                        "x": 26.5,
+                        "y": 420
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "idling2.png",
                   "points": [
                     {
                       "name": "Sword",
