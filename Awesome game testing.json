@@ -1059,6 +1059,22 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Platformer Pack/Building/86cd1f21406274903810c5bbd5364b5375703132099f6b9b80bf7e08b2dc1c04_House tall foreground.png",
           "name": "House tall foreground.png"
         }
+      },
+      {
+        "file": "tf_jungle_a1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tf_jungle_a1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "tf_jungle_b.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tf_jungle_b.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
