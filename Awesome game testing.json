@@ -1019,6 +1019,22 @@
         "name": "weapons master close up.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "forest witch.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "forest witch.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "forest witch close up.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "forest witch close up.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
