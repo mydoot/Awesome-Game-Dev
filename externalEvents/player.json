@@ -683,7 +683,7 @@
                 "value": "Cache"
               },
               "parameters": [
-                "Sword"
+                "staff"
               ]
             },
             {
@@ -841,7 +841,7 @@
                   },
                   "parameters": [
                     "Enemy",
-                    "Sword.AngleToObject(Enemy)",
+                    "staff.AngleToObject(Enemy)",
                     "250",
                     "1"
                   ]
@@ -894,7 +894,7 @@
                     "value": "Montre"
                   },
                   "parameters": [
-                    "Sword",
+                    "staff",
                     ""
                   ]
                 },
@@ -1123,7 +1123,7 @@
                 "value": "FlippableCapability::FlippableBehavior::FlipY"
               },
               "parameters": [
-                "Sword",
+                "staff",
                 "Flippable",
                 ""
               ]
@@ -1160,9 +1160,57 @@
                 "value": "FlippableCapability::FlippableBehavior::FlipY"
               },
               "parameters": [
-                "Sword",
+                "staff",
                 "Flippable",
                 "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Weapon Creation\n"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "staff",
+                "player.PointX(\"Sword\")",
+                "player.PointY(\"Sword\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "staff",
+                "Scale",
+                "=",
+                "0.105"
               ]
             }
           ]
@@ -1176,7 +1224,7 @@
                 "value": "MettreXY"
               },
               "parameters": [
-                "Sword",
+                "staff",
                 "=",
                 "player.PointX(\"Sword\")",
                 "=",
@@ -1188,7 +1236,7 @@
                 "value": "RotateTowardPosition"
               },
               "parameters": [
-                "Sword",
+                "staff",
                 "CursorX()",
                 "CursorY()",
                 "0",
@@ -1200,10 +1248,10 @@
                 "value": "SetNumberObjectVariable"
               },
               "parameters": [
-                "Sword",
+                "staff",
                 "SwordAngle",
                 "=",
-                "Sword.Angle()"
+                "staff.Angle()"
               ]
             }
           ]
@@ -1365,11 +1413,6 @@
         }
       ],
       "parameters": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
     }
   ]
 }

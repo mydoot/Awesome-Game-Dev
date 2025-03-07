@@ -2180,6 +2180,324 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "9ac194a100fb1f24d54c0f218f3c38836f6a2766577309235412efc381676af6",
+      "name": "staff",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "SwordAngle",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "staff",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.2,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "staff 2.png",
+                  "points": [
+                    {
+                      "name": "Hitbox Spawn",
+                      "x": 320,
+                      "y": 178
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 261.5,
+                    "y": 321
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 258.5,
+                    "y": 321
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 193,
+                        "y": 54
+                      },
+                      {
+                        "x": 369,
+                        "y": 54
+                      },
+                      {
+                        "x": 369,
+                        "y": 494
+                      },
+                      {
+                        "x": 193,
+                        "y": 494
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "staff 1.png",
+                  "points": [
+                    {
+                      "name": "Hitbox Spawn",
+                      "x": 320,
+                      "y": 178
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 261.5,
+                    "y": 321
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 258.5,
+                    "y": 321
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 193,
+                        "y": 54
+                      },
+                      {
+                        "x": 369,
+                        "y": 54
+                      },
+                      {
+                        "x": 369,
+                        "y": 494
+                      },
+                      {
+                        "x": 193,
+                        "y": 494
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "AttackAnimation",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "Damage",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "name": "AttackCooldown",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slash_color3_frame1.png",
+                  "points": [
+                    {
+                      "name": "HITBOX",
+                      "x": 63,
+                      "y": 64
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 61.5,
+                    "y": 64
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32,
+                        "y": 116
+                      },
+                      {
+                        "x": 34,
+                        "y": 24
+                      },
+                      {
+                        "x": 106,
+                        "y": 23.5
+                      },
+                      {
+                        "x": 106,
+                        "y": 116
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slash_color3_frame2.png",
+                  "points": [
+                    {
+                      "name": "HITBOX",
+                      "x": 63,
+                      "y": 64
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 61.5,
+                    "y": 64
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32,
+                        "y": 116
+                      },
+                      {
+                        "x": 34,
+                        "y": 24
+                      },
+                      {
+                        "x": 106,
+                        "y": 23.5
+                      },
+                      {
+                        "x": 106,
+                        "y": 116
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slash_color3_frame3.png",
+                  "points": [
+                    {
+                      "name": "HITBOX",
+                      "x": 63,
+                      "y": 64
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 61.5,
+                    "y": 64
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32,
+                        "y": 116
+                      },
+                      {
+                        "x": 34,
+                        "y": 24
+                      },
+                      {
+                        "x": 106,
+                        "y": 23.5
+                      },
+                      {
+                        "x": 106,
+                        "y": 116
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slash_color3_frame4.png",
+                  "points": [
+                    {
+                      "name": "HITBOX",
+                      "x": 63,
+                      "y": 64
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 61.5,
+                    "y": 64
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32,
+                        "y": 116
+                      },
+                      {
+                        "x": 34,
+                        "y": 24
+                      },
+                      {
+                        "x": 106,
+                        "y": 23.5
+                      },
+                      {
+                        "x": 106,
+                        "y": 116
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2187,6 +2505,12 @@
     "children": [
       {
         "objectName": "player"
+      },
+      {
+        "objectName": "staff"
+      },
+      {
+        "objectName": "AttackAnimation"
       }
     ]
   },

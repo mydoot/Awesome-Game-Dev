@@ -1,2 +1,4 @@
 #ignoring autosave file to prevent possible merge conflicts
 *.autosave
+*.autosave
+Awesome game testing.json.autosave
