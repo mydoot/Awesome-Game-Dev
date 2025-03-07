@@ -118,6 +118,39 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "DialogueBox",
+      "persistentUuid": "d02c988e-f130-4510-a4d5-ff26e39608bd",
+      "width": 0,
+      "x": 318,
+      "y": 507,
+      "zOrder": 16,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 286,
+      "keepRatio": true,
+      "layer": "",
+      "name": "WarriorFace",
+      "persistentUuid": "7b82d651-926c-4e0c-a2a9-47fef2b8eb11",
+      "width": 286,
+      "x": 35,
+      "y": 436,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "editionSettings": {
@@ -130,7 +163,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.9934433498259572,
+    "zoomFactor": 0.7370816317994032,
     "windowMask": false
   }
 }

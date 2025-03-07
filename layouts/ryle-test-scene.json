@@ -1195,6 +1195,318 @@
         "characterSize": 20,
         "color": "0;0;0"
       }
+    },
+    {
+      "assetStoreId": "9d5de415b6e469c681701ea42d3b1c486fee31d6ef591a2d3e226f639ab486ff",
+      "name": "DialogueBox",
+      "type": "TwoChoicesDialogBoxes::TwoChoicesDialogBox",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {},
+      "childrenContent": {
+        "Dialogue": {
+          "content": {
+            "text": "Default message. Continue?",
+            "opacity": 255,
+            "scale": 2,
+            "fontSize": 20,
+            "tint": "255;255;255",
+            "bitmapFontResourceName": "8BitOperatorPlus8Regular_Edited.fnt",
+            "textureAtlasResourceName": "8BitOperatorPlus8Regular_Edited.png",
+            "align": "left",
+            "wordWrap": true
+          }
+        },
+        "NoButton": {
+          "content": {
+            "LeftPadding": 8,
+            "RightPadding": 8,
+            "PressedLabelOffsetY": 0,
+            "IdleLabelOffsetY": -8,
+            "BottomPadding": 8,
+            "TopPadding": 8,
+            "MinimalWidth": 300
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 8,
+              "height": 106,
+              "leftMargin": 8,
+              "rightMargin": 8,
+              "texture": "Border2.png",
+              "tiled": false,
+              "topMargin": 8,
+              "width": 256
+            },
+            "Idle": {
+              "bottomMargin": 8,
+              "height": 106,
+              "leftMargin": 8,
+              "rightMargin": 8,
+              "texture": "Border.png",
+              "tiled": false,
+              "topMargin": 8,
+              "width": 256
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "No",
+              "font": "",
+              "textAlignment": "center",
+              "characterSize": 26,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "No",
+                "font": "",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 26,
+                "color": "255;255;255"
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 8,
+              "height": 106,
+              "leftMargin": 8,
+              "rightMargin": 8,
+              "texture": "Border2.png",
+              "tiled": false,
+              "topMargin": 8,
+              "width": 256
+            }
+          }
+        },
+        "TextBorder": {
+          "bottomMargin": 16,
+          "height": 48,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Border.png",
+          "tiled": false,
+          "topMargin": 16,
+          "width": 48
+        },
+        "YesButton": {
+          "content": {
+            "LeftPadding": 8,
+            "RightPadding": 8,
+            "PressedLabelOffsetY": 0,
+            "IdleLabelOffsetY": -8,
+            "BottomPadding": 8,
+            "TopPadding": 8,
+            "MinimalWidth": 300
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 8,
+              "height": 106,
+              "leftMargin": 8,
+              "rightMargin": 8,
+              "texture": "Border2.png",
+              "tiled": false,
+              "topMargin": 8,
+              "width": 256
+            },
+            "Idle": {
+              "bottomMargin": 8,
+              "height": 106,
+              "leftMargin": 8,
+              "rightMargin": 8,
+              "texture": "Border.png",
+              "tiled": false,
+              "topMargin": 8,
+              "width": 256
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "Yes",
+              "font": "",
+              "textAlignment": "center",
+              "characterSize": 26,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Yes",
+                "font": "",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 26,
+                "color": "255;255;255"
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 8,
+              "height": 106,
+              "leftMargin": 8,
+              "rightMargin": 8,
+              "texture": "Border2.png",
+              "tiled": false,
+              "topMargin": 8,
+              "width": 256
+            }
+          }
+        }
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "WarriorFace",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "weapons master close up.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 13
+                      },
+                      {
+                        "x": 499,
+                        "y": 13
+                      },
+                      {
+                        "x": 499,
+                        "y": 495
+                      },
+                      {
+                        "x": 2,
+                        "y": 495
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite3",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "forest witch close up.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 2
+                      },
+                      {
+                        "x": 499,
+                        "y": 2
+                      },
+                      {
+                        "x": 499,
+                        "y": 498
+                      },
+                      {
+                        "x": 2,
+                        "y": 498
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1203,6 +1515,9 @@
       {
         "folderName": "UI",
         "children": [
+          {
+            "objectName": "DialogueBox"
+          },
           {
             "objectName": "HealthText"
           },
@@ -1254,6 +1569,12 @@
       },
       {
         "objectName": "NewText"
+      },
+      {
+        "objectName": "WarriorFace"
+      },
+      {
+        "objectName": "NewSprite3"
       }
     ]
   },
