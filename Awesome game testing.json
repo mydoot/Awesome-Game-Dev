@@ -1075,6 +1075,38 @@
         "name": "tf_jungle_b.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "TX Plant.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TX Plant.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "werewolf shirt3.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "werewolf shirt3.jpg",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Sleeping_Emoji_2_large2.webp",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sleeping_Emoji_2_large2.webp",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "TX Tileset Stone Ground.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TX Tileset Stone Ground.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2572,6 +2604,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/tiledunitsbar"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/objectspawner"
     }
   ],
   "externalLayouts": [
