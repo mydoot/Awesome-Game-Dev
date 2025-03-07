@@ -3618,6 +3618,18 @@
             "",
             "\"Scrolltext\""
           ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "092_Pause_04.wav",
+            "",
+            "100",
+            ""
+          ]
         }
       ]
     },
@@ -3897,6 +3909,18 @@
                 "value": "DialogueTree::ConfirmSelectOption"
               },
               "parameters": []
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "092_Pause_04.wav",
+                "",
+                "100",
+                ""
+              ]
             }
           ]
         },
@@ -3920,6 +3944,18 @@
                 "Text",
                 "=",
                 "DialogueTree::VerticalOptionsList(\">\")"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "070_Equip_10.wav",
+                "",
+                "50",
+                ""
               ]
             }
           ]
