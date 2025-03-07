@@ -1,0 +1,52 @@
+[
+	{
+		"title": "Start",
+		"tags": "",
+		"body": "Do you want to master your combat?\n[[ Indeed. |yes]] \n\n[[ I'm a pacifist, sorry. |no]]",
+		"position": {
+			"x": 465,
+			"y": 291
+		},
+		"colorID": 0
+	},
+	{
+		"title": "yes",
+		"tags": "",
+		"body": "Left Click to perform a melee attack.\n[[ Go on. |yes2]]\n\n[[ But I'm a mage... |yes2]]",
+		"position": {
+			"x": 187,
+			"y": 77
+		},
+		"colorID": 0
+	},
+	{
+		"title": "no",
+		"tags": "",
+		"body": "Fine then, don't learn my magnificent techniques.",
+		"position": {
+			"x": 805,
+			"y": 71
+		},
+		"colorID": 0
+	},
+	{
+		"title": "yes2",
+		"tags": "",
+		"body": "Right Click to perform a dodge roll.\n[[ That will be useful. |yes3]]\n\n[[ What about shooting magic projectiles? |yes3]]",
+		"position": {
+			"x": 177,
+			"y": -156
+		},
+		"colorID": 0
+	},
+	{
+		"title": "yes3",
+		"tags": "",
+		"body": "Good luck.\n",
+		"position": {
+			"x": 170,
+			"y": -382
+		},
+		"colorID": 0
+	}
+]
