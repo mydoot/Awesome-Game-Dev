@@ -2,7 +2,7 @@
 	{
 		"title": "Start",
 		"tags": "",
-		"body": "You've killed the dangerous beasts ahead! Well done.\n[[ It was easy. |Yes]] \n[[ I suddenly don't want to talk to you anymore. |No]]",
+		"body": "You've killed the dangerous beasts ahead! Well done.\n[[ It was easy. |Yes]] \n[[ I suddenly don't want to talk to you anymore. |No]]\n[[ Why are there crabs in the forest? |mid1]] ",
 		"position": {
 			"x": 304,
 			"y": 167
@@ -12,7 +12,7 @@
 	{
 		"title": "Yes",
 		"tags": "",
-		"body": "You can enter ahead to meet the Potions Master. She will teach you well.\n[[ Thank you. |Yes2]] \n[[ Will I finally learn magic? |Yes2]]",
+		"body": "You can enter the portal ahead to meet the Forest Witch. She will teach you well.\n[[ Thank you. |Yes2]] \n[[ Will I finally learn magic? |Yes2]]",
 		"position": {
 			"x": 48,
 			"y": -57
@@ -22,7 +22,7 @@
 	{
 		"title": "No",
 		"tags": "",
-		"body": "???",
+		"body": "???\nRude.",
 		"position": {
 			"x": 644,
 			"y": -53
@@ -36,6 +36,16 @@
 		"position": {
 			"x": 41,
 			"y": -298
+		},
+		"colorID": 0
+	},
+	{
+		"title": "mid1",
+		"tags": "",
+		"body": "Don't question it.\n[[ Alright... |Yes]] \n[[ This place is weird. |Yes]]",
+		"position": {
+			"x": 320,
+			"y": -68
 		},
 		"colorID": 0
 	}
