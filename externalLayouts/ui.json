@@ -209,7 +209,7 @@
       "height": 57,
       "keepRatio": true,
       "layer": "UI",
-      "name": "NewSprite5",
+      "name": "Fireball2",
       "persistentUuid": "69a87680-fe8a-4052-8f59-25fedd011a22",
       "width": 57,
       "x": 90,
@@ -226,7 +226,7 @@
       "height": 33,
       "keepRatio": true,
       "layer": "UI",
-      "name": "NewSprite6",
+      "name": "Q_button",
       "persistentUuid": "a1f6269e-a917-4970-ac10-31caf1287bb3",
       "width": 66,
       "x": 91,
@@ -281,7 +281,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.3389693172845385,
+    "zoomFactor": 0.6897782140104504,
     "windowMask": false
   }
 }
