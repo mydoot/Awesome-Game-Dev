@@ -36,10 +36,27 @@
             },
             {
               "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "player",
+                "\"Mana Regen\""
+              ]
+            },
+            {
+              "type": {
                 "value": "Cache"
               },
               "parameters": [
                 "Stam_full_fluff_text"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Mana_full_fluff_text2"
               ]
             }
           ]
@@ -244,6 +261,212 @@
                   },
                   "parameters": [
                     "Stam_full_fluff_text"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "player",
+                "\"Mana Regen\"",
+                ">=",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "Manaval",
+                "=",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "player",
+                "\"Mana Regen\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "player",
+                "\"Mana Regen\"",
+                ">=",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "Manaval",
+                "<",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "player",
+                "\"Mana Regen\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "Manaval",
+                "+",
+                "1"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "player",
+                    "Manaval",
+                    "=",
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "001_Hover_01.wav",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Mana_full_fluff_text2",
+                    "Opacity",
+                    "=",
+                    "255"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Mana_full_fluff_text2",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.15"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Mana_full_fluff_text2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.15"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Mana_full_fluff_text2",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Mana_full_fluff_text2"
                   ]
                 }
               ]
@@ -939,6 +1162,17 @@
             },
             {
               "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "Manaval",
+                ">",
+                "0"
+              ]
+            },
+            {
+              "type": {
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": []
@@ -952,8 +1186,8 @@
               "parameters": [
                 "player",
                 "FireBullet",
-                "attackhitbox.PointX(\"Attack Pos\")",
-                "attackhitbox.PointY(\"Attack Pos\")",
+                "attackhitbox.PointX(\"Spell Pos\")",
+                "attackhitbox.PointY(\"Spell Pos\")",
                 "Fireball",
                 "attackhitbox.AttackHitboxAngle",
                 "500",
@@ -962,13 +1196,13 @@
             },
             {
               "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
+                "value": "SetNumberObjectVariable"
               },
               "parameters": [
-                "AttackAnimation",
-                "Scale",
-                "=",
-                "1.25"
+                "player",
+                "Manaval",
+                "-",
+                "1"
               ]
             },
             {
@@ -979,7 +1213,7 @@
                 "",
                 "04_Fire_explosion_04_medium3.wav",
                 "",
-                "45",
+                "100",
                 ""
               ]
             }
@@ -990,10 +1224,64 @@
               "conditions": [
                 {
                   "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "player",
+                    "<",
+                    "CursorX()"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipY"
+                  },
+                  "parameters": [
+                    "attackhitbox",
+                    "Flippable",
+                    "no"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "player",
+                    ">",
+                    "CursorX()"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipY"
+                  },
+                  "parameters": [
+                    "attackhitbox",
+                    "Flippable",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
                     "value": "CollisionNP"
                   },
                   "parameters": [
-                    "AttackAnimation",
+                    "Fireball",
                     "Enemy",
                     "",
                     "",
@@ -1045,7 +1333,7 @@
                   "parameters": [
                     "Enemy",
                     "staff.AngleToObject(Enemy)",
-                    "250",
+                    "100",
                     "1"
                   ]
                 },
@@ -1506,6 +1794,17 @@
                 "StamBar",
                 "=",
                 "player.Stamval",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+              },
+              "parameters": [
+                "ManaBar",
+                "=",
+                "player.Manaval",
                 ""
               ]
             }

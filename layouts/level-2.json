@@ -300,84 +300,6 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "attackhitbox",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "name": "AttackHitboxAngle",
-          "type": "number",
-          "value": 0
-        },
-        {
-          "name": "SwordAngle2",
-          "type": "number",
-          "value": 0
-        }
-      ],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "attackhitbox",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "attackhitbox5",
-                  "points": [
-                    {
-                      "name": "Attack Pos",
-                      "x": 64,
-                      "y": 32.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 33.5,
-                    "y": 34
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 33.5,
-                    "y": 31
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20,
-                        "y": 25
-                      },
-                      {
-                        "x": 42,
-                        "y": 25
-                      },
-                      {
-                        "x": 42,
-                        "y": 42
-                      },
-                      {
-                        "x": 20,
-                        "y": 42
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
       "name": "Enemy",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -2310,9 +2232,6 @@
             "objectName": "Enemy"
           }
         ]
-      },
-      {
-        "objectName": "attackhitbox"
       },
       {
         "objectName": "Ground"

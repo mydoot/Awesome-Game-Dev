@@ -118,6 +118,23 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "Mana_full_fluff_text2",
+      "opacity": 0,
+      "persistentUuid": "12516281-b7e6-4f4c-8346-7c87662bedbb",
+      "width": 0,
+      "x": 14,
+      "y": 158,
+      "zOrder": 16,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "editionSettings": {
@@ -130,7 +147,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.8993607583666623,
+    "zoomFactor": 1.061571430521998,
     "windowMask": false
   }
 }

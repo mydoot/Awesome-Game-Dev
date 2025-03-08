@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.6897782140104511,
+    "zoomFactor": 1.4790395861757406,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -836,7 +836,13 @@
       "assetStoreId": "98213fe7f1e2289ef501a2e0a96ed2292535e720bfa616da42cf780d99a3c6d0",
       "name": "ManaBar",
       "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
-      "variables": [],
+      "variables": [
+        {
+          "name": "Manaval",
+          "type": "number",
+          "value": 5
+        }
+      ],
       "effects": [],
       "behaviors": [],
       "content": {
@@ -844,11 +850,11 @@
         "BarLeftPadding": 4,
         "BarRightPadding": 4,
         "BarBottomPadding": 4,
-        "EasingDuration": 0,
+        "EasingDuration": 0.1,
         "PreviousHighValueDuration": 0,
         "ShowLabel": false,
-        "InitialValue": 8,
-        "MaxValue": 16
+        "InitialValue": 5,
+        "MaxValue": 5
       },
       "childrenContent": {
         "Background": {
@@ -1429,6 +1435,61 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Mana_full_fluff_text2",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Effect",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 2
+          },
+          "stringParameters": {
+            "color": "0;0;0"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [],
+      "string": "MANA FULL!",
+      "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+      "textAlignment": "left",
+      "characterSize": 10,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "MANA FULL!",
+        "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 10,
+        "color": "255;255;255"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1448,6 +1509,9 @@
           },
           {
             "objectName": "Stam_full_fluff_text"
+          },
+          {
+            "objectName": "Mana_full_fluff_text2"
           },
           {
             "objectName": "ManaText"
