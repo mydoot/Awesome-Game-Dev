@@ -1,0 +1,42 @@
+[
+	{
+		"title": "Start",
+		"tags": "",
+		"body": "You've killed the dangerous beasts ahead! Well done.\n[[ It was easy. |Yes]] \n[[ I suddenly don't want to talk to you anymore. |No]]",
+		"position": {
+			"x": 304,
+			"y": 167
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Yes",
+		"tags": "",
+		"body": "You can enter ahead to meet the Potions Master. She will teach you well.\n[[ Thank you. |Yes2]] \n[[ Will I finally learn magic? |Yes2]]",
+		"position": {
+			"x": 48,
+			"y": -57
+		},
+		"colorID": 0
+	},
+	{
+		"title": "No",
+		"tags": "",
+		"body": "???",
+		"position": {
+			"x": 644,
+			"y": -53
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Yes2",
+		"tags": "",
+		"body": "Good luck.",
+		"position": {
+			"x": 41,
+			"y": -298
+		},
+		"colorID": 0
+	}
+]
