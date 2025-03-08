@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.3925161175488275,
+    "zoomFactor": 0.478934188453531,
     "windowMask": false
   },
   "objectsGroups": [
@@ -3876,6 +3876,7 @@
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 3,
       "cameraType": "",
+      "defaultCameraBehavior": "do-nothing",
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,

@@ -1001,6 +1001,7 @@
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 3,
       "cameraType": "",
+      "defaultCameraBehavior": "do-nothing",
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
