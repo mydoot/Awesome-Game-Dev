@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.0973679695629526,
+    "zoomFactor": 0.993443349825959,
     "windowMask": false
   },
   "objectsGroups": [
@@ -252,6 +252,22 @@
       "width": 72,
       "x": 806,
       "y": 357,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Fireball",
+      "persistentUuid": "004bb89f-08ed-4375-b0c9-263ba6d55516",
+      "width": 0,
+      "x": 700,
+      "y": 222,
       "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],

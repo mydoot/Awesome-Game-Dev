@@ -1,0 +1,52 @@
+[
+	{
+		"title": "Start",
+		"tags": "",
+		"body": "You've defeated the enemies and brought me their remains. Well done.\n[[ You need to bring me a harder challenge. |Yes1]] \n[[ Felt good to be a real mage. |Alt1]]",
+		"position": {
+			"x": 254,
+			"y": 117
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Yes1",
+		"tags": "",
+		"body": "There will be a more difficult challenge ahead.\n[[ Bring it to me, now!! |Yes11]] \n[[ Where is the easy mode? |Yes11]]",
+		"position": {
+			"x": -119,
+			"y": -134
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Alt1",
+		"tags": "",
+		"body": "Then prepare to use those skills against your ultimate test. \n[[ I was born ready. |Yes11]] \n[[ Exciting. |Yes11]]",
+		"position": {
+			"x": 594,
+			"y": -103
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Yes2",
+		"tags": "",
+		"body": "Enter the portal ahead, and prepare for the true, ultimate test of your abilities.",
+		"position": {
+			"x": 227,
+			"y": -520
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Yes11",
+		"tags": "",
+		"body": "Take this potion. It is full of a regenerative substance and will recover any damage dealt to you once consumed.\n[[ Sounds OP... |Yes2]] \n[[ Sounds incredibly useful. I'll take it. |Yes2]]",
+		"position": {
+			"x": -72,
+			"y": -378
+		},
+		"colorID": 0
+	}
+]

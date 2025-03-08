@@ -1258,7 +1258,7 @@
         "disablePreload": false,
         "file": "assets/NewDialogue.json",
         "kind": "json",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/NewDialogue.json\",\"extension\":\".json\"}",
         "name": "assets\\NewDialogue.json",
         "userAdded": false
       },
@@ -1566,6 +1566,132 @@
         "metadata": "",
         "name": "Q.png",
         "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "crab_monster_uwu.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "crab_monster_uwu.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "crab_monster.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "crab_monster.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "crab_monster2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "crab_monster2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Hit.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Hit",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "crab_monster3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "crab_monster3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Pixel 3.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Pixel 3.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Pixel 2.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Pixel 2.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Pixel 11.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Pixel 11.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "crab_monster4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "crab_monster4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "crab_monster_uwu2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "crab_monster_uwu2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Regular.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Regular",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Regular2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Regular2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "crab_monster5.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"crab_monster5.png\",\"extension\":\".png\"}",
+        "name": "crab_monster5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "crab_monster6.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"crab_monster6.png\",\"extension\":\".png\"}",
+        "name": "crab_monster6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/Witchdialogue2.json",
+        "kind": "json",
+        "metadata": "{\"localFilePath\":\"assets/Witchdialogue2.json\",\"extension\":\".json\"}",
+        "name": "assets\\Witchdialogue2.json",
         "userAdded": false
       }
     ],
@@ -3050,8 +3176,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 43,
+                    "y": 33
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -3086,8 +3212,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 43,
+                    "y": 33
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -3122,8 +3248,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 43,
+                    "y": 33
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -3158,8 +3284,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 43,
+                    "y": 33
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -3194,8 +3320,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 43,
+                    "y": 33
                   },
                   "centerPoint": {
                     "automatic": true,
