@@ -2,7 +2,7 @@
 	{
 		"title": "Start",
 		"tags": "",
-		"body": "Welcome to my domain. Time to master your magical abilities.\n[[ Finally. |Yes]] \n[[ I actually want to switch to being a warrior. |No]]",
+		"body": "Do you want to master your combat abilities?\n[[ Yes. |Yes]] \n[[ Sorry, but I'm a pacifist. |No]]",
 		"position": {
 			"x": 415,
 			"y": 241
@@ -12,7 +12,7 @@
 	{
 		"title": "Yes",
 		"tags": "",
-		"body": "Press Q to fire a Fireball projectile.\n[[ Awesome. |yes2]] \n[[ Can I learn a death ray? |yes2]]",
+		"body": "Left Click to perform a melee attack.\n[[ Ok. |yes2]] \n[[ But I'm a mage... |yes2]]",
 		"position": {
 			"x": 164,
 			"y": 14
@@ -22,7 +22,7 @@
 	{
 		"title": "No",
 		"tags": "",
-		"body": "I have no use for warriors.",
+		"body": "Fine, don't learn my magnificent techniques.",
 		"position": {
 			"x": 755,
 			"y": 21
@@ -32,7 +32,7 @@
 	{
 		"title": "yes2",
 		"tags": "",
-		"body": "Make sure to manage your Mana resource. Otherwise you cannot use any magical attacks.\n[[ True... |Yes3]] \n[[ I'd rather use my staff as a sword. |Yes3]]",
+		"body": "Right click to perform a dodge roll.\n[[ That will be useful. |Yes3]] \n[[ What about magic spells?? |Yes3]]",
 		"position": {
 			"x": 162,
 			"y": -212
@@ -42,7 +42,7 @@
 	{
 		"title": "Yes3",
 		"tags": "",
-		"body": "Kill the enemies ahead, and bring their remains to me. I will craft you a potion to help you later.",
+		"body": "Come back to me after you've slain the enemies ahead.",
 		"position": {
 			"x": 157,
 			"y": -432
