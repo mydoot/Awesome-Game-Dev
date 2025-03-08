@@ -1253,6 +1253,204 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/NewDialogue.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "assets\\NewDialogue.json",
+        "userAdded": false
+      },
+      {
+        "file": "tf_jungle_tileset.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tf_jungle_tileset.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "portal1_frame_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "portal1_frame_1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "portal1_frame_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "portal1_frame_2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "portal1_frame_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "portal1_frame_3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "portal1_frame_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "portal1_frame_4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "portal1_frame_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "portal1_frame_5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "portal1_frame_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "portal1_frame_6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "portal1_frame_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "portal1_frame_7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "portal1_frame_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "portal1_frame_8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "portal1_frame_9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "portal1_frame_9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "portal1_frame_10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "portal1_frame_10.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "portal1_frame_11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "portal1_frame_11.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "portal1_frame_12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "portal1_frame_12.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "portal1_frame_13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "portal1_frame_13.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "portal1_frame_14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "portal1_frame_14.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "001.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "002.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "003.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "004.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "005.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "04_Fire_explosion_04_medium.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "04_Fire_explosion_04_medium.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "04_Fire_explosion_04_medium2.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "04_Fire_explosion_04_medium2.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "04_Fire_explosion_04_medium3.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "04_Fire_explosion_04_medium3.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1283,6 +1481,36 @@
       ],
       "effects": [],
       "behaviors": [
+        {
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet",
+          "FireCooldown": 0.1,
+          "HasJustFired": false,
+          "RotateBullet": true,
+          "FiringArc": 45,
+          "BulletQuantity": 1,
+          "AngleVariance": 0,
+          "BulletSpeedVariance": 0,
+          "AmmoQuantity": 0,
+          "ShotsPerReload": 0,
+          "ReloadDuration": 1,
+          "MaxAmmo": 0,
+          "ShotsBeforeNextReload": 0,
+          "TotalShotsFired": 0,
+          "TotalBulletsCreated": 0,
+          "StartingAmmo": 0,
+          "TotalReloadsCompleted": 0,
+          "UnlimitedAmmo": true,
+          "ReloadInProgress": false,
+          "HeatIncreasePerShot": 0,
+          "HeatLevel": 0,
+          "AutomaticReloading": true,
+          "OverheatDuration": 0,
+          "LinearCoolingRate": 0.1,
+          "ExponentialCoolingRate": 0.3,
+          "BulletLayer": "",
+          "RandomizedAngle": 0
+        },
         {
           "name": "Health",
           "type": "Health::Health",
@@ -2676,6 +2904,288 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Fireball",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "001.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 5,
+                        "y": 17
+                      },
+                      {
+                        "x": 64,
+                        "y": 17
+                      },
+                      {
+                        "x": 64,
+                        "y": 49
+                      },
+                      {
+                        "x": 5,
+                        "y": 49
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "002.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 5,
+                        "y": 17
+                      },
+                      {
+                        "x": 64,
+                        "y": 17
+                      },
+                      {
+                        "x": 64,
+                        "y": 49
+                      },
+                      {
+                        "x": 5,
+                        "y": 49
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "003.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 5,
+                        "y": 17
+                      },
+                      {
+                        "x": 64,
+                        "y": 17
+                      },
+                      {
+                        "x": 64,
+                        "y": 49
+                      },
+                      {
+                        "x": 5,
+                        "y": 49
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "004.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 5,
+                        "y": 17
+                      },
+                      {
+                        "x": 64,
+                        "y": 17
+                      },
+                      {
+                        "x": 64,
+                        "y": 49
+                      },
+                      {
+                        "x": 5,
+                        "y": 49
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "005.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 5,
+                        "y": 17
+                      },
+                      {
+                        "x": 64,
+                        "y": 17
+                      },
+                      {
+                        "x": 64,
+                        "y": 49
+                      },
+                      {
+                        "x": 5,
+                        "y": 49
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "attackhitbox",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "AttackHitboxAngle",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "SwordAngle2",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "attackhitbox",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "attackhitbox5",
+                  "points": [
+                    {
+                      "name": "Attack Pos",
+                      "x": 64,
+                      "y": 32.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 33.5,
+                    "y": 34
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 33.5,
+                    "y": 31
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 20,
+                        "y": 25
+                      },
+                      {
+                        "x": 42,
+                        "y": 25
+                      },
+                      {
+                        "x": 42,
+                        "y": 42
+                      },
+                      {
+                        "x": 20,
+                        "y": 42
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2689,6 +3199,12 @@
       },
       {
         "objectName": "AttackAnimation"
+      },
+      {
+        "objectName": "Fireball"
+      },
+      {
+        "objectName": "attackhitbox"
       }
     ]
   },
@@ -2706,6 +3222,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/level-2"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/level-2-5"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -2766,6 +3286,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/panelspritebutton"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/firebullet"
     }
   ],
   "externalLayouts": [

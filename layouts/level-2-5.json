@@ -1,8 +1,8 @@
 {
   "b": 209,
   "disableInputWhenNotFocused": true,
-  "mangledName": "Ryle_32test_32scene",
-  "name": "Ryle test scene",
+  "mangledName": "Level_322_465",
+  "name": "Level 2.5",
   "r": 209,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.6897782140104511,
+    "zoomFactor": 0.7619362677197614,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -220,34 +220,16 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 69,
+      "customSize": false,
+      "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "Enemy",
-      "persistentUuid": "226b8c2f-3e9e-4377-8a6d-f5b4839953d1",
-      "width": 72,
-      "x": 589,
-      "y": 503,
-      "zOrder": 8,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 69,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Enemy",
-      "persistentUuid": "7ef60eed-0898-4566-9cfd-e6fc19f115ae",
-      "width": 72,
-      "x": 806,
-      "y": 357,
-      "zOrder": 8,
+      "name": "staff",
+      "persistentUuid": "5a6132b0-6d67-4185-9828-2cb4a1b1413d",
+      "width": 0,
+      "x": 690,
+      "y": 279,
+      "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -286,13 +268,18 @@
     },
     {
       "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "9ac194a100fb1f24d54c0f218f3c38836f6a2766577309235412efc381676af6",
-      "name": "Sword",
+      "assetStoreId": "",
+      "name": "attackhitbox",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [
         {
-          "name": "SwordAngle",
+          "name": "AttackHitboxAngle",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "SwordAngle2",
           "type": "number",
           "value": 0
         }
@@ -301,52 +288,52 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "Sword",
+          "name": "attackhitbox",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": true,
+              "looping": false,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.025,
+              "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\Sword.png",
+                  "image": "attackhitbox5",
                   "points": [
                     {
-                      "name": "Hitbox Spawn",
-                      "x": 2.5,
-                      "y": 8
+                      "name": "Attack Pos",
+                      "x": 64,
+                      "y": 32.5
                     }
                   ],
                   "originPoint": {
                     "name": "origine",
-                    "x": 2,
-                    "y": 14
+                    "x": 33.5,
+                    "y": 34
                   },
                   "centerPoint": {
                     "automatic": false,
                     "name": "centre",
-                    "x": 2,
-                    "y": 14
+                    "x": 33.5,
+                    "y": 31
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 20,
+                        "y": 25
                       },
                       {
-                        "x": 16,
-                        "y": 0
+                        "x": 42,
+                        "y": 25
                       },
                       {
-                        "x": 16,
-                        "y": 16
+                        "x": 42,
+                        "y": 42
                       },
                       {
-                        "x": 0,
-                        "y": 16
+                        "x": 20,
+                        "y": 42
                       }
                     ]
                   ]
@@ -1077,243 +1064,9 @@
       }
     },
     {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "NewText",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "Text",
-      "font": "",
-      "textAlignment": "left",
-      "characterSize": 20,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "Text",
-        "font": "",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 20,
-        "color": "0;0;0"
-      }
-    },
-    {
-      "assetStoreId": "9d5de415b6e469c681701ea42d3b1c486fee31d6ef591a2d3e226f639ab486ff",
-      "name": "DialogueBox",
-      "type": "TwoChoicesDialogBoxes::TwoChoicesDialogBox",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {},
-      "childrenContent": {
-        "Dialogue": {
-          "content": {
-            "text": "Default message. Continue?",
-            "opacity": 255,
-            "scale": 2,
-            "fontSize": 20,
-            "tint": "255;255;255",
-            "bitmapFontResourceName": "8BitOperatorPlus8Regular_Edited.fnt",
-            "textureAtlasResourceName": "8BitOperatorPlus8Regular_Edited.png",
-            "align": "left",
-            "wordWrap": true
-          }
-        },
-        "NoButton": {
-          "content": {
-            "LeftPadding": 8,
-            "RightPadding": 8,
-            "PressedLabelOffsetY": 0,
-            "IdleLabelOffsetY": -8,
-            "BottomPadding": 8,
-            "TopPadding": 8,
-            "MinimalWidth": 300
-          },
-          "childrenContent": {
-            "Hovered": {
-              "bottomMargin": 8,
-              "height": 106,
-              "leftMargin": 8,
-              "rightMargin": 8,
-              "texture": "Border2.png",
-              "tiled": false,
-              "topMargin": 8,
-              "width": 256
-            },
-            "Idle": {
-              "bottomMargin": 8,
-              "height": 106,
-              "leftMargin": 8,
-              "rightMargin": 8,
-              "texture": "Border.png",
-              "tiled": false,
-              "topMargin": 8,
-              "width": 256
-            },
-            "Label": {
-              "bold": false,
-              "italic": false,
-              "smoothed": true,
-              "underlined": false,
-              "string": "No",
-              "font": "",
-              "textAlignment": "center",
-              "characterSize": 26,
-              "color": {
-                "b": 255,
-                "g": 255,
-                "r": 255
-              },
-              "content": {
-                "bold": false,
-                "isOutlineEnabled": false,
-                "isShadowEnabled": false,
-                "italic": false,
-                "outlineColor": "255;255;255",
-                "outlineThickness": 2,
-                "shadowAngle": 90,
-                "shadowBlurRadius": 2,
-                "shadowColor": "0;0;0",
-                "shadowDistance": 4,
-                "shadowOpacity": 127,
-                "smoothed": true,
-                "underlined": false,
-                "text": "No",
-                "font": "",
-                "textAlignment": "center",
-                "verticalTextAlignment": "top",
-                "characterSize": 26,
-                "color": "255;255;255"
-              }
-            },
-            "Pressed": {
-              "bottomMargin": 8,
-              "height": 106,
-              "leftMargin": 8,
-              "rightMargin": 8,
-              "texture": "Border2.png",
-              "tiled": false,
-              "topMargin": 8,
-              "width": 256
-            }
-          }
-        },
-        "TextBorder": {
-          "bottomMargin": 16,
-          "height": 48,
-          "leftMargin": 16,
-          "rightMargin": 16,
-          "texture": "Border.png",
-          "tiled": false,
-          "topMargin": 16,
-          "width": 48
-        },
-        "YesButton": {
-          "content": {
-            "LeftPadding": 8,
-            "RightPadding": 8,
-            "PressedLabelOffsetY": 0,
-            "IdleLabelOffsetY": -8,
-            "BottomPadding": 8,
-            "TopPadding": 8,
-            "MinimalWidth": 300
-          },
-          "childrenContent": {
-            "Hovered": {
-              "bottomMargin": 8,
-              "height": 106,
-              "leftMargin": 8,
-              "rightMargin": 8,
-              "texture": "Border2.png",
-              "tiled": false,
-              "topMargin": 8,
-              "width": 256
-            },
-            "Idle": {
-              "bottomMargin": 8,
-              "height": 106,
-              "leftMargin": 8,
-              "rightMargin": 8,
-              "texture": "Border.png",
-              "tiled": false,
-              "topMargin": 8,
-              "width": 256
-            },
-            "Label": {
-              "bold": false,
-              "italic": false,
-              "smoothed": true,
-              "underlined": false,
-              "string": "Yes",
-              "font": "",
-              "textAlignment": "center",
-              "characterSize": 26,
-              "color": {
-                "b": 255,
-                "g": 255,
-                "r": 255
-              },
-              "content": {
-                "bold": false,
-                "isOutlineEnabled": false,
-                "isShadowEnabled": false,
-                "italic": false,
-                "outlineColor": "255;255;255",
-                "outlineThickness": 2,
-                "shadowAngle": 90,
-                "shadowBlurRadius": 2,
-                "shadowColor": "0;0;0",
-                "shadowDistance": 4,
-                "shadowOpacity": 127,
-                "smoothed": true,
-                "underlined": false,
-                "text": "Yes",
-                "font": "",
-                "textAlignment": "center",
-                "verticalTextAlignment": "top",
-                "characterSize": 26,
-                "color": "255;255;255"
-              }
-            },
-            "Pressed": {
-              "bottomMargin": 8,
-              "height": 106,
-              "leftMargin": 8,
-              "rightMargin": 8,
-              "texture": "Border2.png",
-              "tiled": false,
-              "topMargin": 8,
-              "width": 256
-            }
-          }
-        }
-      }
-    },
-    {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "WarriorFace",
+      "name": "forest_witch",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -1321,16 +1074,16 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "",
+          "name": "lil guy",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "weapons master close up.png",
+                  "image": "forest witch.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1346,20 +1099,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 2,
-                        "y": 13
+                        "x": 18,
+                        "y": 46
                       },
                       {
-                        "x": 499,
-                        "y": 13
+                        "x": 447,
+                        "y": 46
                       },
                       {
-                        "x": 499,
-                        "y": 495
+                        "x": 447,
+                        "y": 494
                       },
                       {
-                        "x": 2,
-                        "y": 495
+                        "x": 18,
+                        "y": 494
                       }
                     ]
                   ]
@@ -1367,25 +1120,13 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "NewSprite3",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
+        },
         {
-          "name": "",
+          "name": "up close",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
@@ -1406,20 +1147,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 2,
-                        "y": 2
+                        "x": 18,
+                        "y": 46
                       },
                       {
-                        "x": 499,
-                        "y": 2
+                        "x": 447,
+                        "y": 46
                       },
                       {
-                        "x": 499,
-                        "y": 498
+                        "x": 447,
+                        "y": 494
                       },
                       {
-                        "x": 2,
-                        "y": 498
+                        "x": 18,
+                        "y": 494
                       }
                     ]
                   ]
@@ -1437,9 +1178,6 @@
       {
         "folderName": "UI",
         "children": [
-          {
-            "objectName": "DialogueBox"
-          },
           {
             "objectName": "HealthText"
           },
@@ -1472,13 +1210,13 @@
         ]
       },
       {
+        "objectName": "attackhitbox"
+      },
+      {
         "objectName": "Ground"
       },
       {
         "objectName": "Props"
-      },
-      {
-        "objectName": "Sword"
       },
       {
         "objectName": "HeartScrollBar"
@@ -1487,13 +1225,7 @@
         "objectName": "NewSprite"
       },
       {
-        "objectName": "NewText"
-      },
-      {
-        "objectName": "WarriorFace"
-      },
-      {
-        "objectName": "NewSprite3"
+        "objectName": "forest_witch"
       }
     ]
   },
@@ -1664,10 +1396,6 @@
     {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
-    },
-    {
-      "name": "FireBullet",
-      "type": "FireBullet::FireBullet"
     },
     {
       "name": "Flippable",

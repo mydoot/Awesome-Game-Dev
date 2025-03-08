@@ -9,7 +9,7 @@
   "title": "",
   "v": 209,
   "uiSettings": {
-    "grid": true,
+    "grid": false,
     "gridType": "rectangular",
     "gridWidth": 32,
     "gridHeight": 32,
@@ -17,8 +17,8 @@
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": true,
-    "zoomFactor": 0.8993607583666661,
+    "snap": false,
+    "zoomFactor": 1.0973679695629575,
     "windowMask": false
   },
   "objectsGroups": [
@@ -39,6 +39,23 @@
         },
         {
           "name": "weapons_master"
+        }
+      ]
+    },
+    {
+      "name": "Dialougue_UI_Elements",
+      "objects": [
+        {
+          "name": "Dialoguebox"
+        },
+        {
+          "name": "DialogueText"
+        },
+        {
+          "name": "OptionText"
+        },
+        {
+          "name": "WeapMasterFace"
         }
       ]
     }
@@ -68,6 +85,16 @@
       "name": "AttackY",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "NumofDeadEnemies",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "LevelComplete",
+      "type": "boolean",
+      "value": false
     }
   ],
   "instances": [
@@ -134,22 +161,6 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "attackhitbox",
-      "persistentUuid": "aa80e663-3abf-4ddf-9982-17c33f374c25",
-      "width": 0,
-      "x": 2370,
-      "y": 226,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": true,
       "depth": 2,
       "height": 128,
@@ -212,23 +223,6 @@
       "x": 192,
       "y": 608,
       "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 52,
-      "keepRatio": true,
-      "layer": "",
-      "name": "weapons_master",
-      "persistentUuid": "bc37001a-ca1b-4105-bf10-ee5f403de104",
-      "width": 52,
-      "x": 524,
-      "y": 396,
-      "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1617,6 +1611,40 @@
         }
       ],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 48,
+      "keepRatio": true,
+      "layer": "",
+      "name": "weapons_master",
+      "persistentUuid": "ec873577-2fdb-4ab1-ac18-814c879636ab",
+      "width": 48,
+      "x": 512,
+      "y": 384,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 2,
+      "height": 103,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Portal",
+      "persistentUuid": "48e985e7-4eb1-4702-8734-8745683be316",
+      "width": 103,
+      "x": 220,
+      "y": 313,
+      "zOrder": 30,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -1649,84 +1677,6 @@
         "tileSize": 32,
         "tilesWithHitBox": "30,189,190,83,115,9,10,5,37,69,109,107"
       }
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "attackhitbox",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "name": "AttackHitboxAngle",
-          "type": "number",
-          "value": 0
-        },
-        {
-          "name": "SwordAngle2",
-          "type": "number",
-          "value": 0
-        }
-      ],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "attackhitbox",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "attackhitbox5",
-                  "points": [
-                    {
-                      "name": "Attack Pos",
-                      "x": 64,
-                      "y": 32.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 33.5,
-                    "y": 34
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 33.5,
-                    "y": 31
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 20,
-                        "y": 25
-                      },
-                      {
-                        "x": 42,
-                        "y": 25
-                      },
-                      {
-                        "x": 42,
-                        "y": 42
-                      },
-                      {
-                        "x": 20,
-                        "y": 42
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
     },
     {
       "adaptCollisionMaskAutomatically": true,
@@ -2449,114 +2399,6 @@
     },
     {
       "adaptCollisionMaskAutomatically": false,
-      "assetStoreId": "",
-      "name": "weapons_master",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "lil guy",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "weapons master.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 33,
-                        "y": 2
-                      },
-                      {
-                        "x": 459,
-                        "y": 2
-                      },
-                      {
-                        "x": 460.5,
-                        "y": 364
-                      },
-                      {
-                        "x": 34.5,
-                        "y": 367
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "close up",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "weapons master close up.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 33,
-                        "y": 2
-                      },
-                      {
-                        "x": 459,
-                        "y": 2
-                      },
-                      {
-                        "x": 460.5,
-                        "y": 364
-                      },
-                      {
-                        "x": 34.5,
-                        "y": 367
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "b5c9b1ae44a59c880adb56c8b50454297a7a0a8f1ee1b9271240c48e8c9667a4",
       "name": "House",
       "type": "Sprite",
@@ -3244,6 +3086,552 @@
         "characterSize": 25,
         "color": "0;0;0"
       }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "debugcounter",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "weapons_master",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "weapons master.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 33,
+                        "y": 2
+                      },
+                      {
+                        "x": 459,
+                        "y": 2
+                      },
+                      {
+                        "x": 460.5,
+                        "y": 356
+                      },
+                      {
+                        "x": 32.5,
+                        "y": 349
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "Portal",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "portal1_frame_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 21,
+                        "y": 33.5
+                      },
+                      {
+                        "x": 23,
+                        "y": 26
+                      },
+                      {
+                        "x": 31,
+                        "y": 21
+                      },
+                      {
+                        "x": 39,
+                        "y": 24
+                      },
+                      {
+                        "x": 43,
+                        "y": 31.5
+                      },
+                      {
+                        "x": 41.5,
+                        "y": 38
+                      },
+                      {
+                        "x": 40,
+                        "y": 43.5
+                      },
+                      {
+                        "x": 33.5,
+                        "y": 47
+                      },
+                      {
+                        "x": 27.5,
+                        "y": 44.5
+                      },
+                      {
+                        "x": 23,
+                        "y": 40.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "portal1_frame_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 21,
+                        "y": 33.5
+                      },
+                      {
+                        "x": 23,
+                        "y": 26
+                      },
+                      {
+                        "x": 31,
+                        "y": 21
+                      },
+                      {
+                        "x": 39,
+                        "y": 24
+                      },
+                      {
+                        "x": 43,
+                        "y": 31.5
+                      },
+                      {
+                        "x": 41.5,
+                        "y": 38
+                      },
+                      {
+                        "x": 40,
+                        "y": 43.5
+                      },
+                      {
+                        "x": 33.5,
+                        "y": 47
+                      },
+                      {
+                        "x": 27.5,
+                        "y": 44.5
+                      },
+                      {
+                        "x": 23,
+                        "y": 40.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "portal1_frame_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 21,
+                        "y": 33.5
+                      },
+                      {
+                        "x": 23,
+                        "y": 26
+                      },
+                      {
+                        "x": 31,
+                        "y": 21
+                      },
+                      {
+                        "x": 39,
+                        "y": 24
+                      },
+                      {
+                        "x": 43,
+                        "y": 31.5
+                      },
+                      {
+                        "x": 41.5,
+                        "y": 38
+                      },
+                      {
+                        "x": 40,
+                        "y": 43.5
+                      },
+                      {
+                        "x": 33.5,
+                        "y": 47
+                      },
+                      {
+                        "x": 27.5,
+                        "y": 44.5
+                      },
+                      {
+                        "x": 23,
+                        "y": 40.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "portal1_frame_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 21,
+                        "y": 33.5
+                      },
+                      {
+                        "x": 23,
+                        "y": 26
+                      },
+                      {
+                        "x": 31,
+                        "y": 21
+                      },
+                      {
+                        "x": 39,
+                        "y": 24
+                      },
+                      {
+                        "x": 43,
+                        "y": 31.5
+                      },
+                      {
+                        "x": 41.5,
+                        "y": 38
+                      },
+                      {
+                        "x": 40,
+                        "y": 43.5
+                      },
+                      {
+                        "x": 33.5,
+                        "y": 47
+                      },
+                      {
+                        "x": 27.5,
+                        "y": 44.5
+                      },
+                      {
+                        "x": 23,
+                        "y": 40.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "portal1_frame_5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 21,
+                        "y": 33.5
+                      },
+                      {
+                        "x": 23,
+                        "y": 26
+                      },
+                      {
+                        "x": 31,
+                        "y": 21
+                      },
+                      {
+                        "x": 39,
+                        "y": 24
+                      },
+                      {
+                        "x": 43,
+                        "y": 31.5
+                      },
+                      {
+                        "x": 41.5,
+                        "y": 38
+                      },
+                      {
+                        "x": 40,
+                        "y": 43.5
+                      },
+                      {
+                        "x": 33.5,
+                        "y": 47
+                      },
+                      {
+                        "x": 27.5,
+                        "y": 44.5
+                      },
+                      {
+                        "x": 23,
+                        "y": 40.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "portal1_frame_6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 21,
+                        "y": 33.5
+                      },
+                      {
+                        "x": 23,
+                        "y": 26
+                      },
+                      {
+                        "x": 31,
+                        "y": 21
+                      },
+                      {
+                        "x": 39,
+                        "y": 24
+                      },
+                      {
+                        "x": 43,
+                        "y": 31.5
+                      },
+                      {
+                        "x": 41.5,
+                        "y": 38
+                      },
+                      {
+                        "x": 40,
+                        "y": 43.5
+                      },
+                      {
+                        "x": 33.5,
+                        "y": 47
+                      },
+                      {
+                        "x": 27.5,
+                        "y": 44.5
+                      },
+                      {
+                        "x": 23,
+                        "y": 40.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "portal1_frame_7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 21,
+                        "y": 33.5
+                      },
+                      {
+                        "x": 23,
+                        "y": 26
+                      },
+                      {
+                        "x": 31,
+                        "y": 21
+                      },
+                      {
+                        "x": 39,
+                        "y": 24
+                      },
+                      {
+                        "x": 43,
+                        "y": 31.5
+                      },
+                      {
+                        "x": 41.5,
+                        "y": 38
+                      },
+                      {
+                        "x": 40,
+                        "y": 43.5
+                      },
+                      {
+                        "x": 33.5,
+                        "y": 47
+                      },
+                      {
+                        "x": 27.5,
+                        "y": 44.5
+                      },
+                      {
+                        "x": 23,
+                        "y": 40.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -3299,9 +3687,6 @@
         ]
       },
       {
-        "objectName": "attackhitbox"
-      },
-      {
         "objectName": "Ground"
       },
       {
@@ -3317,9 +3702,6 @@
         "objectName": "NewSprite"
       },
       {
-        "objectName": "weapons_master"
-      },
-      {
         "objectName": "House"
       },
       {
@@ -3333,6 +3715,15 @@
       },
       {
         "objectName": "EnemySpawner"
+      },
+      {
+        "objectName": "debugcounter"
+      },
+      {
+        "objectName": "weapons_master"
+      },
+      {
+        "objectName": "Portal"
       }
     ]
   },
@@ -3361,7 +3752,7 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "UI Elements and Dialogue"
+      "comment": "UI Elements and Dialogue and Portal\n"
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -3393,31 +3784,7 @@
             "value": "Cache"
           },
           "parameters": [
-            "OptionText"
-          ]
-        },
-        {
-          "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "Dialoguebox"
-          ]
-        },
-        {
-          "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "WeapMasterFace"
-          ]
-        },
-        {
-          "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "DialogueText"
+            "Dialougue_UI_Elements"
           ]
         },
         {
@@ -3427,6 +3794,24 @@
           "parameters": [
             "TwoChoicesDialogBox",
             "Text"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Portal"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "LevelComplete",
+            "False",
+            ""
           ]
         }
       ]
@@ -3482,18 +3867,6 @@
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "Dialogue Handler"
-    },
-    {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -3546,8 +3919,96 @@
             "BeginSpawningEnemyDetector",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "DialogueTree::LoadDialogueFromJsonFile"
+          },
+          "parameters": [
+            "",
+            "assets\\NewDialogue.json"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "LevelComplete",
+            "True",
+            ""
+          ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Portal Handler\n"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "player",
+            "Portal",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "LevelComplete",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Level 2\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Dialogue Handler"
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -3734,6 +4195,100 @@
             "yes"
           ]
         }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "LevelComplete",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "DialogueTree::IsDialogueRunning"
+              },
+              "parameters": []
+            },
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"Scrolltext\"",
+                ">=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "DialogueText"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Dialoguebox"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "WeapMasterFace"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "DialogueText"
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "player",
+                "TopDownMovement",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Portal",
+                ""
+              ]
+            }
+          ]
+        }
       ]
     },
     {
@@ -3792,6 +4347,25 @@
                 "",
                 "\"Scrolltext\""
               ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DialogueTree::HasClippedTextScrollingCompleted"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "DialogueTree::GoToNextLine"
+              },
+              "parameters": []
             }
           ]
         },
