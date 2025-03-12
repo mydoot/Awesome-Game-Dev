@@ -2661,16 +2661,124 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "",
+          "name": "idle",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
+              "looping": true,
+              "timeBetweenFrames": 0.24,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
                   "image": "forest witch.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 18,
+                        "y": 46
+                      },
+                      {
+                        "x": 447,
+                        "y": 46
+                      },
+                      {
+                        "x": 447,
+                        "y": 494
+                      },
+                      {
+                        "x": 18,
+                        "y": 494
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "idle witch.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 18,
+                        "y": 46
+                      },
+                      {
+                        "x": 447,
+                        "y": 46
+                      },
+                      {
+                        "x": 447,
+                        "y": 494
+                      },
+                      {
+                        "x": 18,
+                        "y": 494
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "forest witch.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 18,
+                        "y": 46
+                      },
+                      {
+                        "x": 447,
+                        "y": 46
+                      },
+                      {
+                        "x": 447,
+                        "y": 494
+                      },
+                      {
+                        "x": 18,
+                        "y": 494
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "idle witch 2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",

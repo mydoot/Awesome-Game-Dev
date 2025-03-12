@@ -2516,16 +2516,124 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "",
+          "name": "idle",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
+              "looping": true,
+              "timeBetweenFrames": 0.2,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
                   "image": "weapons master.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 33,
+                        "y": 2
+                      },
+                      {
+                        "x": 459,
+                        "y": 2
+                      },
+                      {
+                        "x": 460.5,
+                        "y": 356
+                      },
+                      {
+                        "x": 32.5,
+                        "y": 349
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "idle wpm 2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 33,
+                        "y": 2
+                      },
+                      {
+                        "x": 459,
+                        "y": 2
+                      },
+                      {
+                        "x": 460.5,
+                        "y": 356
+                      },
+                      {
+                        "x": 32.5,
+                        "y": 349
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "weapons master.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 33,
+                        "y": 2
+                      },
+                      {
+                        "x": 459,
+                        "y": 2
+                      },
+                      {
+                        "x": 460.5,
+                        "y": 356
+                      },
+                      {
+                        "x": 32.5,
+                        "y": 349
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "idle wpm.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",

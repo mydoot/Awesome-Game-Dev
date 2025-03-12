@@ -1988,6 +1988,46 @@
         "name": "tf_A1_ashlands_3.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "idle wpm 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "idle wpm 2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "idle wpm.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "idle wpm.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "idle witch 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "idle witch 2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "idle witch.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "idle witch.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "boss.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "boss.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
