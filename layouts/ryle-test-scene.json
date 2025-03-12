@@ -25,23 +25,6 @@
     {
       "name": "Bottomhalf UI elements",
       "objects": []
-    },
-    {
-      "name": "death screen",
-      "objects": [
-        {
-          "name": "deathscreen2"
-        },
-        {
-          "name": "Deathscreen_Text"
-        },
-        {
-          "name": "BlackSquareDecoratedButton"
-        },
-        {
-          "name": "NewPanelSprite"
-        }
-      ]
     }
   ],
   "variables": [
@@ -884,22 +867,6 @@
           }
         }
       }
-    },
-    {
-      "assetStoreId": "",
-      "bottomMargin": 0,
-      "height": 32,
-      "leftMargin": 0,
-      "name": "NewPanelSprite",
-      "rightMargin": 0,
-      "texture": "black-screen_39.png",
-      "tiled": false,
-      "topMargin": 0,
-      "type": "PanelSpriteObject::PanelSprite",
-      "width": 32,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -935,9 +902,6 @@
       },
       {
         "objectName": "HeartScrollBar"
-      },
-      {
-        "objectName": "NewPanelSprite"
       }
     ]
   },
