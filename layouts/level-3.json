@@ -551,11 +551,53 @@
             {
               "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.15,
+              "timeBetweenFrames": 0.2,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
                   "image": "boss.png",
+                  "points": [
+                    {
+                      "name": "Healthbar Point",
+                      "x": 17.5,
+                      "y": -54
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 148,
+                    "y": 152
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 148,
+                    "y": 151
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 14
+                      },
+                      {
+                        "x": 500,
+                        "y": 14
+                      },
+                      {
+                        "x": 500,
+                        "y": 473
+                      },
+                      {
+                        "x": 6,
+                        "y": 473
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "boss 1.png",
                   "points": [
                     {
                       "name": "Healthbar Point",

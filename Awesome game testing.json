@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 224,
+    "build": 226,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -2026,6 +2026,14 @@
         "kind": "image",
         "metadata": "",
         "name": "boss.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "boss 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "boss 1.png",
         "smoothed": false,
         "userAdded": false
       }
