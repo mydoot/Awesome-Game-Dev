@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.4481978045410465,
+    "zoomFactor": 0.27253598967729986,
     "windowMask": false
   },
   "objectsGroups": [
@@ -369,8 +369,8 @@
       "name": "LevelCam",
       "persistentUuid": "146cfe3a-71e0-4f85-a28a-a28561e3bace",
       "width": 57,
-      "x": 626,
-      "y": -1538,
+      "x": 608,
+      "y": -1600,
       "zOrder": 40,
       "numberProperties": [],
       "stringProperties": [],
@@ -387,7 +387,7 @@
       "width": 0,
       "x": -352,
       "y": -2208,
-      "zOrder": 41,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [
         {
@@ -2868,7 +2868,7 @@
             "LevelCam.PointY(\"Cam Point\")",
             "",
             "\"easeOutSine\"",
-            "1"
+            "1.25"
           ]
         },
         {
