@@ -1693,6 +1693,16 @@
         "metadata": "{\"localFilePath\":\"assets/Witchdialogue2.json\",\"extension\":\".json\"}",
         "name": "assets\\Witchdialogue2.json",
         "userAdded": false
+      },
+      {
+        "file": "02_Heal_02.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "02_Heal_02.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1724,6 +1734,16 @@
           "name": "Manaval",
           "type": "number",
           "value": 5
+        },
+        {
+          "name": "NumofPotion",
+          "type": "number",
+          "value": 2
+        },
+        {
+          "name": "Manaval2",
+          "type": "number",
+          "value": 0
         }
       ],
       "effects": [],
@@ -4090,7 +4110,7 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "x1",
+      "string": "x2",
       "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
       "textAlignment": "left",
       "characterSize": 30,
@@ -4113,7 +4133,7 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "x1",
+        "text": "x2",
         "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",

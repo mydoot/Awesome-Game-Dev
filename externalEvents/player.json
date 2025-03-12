@@ -1186,10 +1186,10 @@
               "parameters": [
                 "player",
                 "FireBullet",
-                "attackhitbox.PointX(\"Spell Pos\")",
-                "attackhitbox.PointY(\"Spell Pos\")",
+                "player.PointX(\"Attack Pos\")",
+                "player.PointY(\"Attack Pos\")",
                 "Fireball",
-                "attackhitbox.AttackHitboxAngle",
+                "attackhitbox.Angle()",
                 "500",
                 ""
               ]
@@ -1220,66 +1220,13 @@
           ],
           "events": [
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "PosX"
-                  },
-                  "parameters": [
-                    "player",
-                    "<",
-                    "CursorX()"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "FlippableCapability::FlippableBehavior::FlipY"
-                  },
-                  "parameters": [
-                    "attackhitbox",
-                    "Flippable",
-                    "no"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "PosX"
-                  },
-                  "parameters": [
-                    "player",
-                    ">",
-                    "CursorX()"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "FlippableCapability::FlippableBehavior::FlipY"
-                  },
-                  "parameters": [
-                    "attackhitbox",
-                    "Flippable",
-                    "yes"
-                  ]
-                }
-              ]
-            },
-            {
               "type": "BuiltinCommonInstructions::ForEach",
               "object": "Fireball",
               "conditions": [],
               "actions": [],
               "events": [
                 {
+                  "disabled": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -1374,6 +1321,96 @@
                     }
                   ]
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Potion"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"r\""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "NumofPotion",
+                ">",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "NumofPotion",
+                "-",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "02_Heal_02.wav",
+                "",
+                "70",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::Heal"
+              },
+              "parameters": [
+                "player",
+                "Health",
+                "1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "PotionText",
+                "Text",
+                "=",
+                "\"x\" + player.NumofPotion"
               ]
             }
           ]
