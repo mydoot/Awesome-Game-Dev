@@ -1457,6 +1457,18 @@
                 "=",
                 "\"x\" + player.NumofPotion"
               ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Heal_effect_",
+                "player.CenterX()",
+                "player.CenterY()",
+                ""
+              ]
             }
           ]
         },

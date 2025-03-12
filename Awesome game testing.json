@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 226,
+    "build": 224,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -2035,6 +2035,320 @@
         "metadata": "",
         "name": "boss 1.png",
         "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Hit2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Hit2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Hit3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Hit3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Hit4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Hit4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Battle-Grief.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Battle-Grief.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "png-clipart-transmutation-circle-magic-circle-fairy-magic-purple-libra-thumbnail.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "png-clipart-transmutation-circle-magic-circle-fairy-magic-purple-libra-thumbnail.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "s5nMg.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "s5nMg.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Holy VFX 02 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Holy VFX 02 1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Holy VFX 02 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Holy VFX 02 2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Holy VFX 02 3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Holy VFX 02 3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Holy VFX 02 4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Holy VFX 02 4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Holy VFX 02 5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Holy VFX 02 5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Holy VFX 02 6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Holy VFX 02 6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Holy VFX 02 7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Holy VFX 02 7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Holy VFX 02 8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Holy VFX 02 8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Holy VFX 02 9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Holy VFX 02 9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Holy VFX 02 10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Holy VFX 02 10.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Holy VFX 02 11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Holy VFX 02 11.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Holy VFX 02 12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Holy VFX 02 12.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Holy VFX 02 13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Holy VFX 02 13.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Holy VFX 02 14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Holy VFX 02 14.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Holy VFX 02 15.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Holy VFX 02 15.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Holy VFX 02 16.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Holy VFX 02 16.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ExplosionFog-Texture-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ExplosionFog-Texture-2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Particles/64a424eeec46f355f121c7c3f25a37d39954b746c504a496642c49181467359c_ExplosionFog-Texture-2.png",
+          "name": "ExplosionFog-Texture-2.png"
+        }
+      },
+      {
+        "file": "assets/DarkMagicSmoke.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "DarkMagicSmoke.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Particles/015985f8d1d3aaa13173ebdf90f8e893ccb834accbe76f55adbc9dfabef145f7_DarkMagicSmoke.png",
+          "name": "DarkMagicSmoke.png"
+        }
+      },
+      {
+        "file": "assets/Glow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Glow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Particles/054cca73b5082c5f8639999d0eee82f4f42a1b346ee9efbd013058ccc70b45ca_Glow.png",
+          "name": "Glow.png"
+        }
+      },
+      {
+        "file": "assets/ExplosionTexture1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ExplosionTexture1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Particles/50be691a42be33a96faa72d0fc17e0463403326c605888adb799bbb2b02e3fd8_ExplosionTexture1.png",
+          "name": "ExplosionTexture1.png"
+        }
+      },
+      {
+        "file": "assets/Lightning-Texture-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Lightning-Texture-1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Particles/59f79e94532692d7af37ad256af2fc5e3e4de06e178f51de298704cc5eb449b2_Lightning-Texture-1.png",
+          "name": "Lightning-Texture-1.png"
+        }
+      },
+      {
+        "file": "assets/Sparks.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sparks.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Particles/PixiJS/1be94c18bc3de19355d118a226f03e10a4f18307277f00f3559d265a9b27bbef_Sparks.png",
+          "name": "Sparks.png"
+        }
+      },
+      {
+        "file": "assets/LightGlow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "LightGlow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Particles/GDevelop/c17e2d500015e598624b763f4942b26e3aac96efca094cd20257a61e15b27fcb_LightGlow.png",
+          "name": "LightGlow.png"
+        }
+      },
+      {
+        "file": "assets/Hit5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Hit5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Hit6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Hit6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Hit7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Hit7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Hit8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Hit8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "18_Thunder_02.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "18_Thunder_02.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "51_Flee_02.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "51_Flee_02.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
         "userAdded": false
       }
     ],
@@ -5191,6 +5505,53 @@
         "characterSize": 70,
         "color": "0;0;0"
       }
+    },
+    {
+      "additive": true,
+      "assetStoreId": "ce6caabbc8bee5296428f4e756868114a785fac84bbb6b22d4910a63e421c5df",
+      "destroyWhenNoParticles": true,
+      "emitterAngleA": 0,
+      "emitterAngleB": 360,
+      "emitterForceMax": 140,
+      "emitterForceMin": 80,
+      "flow": 250,
+      "jumpForwardInTimeOnCreation": 0,
+      "maxParticleNb": 400,
+      "name": "Heal_effect_",
+      "particleAlpha1": 255,
+      "particleAlpha2": 0,
+      "particleAlphaRandomness1": 0,
+      "particleAlphaRandomness2": 0,
+      "particleAngle1": 0,
+      "particleAngle2": 0,
+      "particleAngleRandomness1": 0,
+      "particleAngleRandomness2": 0,
+      "particleBlue1": 0,
+      "particleBlue2": 255,
+      "particleColor1": "3;255;0",
+      "particleColor2": "0;246;255",
+      "particleGravityX": 0,
+      "particleGravityY": 0,
+      "particleGreen1": 255,
+      "particleGreen2": 246,
+      "particleLifeTimeMax": 1.2,
+      "particleLifeTimeMin": 0.05,
+      "particleRed1": 3,
+      "particleRed2": 0,
+      "particleSize1": 5,
+      "particleSize2": 200,
+      "particleSizeRandomness1": 0,
+      "particleSizeRandomness2": 0,
+      "rendererParam1": 0,
+      "rendererParam2": 0,
+      "rendererType": "Quad",
+      "tank": 100,
+      "textureParticleName": "LightGlow.png",
+      "type": "ParticleSystem::ParticleEmitter",
+      "zoneRadius": 0,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -5287,6 +5648,9 @@
       },
       {
         "objectName": "LevelUItext"
+      },
+      {
+        "objectName": "Heal_effect_"
       }
     ]
   },
@@ -5398,6 +5762,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/firebullet"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/camerashake"
     }
   ],
   "externalLayouts": [

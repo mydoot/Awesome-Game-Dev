@@ -396,16 +396,103 @@
                 "Health",
                 "="
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "Delete"
+                "value": "Tween::TweenCameraZoom2"
+              },
+              "parameters": [
+                "",
+                "\"camerazoom\"",
+                "1",
+                "",
+                "\"linear\"",
+                "1.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "CameraCanMove",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BoidsMovement::BoidsMovement::SetMaxSpeed"
               },
               "parameters": [
                 "Boss",
+                "BoidsMovement",
+                "0",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FadeMusicVolume"
+              },
+              "parameters": [
+                "",
+                "2",
+                "0",
+                "3.8"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Boss",
+                "\"BossAttackCooldown\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PauseObjectTimer"
+              },
+              "parameters": [
+                "Boss",
+                "\"BossAttackCooldown\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Boss_projectile",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CameraShake::StartShaking"
+              },
+              "parameters": [
+                "",
+                "0.15",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
               ]
             },
             {
@@ -414,9 +501,117 @@
               },
               "parameters": [
                 "",
-                "69_Enemy_death_01.wav",
+                "51_Flee_02.wav",
                 "",
-                "100",
+                "75",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "BasicExplosionEnergy",
+                "Boss.CenterX()",
+                "Boss.CenterY()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "51_Flee_02.wav",
+                "",
+                "75",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "BasicExplosionEnergy",
+                "Boss.CenterX()",
+                "Boss.CenterY()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "51_Flee_02.wav",
+                "",
+                "75",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "BasicExplosionEnergy",
+                "Boss.CenterX()",
+                "Boss.CenterY()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "18_Thunder_02.wav",
+                "",
+                "75",
+                "0.25"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "BasicExplosionEnergy",
+                "Boss.CenterX()",
+                "Boss.CenterY()",
                 ""
               ]
             },
@@ -436,13 +631,76 @@
             },
             {
               "type": {
-                "value": "FadeMusicVolume"
+                "value": "CentreCamera"
               },
               "parameters": [
                 "",
-                "2",
-                "0",
-                "2.5"
+                "player",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Boss"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Sparks",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Sparks2",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Boss_Sparks",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CameraShake::StopShaking"
+              },
+              "parameters": [
+                "",
+                "0.15\n",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Boss",
+                ""
               ]
             },
             {
@@ -460,18 +718,6 @@
             },
             {
               "type": {
-                "value": "CentreCamera"
-              },
-              "parameters": [
-                "",
-                "player",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "SetBooleanVariable"
               },
               "parameters": [
@@ -479,75 +725,11 @@
                 "False",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "Boss_projectile",
-                ""
-              ]
             }
           ]
         }
       ],
       "parameters": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "DepartScene"
-          },
-          "parameters": [
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "bosshitbox",
-            "Boss.CenterX()",
-            "Boss.CenterY()",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "MettreXY"
-          },
-          "parameters": [
-            "bosshitbox",
-            "=",
-            "Boss.CenterX()",
-            "=",
-            "Boss.CenterY()"
-          ]
-        },
-        {
-          "type": {
-            "value": "Rotate"
-          },
-          "parameters": [
-            "bosshitbox",
-            "90",
-            "player.PointY(\"Center\")"
-          ]
-        }
-      ]
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -604,6 +786,136 @@
             "BoidsMovement",
             "35",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "Boss_Sparks",
+            "Boss.CenterX()",
+            "Boss.CenterY()",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "Sparks",
+            "Boss.CenterX()",
+            "Boss.CenterY()",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "Sparks2",
+            "Boss.CenterX()",
+            "Boss.CenterY()",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "RotateTowardAngle"
+          },
+          "parameters": [
+            "Sparks2",
+            "180",
+            "0",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "RotateTowardAngle"
+          },
+          "parameters": [
+            "Sparks2",
+            "180",
+            "0",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "Boss_Sparks",
+            "=",
+            "Boss.PointX(\"sfx Point\")",
+            "=",
+            "Boss.PointY(\"sfx Point\")"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "Sparks2",
+            "=",
+            "Boss.PointX(\"sfx Point\")",
+            "=",
+            "Boss.PointY(\"sfx Point\")"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "Sparks",
+            "=",
+            "Boss.PointX(\"sfx Point\")",
+            "=",
+            "Boss.PointY(\"sfx Point\")"
+          ]
+        },
+        {
+          "type": {
+            "value": "LinkedObjects::LinkObjects"
+          },
+          "parameters": [
+            "",
+            "Boss",
+            "Boss_Sparks"
+          ]
+        },
+        {
+          "type": {
+            "value": "LinkedObjects::LinkObjects"
+          },
+          "parameters": [
+            "",
+            "Boss",
+            "Sparks"
+          ]
+        },
+        {
+          "type": {
+            "value": "LinkedObjects::LinkObjects"
+          },
+          "parameters": [
+            "",
+            "Boss",
+            "Sparks2"
           ]
         }
       ]
