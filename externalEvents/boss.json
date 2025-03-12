@@ -20,7 +20,7 @@
                 "value": "BoidsMovement::BoidsMovement::MoveToObject"
               },
               "parameters": [
-                "boss",
+                "Boss",
                 "BoidsMovement",
                 "player",
                 "2",
@@ -37,7 +37,7 @@
                     "value": "CollisionNP"
                   },
                   "parameters": [
-                    "",
+                    "Boss",
                     "player",
                     "",
                     "",
@@ -113,26 +113,6 @@
                     "\"Hit Timer\"\n"
                   ]
                 }
-              ],
-              "events": [
-                {
-                  "disabled": true,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "AddForceAL"
-                      },
-                      "parameters": [
-                        "player",
-                        "Enemy.AngleToObject(player)",
-                        "250",
-                        "1"
-                      ]
-                    }
-                  ]
-                }
               ]
             }
           ]
@@ -145,7 +125,7 @@
                 "value": "Health::Health::IsDead"
               },
               "parameters": [
-                "boss",
+                "Boss",
                 "Health",
                 "="
               ]
@@ -157,7 +137,7 @@
                 "value": "Delete"
               },
               "parameters": [
-                "",
+                "Boss",
                 ""
               ]
             },
@@ -183,7 +163,7 @@
                 "value": "CollisionNP"
               },
               "parameters": [
-                "Enemy",
+                "Boss",
                 "Fireball",
                 "",
                 "",
@@ -196,7 +176,7 @@
                 "value": "Health::Health::IsDamageCooldownActive"
               },
               "parameters": [
-                "Enemy",
+                "Boss",
                 "Health",
                 ""
               ]
@@ -208,7 +188,97 @@
                 "value": "Health::Health::Hit"
               },
               "parameters": [
-                "Enemy",
+                "Boss",
+                "Health",
+                "1",
+                "AttackAnimation.Damage",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "15_Impact_flesh_02.wav",
+                "",
+                "50",
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Boss",
+                "Animation",
+                "=",
+                "\"Hit\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Boss",
+                "\"Hit Timer\"\n"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Fireball",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "AttackAnimation",
+                "Boss",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Health::Health::IsDamageCooldownActive"
+              },
+              "parameters": [
+                "Boss",
+                "Health",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Health::Health::Hit"
+              },
+              "parameters": [
+                "Boss",
                 "Health",
                 "1",
                 "AttackAnimation.Damage",
@@ -233,9 +303,9 @@
                 "value": "AddForceAL"
               },
               "parameters": [
-                "Enemy",
+                "Boss",
                 "staff.AngleToObject(Enemy)",
-                "50",
+                "10",
                 "1"
               ]
             },
@@ -244,7 +314,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
-                "Enemy",
+                "Boss",
                 "Animation",
                 "=",
                 "\"Hit\""
@@ -255,17 +325,8 @@
                 "value": "ResetObjectTimer"
               },
               "parameters": [
-                "Enemy",
+                "Boss",
                 "\"Hit Timer\"\n"
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "Fireball",
-                ""
               ]
             }
           ]
@@ -278,7 +339,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::Name"
               },
               "parameters": [
-                "Enemy",
+                "Boss",
                 "Animation",
                 "=",
                 "\"Hit\""
@@ -289,7 +350,7 @@
                 "value": "CompareObjectTimer"
               },
               "parameters": [
-                "Enemy",
+                "Boss",
                 "\"Hit Timer\"",
                 ">=",
                 "0.25"
@@ -300,7 +361,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
               },
               "parameters": [
-                "Enemy",
+                "Boss",
                 "Animation"
               ]
             },
@@ -317,7 +378,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
-                "Enemy",
+                "Boss",
                 "Animation",
                 "=",
                 "\"Regular\""
@@ -328,7 +389,7 @@
                 "value": "Arreter"
               },
               "parameters": [
-                "Enemy"
+                "Boss"
               ]
             },
             {
@@ -336,21 +397,21 @@
                 "value": "BoidsMovement::BoidsMovement::SetMaxAcceleration"
               },
               "parameters": [
-                "Enemy",
+                "Boss",
                 "BoidsMovement",
                 "50",
                 ""
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "parameters": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
     }
   ]
 }

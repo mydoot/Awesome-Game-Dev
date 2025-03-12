@@ -2020,7 +2020,7 @@
       "include": {
         "includeConfig": 0
       },
-      "target": "Enemy"
+      "target": "Boss"
     },
     {
       "type": "BuiltinCommonInstructions::Comment",
