@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.584378441074105,
+    "zoomFactor": 0.6244537826600121,
     "windowMask": false
   },
   "objectsGroups": [
@@ -104,6 +104,11 @@
     },
     {
       "name": "LevelComplete",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "CameraCanMove",
       "type": "boolean",
       "value": false
     }
@@ -284,8 +289,8 @@
       "name": "EnemySpawner",
       "persistentUuid": "9943f5b3-647c-4f75-996d-f33a9af65b8e",
       "width": 128,
-      "x": 576,
-      "y": -1568,
+      "x": 570,
+      "y": -1586,
       "zOrder": 34,
       "numberProperties": [],
       "stringProperties": [],
@@ -374,6 +379,23 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 57,
+      "keepRatio": true,
+      "layer": "",
+      "name": "LevelCam",
+      "persistentUuid": "146cfe3a-71e0-4f85-a28a-a28561e3bace",
+      "width": 57,
+      "x": 626,
+      "y": -1538,
+      "zOrder": 40,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -402,12 +424,22 @@
         {
           "name": "Health",
           "type": "number",
-          "value": 3
+          "value": 50
         },
         {
           "name": "MaxHealth",
           "type": "number",
-          "value": 3
+          "value": 50
+        },
+        {
+          "name": "BossAttacks",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "=",
+          "type": "number",
+          "value": 0
         }
       ],
       "effects": [],
@@ -415,8 +447,8 @@
         {
           "name": "BoidsMovement",
           "type": "BoidsMovement::BoidsMovement",
-          "MaxSpeed": 75,
-          "MaxAcceleration": 65,
+          "MaxSpeed": 40,
+          "MaxAcceleration": 35,
           "ShouldRotate": false,
           "CohesionRadius": 64,
           "AlignmentRadius": 48,
@@ -427,12 +459,42 @@
           "CollisionLayer": 0
         },
         {
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet",
+          "FireCooldown": 0.1,
+          "HasJustFired": false,
+          "RotateBullet": true,
+          "FiringArc": 45,
+          "BulletQuantity": 1,
+          "AngleVariance": 0,
+          "BulletSpeedVariance": 0,
+          "AmmoQuantity": 0,
+          "ShotsPerReload": 0,
+          "ReloadDuration": 1,
+          "MaxAmmo": 0,
+          "ShotsBeforeNextReload": 0,
+          "TotalShotsFired": 0,
+          "TotalBulletsCreated": 0,
+          "StartingAmmo": 0,
+          "TotalReloadsCompleted": 0,
+          "UnlimitedAmmo": true,
+          "ReloadInProgress": false,
+          "HeatIncreasePerShot": 0,
+          "HeatLevel": 0,
+          "AutomaticReloading": true,
+          "OverheatDuration": 0,
+          "LinearCoolingRate": 0.1,
+          "ExponentialCoolingRate": 0.3,
+          "BulletLayer": "",
+          "RandomizedAngle": 0
+        },
+        {
           "name": "Health",
           "type": "Health::Health",
-          "Health": 30,
+          "Health": 50,
           "CurrentHealth": 0,
-          "MaxHealth": 30,
-          "DamageCooldown": 0.25,
+          "MaxHealth": 50,
+          "DamageCooldown": 0.5,
           "AllowOverHealing": false,
           "IsHealthJustDamaged": false,
           "DamageToBeApplied": 0,
@@ -481,10 +543,10 @@
                     "y": 152
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 148,
+                    "y": 151
                   },
                   "customCollisionMask": [
                     [
@@ -536,10 +598,10 @@
                     "y": 152
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 148,
+                    "y": 151
                   },
                   "customCollisionMask": [
                     [
@@ -578,10 +640,10 @@
                     "y": 152
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 148,
+                    "y": 151
                   },
                   "customCollisionMask": [
                     [
@@ -620,10 +682,10 @@
                     "y": 152
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 148,
+                    "y": 151
                   },
                   "customCollisionMask": [
                     [
@@ -702,8 +764,8 @@
         }
       ],
       "content": {
-        "MaxValue": 3,
-        "InitialValue": 3,
+        "MaxValue": 50,
+        "InitialValue": 50,
         "BarLeftPadding": 9,
         "BarRightPadding": 9,
         "BarBottomPadding": 3,
@@ -1929,6 +1991,384 @@
         "characterSize": 35,
         "color": "0;0;0"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "LevelCam",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "sign.png",
+                  "points": [
+                    {
+                      "name": "Cam Point",
+                      "x": 20,
+                      "y": 20
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 3
+                      },
+                      {
+                        "x": 37,
+                        "y": 3
+                      },
+                      {
+                        "x": 37,
+                        "y": 37
+                      },
+                      {
+                        "x": 3,
+                        "y": 37
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "Boss_projectile",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "1_0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 28,
+                        "y": 43.5
+                      },
+                      {
+                        "x": 77,
+                        "y": 43
+                      },
+                      {
+                        "x": 76.5,
+                        "y": 61
+                      },
+                      {
+                        "x": 28.5,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "1_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 28,
+                        "y": 43.5
+                      },
+                      {
+                        "x": 77,
+                        "y": 43
+                      },
+                      {
+                        "x": 76.5,
+                        "y": 61
+                      },
+                      {
+                        "x": 28.5,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "1_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 28,
+                        "y": 43.5
+                      },
+                      {
+                        "x": 77,
+                        "y": 43
+                      },
+                      {
+                        "x": 76.5,
+                        "y": 61
+                      },
+                      {
+                        "x": 28.5,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "1_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 28,
+                        "y": 43.5
+                      },
+                      {
+                        "x": 77,
+                        "y": 43
+                      },
+                      {
+                        "x": 76.5,
+                        "y": 61
+                      },
+                      {
+                        "x": 28.5,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "1_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 28,
+                        "y": 43.5
+                      },
+                      {
+                        "x": 77,
+                        "y": 43
+                      },
+                      {
+                        "x": 76.5,
+                        "y": 61
+                      },
+                      {
+                        "x": 28.5,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "1_5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 28,
+                        "y": 43.5
+                      },
+                      {
+                        "x": 77,
+                        "y": 43
+                      },
+                      {
+                        "x": 76.5,
+                        "y": 61
+                      },
+                      {
+                        "x": 28.5,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "1_6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 28,
+                        "y": 43.5
+                      },
+                      {
+                        "x": 77,
+                        "y": 43
+                      },
+                      {
+                        "x": 76.5,
+                        "y": 61
+                      },
+                      {
+                        "x": 28.5,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "1_7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 28,
+                        "y": 43.5
+                      },
+                      {
+                        "x": 77,
+                        "y": 43
+                      },
+                      {
+                        "x": 76.5,
+                        "y": 61
+                      },
+                      {
+                        "x": 28.5,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1942,6 +2382,9 @@
           },
           {
             "objectName": "Boss"
+          },
+          {
+            "objectName": "Boss_projectile"
           },
           {
             "objectName": "bossname"
@@ -1980,6 +2423,9 @@
       },
       {
         "objectName": "EnemySpawner"
+      },
+      {
+        "objectName": "LevelCam"
       },
       {
         "objectName": "BeginSpawningEnemyDetector"
@@ -2207,6 +2653,14 @@
           "parameters": [
             "change_music"
           ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "LevelCam"
+          ]
         }
       ]
     },
@@ -2221,6 +2675,35 @@
           "parameters": [
             "player",
             "Collidable Objects",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "CameraCanMove",
+            "False",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "CentreCamera"
+          },
+          "parameters": [
+            "",
+            "player",
+            "",
+            "",
             ""
           ]
         }
@@ -2309,6 +2792,25 @@
       "actions": [
         {
           "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"CameraDuration\""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "CameraCanMove",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "ObjectSpawner::ObjectSpawner::SpawnObject"
           },
           "parameters": [
@@ -2372,6 +2874,86 @@
             "\"easeOutQuad\"",
             "0.5",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenCameraPosition2"
+          },
+          "parameters": [
+            "",
+            "\"cameramove\"",
+            "LevelCam.PointX(\"Cam Point\")",
+            "LevelCam.PointY(\"Cam Point\")",
+            "",
+            "\"easeOutSine\"",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "Boss",
+            "\"BossAttackCooldown\""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"CameraDuration\"",
+                ">=",
+                "2.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "CameraCanMove",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CentreCamera"
+              },
+              "parameters": [
+                "",
+                "player",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"CameraDuration\""
+              ]
+            }
           ]
         }
       ]

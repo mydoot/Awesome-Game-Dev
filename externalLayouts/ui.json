@@ -269,6 +269,73 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 16,
+      "height": 729,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "NewPanelSprite",
+      "opacity": 128,
+      "persistentUuid": "fb7e276a-ef03-472e-ab1e-01877c71afd7",
+      "width": 1287,
+      "x": -2,
+      "y": -2,
+      "zOrder": 50,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 3,
+      "height": 56,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "Deathscreen_Text",
+      "persistentUuid": "22c3cb2f-02ca-43e0-bc9e-98d44cdd884c",
+      "width": 448,
+      "x": 407,
+      "y": 145,
+      "zOrder": 51,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "deathscreen2",
+      "persistentUuid": "85b79e13-344d-4496-bc21-e14e00a84859",
+      "width": 0,
+      "x": 522,
+      "y": 214,
+      "zOrder": 52,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "BlackSquareDecoratedButton",
+      "persistentUuid": "581c56f3-76cb-4843-a086-281aea216f24",
+      "width": 0,
+      "x": 519,
+      "y": 290,
+      "zOrder": 53,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "editionSettings": {
@@ -281,7 +348,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.546875000000001,
+    "zoomFactor": 0.5468750000000011,
     "windowMask": false
   }
 }
