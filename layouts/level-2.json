@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.6455105703311566,
+    "zoomFactor": 1.0615714305220116,
     "windowMask": false
   },
   "objectsGroups": [
@@ -270,8 +270,8 @@
       "name": "Portal",
       "persistentUuid": "8f3be67c-574d-4c6a-b378-7970dc2c708a",
       "width": 80,
-      "x": 160,
-      "y": 256,
+      "x": 176,
+      "y": 272,
       "zOrder": 34,
       "numberProperties": [],
       "stringProperties": [],
@@ -1606,7 +1606,7 @@
       "name": "Props",
       "persistentUuid": "246248c3-7db3-4d67-b9e2-b0617a81faf8",
       "width": 0,
-      "x": 400,
+      "x": 432,
       "y": 160,
       "zOrder": 41,
       "numberProperties": [],
@@ -1616,6 +1616,38 @@
           "value": "{\"tileWidth\":32,\"tileHeight\":32,\"dimX\":7,\"dimY\":9,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[-1,-1,-1,-1,13,14,15],[-1,-1,-1,-1,29,30,31],[149,-1,-1,-1,45,46,47],[-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1],[-1,-1,189,190,-1,-1,-1],[-1,-1,205,206,-1,-1,-1]]}]}"
         }
       ],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "LevelUItext",
+      "persistentUuid": "9f9dfe9b-c5d1-40c9-8074-f74eca1f4b4e",
+      "width": 0,
+      "x": 32,
+      "y": -500,
+      "zOrder": 42,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Portal_2",
+      "persistentUuid": "2a38fac4-eb73-4d43-a7de-e122987f16f1",
+      "width": 0,
+      "x": 464,
+      "y": 192,
+      "zOrder": 43,
+      "numberProperties": [],
+      "stringProperties": [],
       "initialVariables": []
     }
   ],
@@ -2953,6 +2985,282 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Portal_2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "portal1_frame_8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 2
+                      },
+                      {
+                        "x": 62,
+                        "y": 2
+                      },
+                      {
+                        "x": 62,
+                        "y": 62
+                      },
+                      {
+                        "x": 2,
+                        "y": 62
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "portal1_frame_9.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 2
+                      },
+                      {
+                        "x": 62,
+                        "y": 2
+                      },
+                      {
+                        "x": 62,
+                        "y": 62
+                      },
+                      {
+                        "x": 2,
+                        "y": 62
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "portal1_frame_10.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 2
+                      },
+                      {
+                        "x": 62,
+                        "y": 2
+                      },
+                      {
+                        "x": 62,
+                        "y": 62
+                      },
+                      {
+                        "x": 2,
+                        "y": 62
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "portal1_frame_11.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 2
+                      },
+                      {
+                        "x": 62,
+                        "y": 2
+                      },
+                      {
+                        "x": 62,
+                        "y": 62
+                      },
+                      {
+                        "x": 2,
+                        "y": 62
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "portal1_frame_12.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 2
+                      },
+                      {
+                        "x": 62,
+                        "y": 2
+                      },
+                      {
+                        "x": 62,
+                        "y": 62
+                      },
+                      {
+                        "x": 2,
+                        "y": 62
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "portal1_frame_13.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 2
+                      },
+                      {
+                        "x": 62,
+                        "y": 2
+                      },
+                      {
+                        "x": 62,
+                        "y": 62
+                      },
+                      {
+                        "x": 2,
+                        "y": 62
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "portal1_frame_14.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 2
+                      },
+                      {
+                        "x": 62,
+                        "y": 2
+                      },
+                      {
+                        "x": 62,
+                        "y": 62
+                      },
+                      {
+                        "x": 2,
+                        "y": 62
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2992,6 +3300,9 @@
       },
       {
         "objectName": "Portal"
+      },
+      {
+        "objectName": "Portal_2"
       },
       {
         "objectName": "House"
@@ -3115,6 +3426,86 @@
             "False",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+          },
+          "parameters": [
+            "LevelUItext",
+            "Tween",
+            "\"levelui\"",
+            "6",
+            "\"easeOutQuad\"",
+            "0.5",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"levelUI\" "
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "LevelUItext",
+            "Text",
+            "=",
+            "\"LEVEL 2\nJUNGLE OF THE FOREST WITCH\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Portal_2"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"levelUI\" ",
+            ">=",
+            "2.5"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+          },
+          "parameters": [
+            "LevelUItext",
+            "Tween",
+            "\"levelui\"",
+            "-500",
+            "\"easeOutQuad\"",
+            "0.5",
+            ""
+          ]
         }
       ]
     },
@@ -3163,6 +3554,18 @@
           "parameters": [
             "player",
             "Collidable Objects",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "CentreCamera"
+          },
+          "parameters": [
+            "",
+            "player",
+            "",
+            "",
             ""
           ]
         }
@@ -3266,6 +3669,51 @@
           "parameters": [
             "LevelComplete",
             "True",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "player",
+            "Portal_2",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "LevelComplete",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Level 3\"",
             ""
           ]
         }
@@ -3560,6 +4008,15 @@
                 "Text",
                 "=",
                 "\"x2\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Portal_2",
+                ""
               ]
             }
           ]

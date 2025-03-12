@@ -1950,6 +1950,44 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Font Pack/490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
           "name": "gdevelop-asset-store"
         }
+      },
+      {
+        "file": "13_Ice_explosion_01.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "13_Ice_explosion_01.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "../../../Downloads/RPG_Essentials_Free/8_Buffs_Heals_SFX/02_Heal_02.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "..\\..\\..\\Downloads\\RPG_Essentials_Free\\8_Buffs_Heals_SFX\\02_Heal_02.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "16_Atk_buff_04.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "16_Atk_buff_04.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "tf_A1_ashlands_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tf_A1_ashlands_3.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -5045,6 +5083,66 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "LevelUItext",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Effect",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 2
+          },
+          "stringParameters": {
+            "color": "255;255;255"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "string": "LEVEL 3\nVOLCANO OF ASH",
+      "font": "1bee9bddf3765d016ea29c21d418cdb0e958d1cd9c0aaa8743f9e174cb486e71_Kenney Pixel Square.ttf",
+      "textAlignment": "center",
+      "characterSize": 70,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "LEVEL 3\nVOLCANO OF ASH",
+        "font": "1bee9bddf3765d016ea29c21d418cdb0e958d1cd9c0aaa8743f9e174cb486e71_Kenney Pixel Square.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 70,
+        "color": "0;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -5138,6 +5236,9 @@
       },
       {
         "objectName": "NewPanelSprite"
+      },
+      {
+        "objectName": "LevelUItext"
       }
     ]
   },
