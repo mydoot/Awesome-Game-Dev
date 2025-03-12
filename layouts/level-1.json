@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.43357743047024067,
+    "zoomFactor": 0.7130377630690451,
     "windowMask": false
   },
   "objectsGroups": [
@@ -3427,7 +3427,7 @@
           },
           "parameters": [
             "",
-            "\"Level 2\"",
+            "\"Level 3\"",
             ""
           ]
         }

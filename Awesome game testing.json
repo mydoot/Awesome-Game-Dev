@@ -1703,6 +1703,107 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "tf_A5_ashlands_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tf_A5_ashlands_3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "tf_A5_ashlands_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tf_A5_ashlands_2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "tf_A1_ashlands_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tf_A1_ashlands_2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "tf_B_ashlands_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tf_B_ashlands_2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Pixel 5.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Pixel 5.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "../../../Downloads/Pixel RPG Music Pack/Pixel Music Pack/mp3/Pixel 6.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "..\\..\\..\\Downloads\\Pixel RPG Music Pack\\Pixel Music Pack\\mp3\\Pixel 6.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Pixel 7.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Pixel 7.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Pixel6.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Pixel6.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Kenney Pixel Square.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "1bee9bddf3765d016ea29c21d418cdb0e958d1cd9c0aaa8743f9e174cb486e71_Kenney Pixel Square.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Font Pack/1bee9bddf3765d016ea29c21d418cdb0e958d1cd9c0aaa8743f9e174cb486e71_Kenney Pixel Square.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "Battle-Vampire.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Battle-Vampire.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "f573da075113b6401095aa991bf4419e.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "f573da075113b6401095aa991bf4419e.jpg",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -4602,6 +4703,10 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/level-3-5"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/ryle-test-scene"
     }
   ],
@@ -4613,6 +4718,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/enemy"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/boss"
     }
   ],
   "eventsFunctionsExtensions": [

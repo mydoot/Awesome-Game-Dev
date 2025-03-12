@@ -13,60 +13,6 @@
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "Enemy_Health",
-                "Enemy.X(\"Healthbar Point\")",
-                "Enemy.Y(\"Healthbar Point\")",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "LinkedObjects::LinkObjects"
-              },
-              "parameters": [
-                "",
-                "Enemy",
-                "Enemy_Health"
-              ]
-            },
-            {
-              "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
-              },
-              "parameters": [
-                "Enemy_Health",
-                "Scale",
-                "=",
-                "0.65"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
             {
@@ -79,29 +25,6 @@
                 "player",
                 "2",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
-              },
-              "parameters": [
-                "Enemy_Health",
-                "=",
-                "Enemy.Health::Health()",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "MettreXY"
-              },
-              "parameters": [
-                "Enemy_Health",
-                "=",
-                "Enemy.PointX(\"Healthbar Point\")",
-                "=",
-                "Enemy.PointY(\"Healthbar Point\")"
               ]
             }
           ],
