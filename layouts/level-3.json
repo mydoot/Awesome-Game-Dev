@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.49508400737490216,
+    "zoomFactor": 0.5468750000000152,
     "windowMask": false
   },
   "objectsGroups": [
@@ -352,7 +352,7 @@
       "name": "bossname",
       "persistentUuid": "e3f61145-d9c5-4157-8383-d6afa00e84f2",
       "width": 0,
-      "x": 497,
+      "x": 416,
       "y": -81,
       "zOrder": 39,
       "numberProperties": [],
@@ -2073,7 +2073,7 @@
           "type": "Tween::TweenBehavior"
         }
       ],
-      "string": "FALLEN ANGEL",
+      "string": "ANGEL FROM ANOTHER WORLD",
       "font": "Kenney Mini Square.ttf",
       "textAlignment": "left",
       "characterSize": 35,
@@ -2096,7 +2096,7 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "FALLEN ANGEL",
+        "text": "ANGEL FROM ANOTHER WORLD",
         "font": "Kenney Mini Square.ttf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
@@ -3263,11 +3263,11 @@
       "destroyWhenNoParticles": true,
       "emitterAngleA": 0,
       "emitterAngleB": 360,
-      "emitterForceMax": 90,
+      "emitterForceMax": 110,
       "emitterForceMin": 50,
-      "flow": 100,
+      "flow": 500,
       "jumpForwardInTimeOnCreation": 0,
-      "maxParticleNb": 300,
+      "maxParticleNb": 700,
       "name": "BasicExplosionEnergy",
       "particleAlpha1": 204,
       "particleAlpha2": 0,
@@ -3285,7 +3285,7 @@
       "particleGravityY": 0,
       "particleGreen1": 250,
       "particleGreen2": 255,
-      "particleLifeTimeMax": 1.5,
+      "particleLifeTimeMax": 4,
       "particleLifeTimeMin": 0.5,
       "particleRed1": 202,
       "particleRed2": 243,
@@ -4132,8 +4132,44 @@
           },
           "parameters": [
             "",
-            "0.25",
+            "0",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "CameraShake::SetLayerTranslationAmplitude"
+          },
+          "parameters": [
+            "",
+            "15",
+            "15",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "CameraShake::ShakeCamera"
+          },
+          "parameters": [
+            "",
+            "1",
+            "0",
+            "1",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "16_Atk_buff_05.wav",
+            "",
+            "75",
+            "0.6"
           ]
         },
         {
@@ -4250,10 +4286,32 @@
         },
         {
           "type": {
+            "value": "BoidsMovement::BoidsMovement::SetMaxSpeed"
+          },
+          "parameters": [
+            "Boss",
+            "BoidsMovement",
+            "0",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "Wait"
           },
           "parameters": [
-            "1"
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "BoidsMovement::BoidsMovement::SetMaxSpeed"
+          },
+          "parameters": [
+            "Boss",
+            "BoidsMovement",
+            "20",
+            ""
           ]
         },
         {

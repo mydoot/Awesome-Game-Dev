@@ -2350,6 +2350,16 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "16_Atk_buff_05.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "16_Atk_buff_05.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
