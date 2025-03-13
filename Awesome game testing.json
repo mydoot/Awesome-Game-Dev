@@ -2360,6 +2360,17 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/OpenSans-VariableFont_wdth,wght.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "1f6e6d07c3a6894600d328198b30db216eb6b8c727a919fbd545a1bf1cee8377_OpenSans-VariableFont_wdth,wght.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/1f6e6d07c3a6894600d328198b30db216eb6b8c727a919fbd545a1bf1cee8377_OpenSans-VariableFont_wdth,wght.ttf",
+          "name": "gdevelop-asset-store"
+        }
       }
     ],
     "resourceFolders": []
@@ -5665,6 +5676,64 @@
     ]
   },
   "objectsGroups": [
+    {
+      "name": "top half ui ",
+      "objects": [
+        {
+          "name": "HeartScrollBar"
+        },
+        {
+          "name": "HealthText"
+        },
+        {
+          "name": "ManaBar"
+        },
+        {
+          "name": "ManaText"
+        },
+        {
+          "name": "Mana_full_fluff_text2"
+        },
+        {
+          "name": "StamBar"
+        },
+        {
+          "name": "StaminaText"
+        },
+        {
+          "name": "Stam_full_fluff_text"
+        }
+      ]
+    },
+    {
+      "name": "bottom half ui",
+      "objects": [
+        {
+          "name": "Fireball2"
+        },
+        {
+          "name": "NewSprite4"
+        },
+        {
+          "name": "NewSprite7"
+        },
+        {
+          "name": "NewSprite2"
+        },
+        {
+          "name": "dodge"
+        },
+        {
+          "name": "Q_button"
+        },
+        {
+          "name": "UIPotion"
+        },
+        {
+          "name": "PotionText"
+        }
+      ]
+    },
     {
       "name": "death screen",
       "objects": [

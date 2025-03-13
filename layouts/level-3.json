@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5468750000000152,
+    "zoomFactor": 0.6244537826600168,
     "windowMask": false
   },
   "objectsGroups": [
@@ -345,15 +345,16 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 35,
       "keepRatio": true,
       "layer": "UI",
       "name": "bossname",
       "persistentUuid": "e3f61145-d9c5-4157-8383-d6afa00e84f2",
-      "width": 0,
-      "x": 416,
-      "y": -81,
+      "width": 214,
+      "x": 512,
+      "y": -80,
       "zOrder": 39,
       "numberProperties": [],
       "stringProperties": [],
@@ -2059,8 +2060,8 @@
     },
     {
       "assetStoreId": "",
-      "bold": false,
-      "italic": false,
+      "bold": true,
+      "italic": true,
       "name": "bossname",
       "smoothed": true,
       "type": "TextObject::Text",
@@ -2073,20 +2074,20 @@
           "type": "Tween::TweenBehavior"
         }
       ],
-      "string": "ANGEL FROM ANOTHER WORLD",
-      "font": "Kenney Mini Square.ttf",
+      "string": "FALLEN ANGEL",
+      "font": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
       "textAlignment": "left",
-      "characterSize": 35,
+      "characterSize": 50,
       "color": {
         "b": 0,
         "g": 0,
         "r": 0
       },
       "content": {
-        "bold": false,
+        "bold": true,
         "isOutlineEnabled": false,
         "isShadowEnabled": false,
-        "italic": false,
+        "italic": true,
         "outlineColor": "255;255;255",
         "outlineThickness": 2,
         "shadowAngle": 90,
@@ -2096,11 +2097,11 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "ANGEL FROM ANOTHER WORLD",
-        "font": "Kenney Mini Square.ttf",
+        "text": "FALLEN ANGEL",
+        "font": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 35,
+        "characterSize": 50,
         "color": "0;0;0"
       }
     },
@@ -3538,6 +3539,100 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "additive": true,
+      "assetStoreId": "6276301327f98b40a9f1c43160c30750902f6c4c70bfc8e996778256206ed8e1",
+      "destroyWhenNoParticles": true,
+      "emitterAngleA": 0,
+      "emitterAngleB": 1,
+      "emitterForceMax": 300,
+      "emitterForceMin": 200,
+      "flow": 125,
+      "jumpForwardInTimeOnCreation": 0,
+      "maxParticleNb": 300,
+      "name": "PixelFlame",
+      "particleAlpha1": 204,
+      "particleAlpha2": 0,
+      "particleAlphaRandomness1": 0,
+      "particleAlphaRandomness2": 0,
+      "particleAngle1": 0,
+      "particleAngle2": 0,
+      "particleAngleRandomness1": 0,
+      "particleAngleRandomness2": 0,
+      "particleBlue1": 40,
+      "particleBlue2": 0,
+      "particleColor1": "255;122;40",
+      "particleColor2": "255;0;0",
+      "particleGravityX": 0,
+      "particleGravityY": 0,
+      "particleGreen1": 122,
+      "particleGreen2": 0,
+      "particleLifeTimeMax": 1,
+      "particleLifeTimeMin": 0.2,
+      "particleRed1": 255,
+      "particleRed2": 255,
+      "particleSize1": 50,
+      "particleSize2": 0,
+      "particleSizeRandomness1": 0,
+      "particleSizeRandomness2": 0,
+      "rendererParam1": 40,
+      "rendererParam2": 40,
+      "rendererType": "Line",
+      "tank": -1,
+      "textureParticleName": "",
+      "type": "ParticleSystem::ParticleEmitter",
+      "zoneRadius": 20,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "additive": true,
+      "assetStoreId": "6276301327f98b40a9f1c43160c30750902f6c4c70bfc8e996778256206ed8e1",
+      "destroyWhenNoParticles": true,
+      "emitterAngleA": 0,
+      "emitterAngleB": 1,
+      "emitterForceMax": 250,
+      "emitterForceMin": 150,
+      "flow": 15,
+      "jumpForwardInTimeOnCreation": 0,
+      "maxParticleNb": 300,
+      "name": "PixelSmoke",
+      "particleAlpha1": 204,
+      "particleAlpha2": 0,
+      "particleAlphaRandomness1": 0,
+      "particleAlphaRandomness2": 0,
+      "particleAngle1": 0,
+      "particleAngle2": 0,
+      "particleAngleRandomness1": 0,
+      "particleAngleRandomness2": 0,
+      "particleBlue1": 20,
+      "particleBlue2": 63,
+      "particleColor1": "20;20;20",
+      "particleColor2": "63;63;63",
+      "particleGravityX": 0,
+      "particleGravityY": 0,
+      "particleGreen1": 20,
+      "particleGreen2": 63,
+      "particleLifeTimeMax": 1.5,
+      "particleLifeTimeMin": 0.5,
+      "particleRed1": 20,
+      "particleRed2": 63,
+      "particleSize1": 0,
+      "particleSize2": 100,
+      "particleSizeRandomness1": 0,
+      "particleSizeRandomness2": 0,
+      "rendererParam1": 100,
+      "rendererParam2": 100,
+      "rendererType": "Line",
+      "tank": -1,
+      "textureParticleName": "",
+      "type": "ParticleSystem::ParticleEmitter",
+      "zoneRadius": 3,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -3548,6 +3643,9 @@
         "children": [
           {
             "objectName": "Enemy_Health"
+          },
+          {
+            "objectName": "PixelSmoke"
           },
           {
             "objectName": "Boss"
@@ -3625,6 +3723,9 @@
       },
       {
         "objectName": "Summon_Animation"
+      },
+      {
+        "objectName": "PixelFlame"
       },
       {
         "objectName": "StarSparks"
@@ -4089,6 +4190,22 @@
         },
         {
           "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "top half ui "
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "bottom half ui"
+          ]
+        },
+        {
+          "type": {
             "value": "Tween::TweenCameraZoom2"
           },
           "parameters": [
@@ -4369,6 +4486,24 @@
             "TopDownMovement",
             "yes"
           ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "top half ui ",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "bottom half ui",
+            ""
+          ]
         }
       ],
       "events": [
@@ -4447,9 +4582,14 @@
         },
         {
           "type": {
-            "value": "BuiltinCommonInstructions::Once"
+            "inverted": true,
+            "value": "Health::Health::IsDamageCooldownActive"
           },
-          "parameters": []
+          "parameters": [
+            "player",
+            "Health",
+            ""
+          ]
         }
       ],
       "actions": [
@@ -4460,9 +4600,133 @@
           "parameters": [
             "player",
             "Health",
-            "3",
+            "1",
             "no",
             "no",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "player",
+            "Animation",
+            "=",
+            "\"Hit\""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "61_Hit_03.wav",
+            "",
+            "65",
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "player",
+            "\"OnFire\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "player",
+            "\"OnFire\"",
+            "<",
+            "1.25"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "PixelFlame",
+            "player.CenterX()",
+            "player.CenterY()",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "player",
+            "\"OnFire\"",
+            ">=",
+            "1.25"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "PixelFlame",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "PixelFlame",
+            "=",
+            "player.CenterX()",
+            "=",
+            "player.CenterY()"
+          ]
+        },
+        {
+          "type": {
+            "value": "RotateTowardAngle"
+          },
+          "parameters": [
+            "PixelFlame",
+            "-90",
+            "0",
             ""
           ]
         }
