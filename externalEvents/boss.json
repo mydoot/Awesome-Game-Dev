@@ -470,20 +470,51 @@
             },
             {
               "type": {
+                "value": "Health::Health::Heal"
+              },
+              "parameters": [
+                "player",
+                "Health",
+                "3",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "Delete"
               },
               "parameters": [
-                "Boss_projectile",
+                "Sparks",
                 ""
               ]
             },
             {
               "type": {
-                "value": "CameraShake::StartShaking"
+                "value": "Delete"
+              },
+              "parameters": [
+                "Sparks2",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Boss_Sparks",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CameraShake::SetLayerTranslationAmplitude"
               },
               "parameters": [
                 "",
-                "0.15",
+                "10",
+                "10",
+                "",
                 ""
               ]
             },
@@ -497,6 +528,29 @@
             },
             {
               "type": {
+                "value": "CameraShake::ShakeCamera"
+              },
+              "parameters": [
+                "",
+                "0.75",
+                "0",
+                "0.5",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::Heal"
+              },
+              "parameters": [
+                "player",
+                "Health",
+                "3",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "PlaySound"
               },
               "parameters": [
@@ -504,7 +558,7 @@
                 "51_Flee_02.wav",
                 "",
                 "75",
-                "1"
+                "0.5"
               ]
             },
             {
@@ -513,7 +567,7 @@
               },
               "parameters": [
                 "",
-                "BasicExplosionEnergy",
+                "BasicExplosionEnergy2",
                 "Boss.CenterX()",
                 "Boss.CenterY()",
                 ""
@@ -529,6 +583,29 @@
             },
             {
               "type": {
+                "value": "CameraShake::ShakeCamera"
+              },
+              "parameters": [
+                "",
+                "0.75",
+                "0",
+                "0.5",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::Heal"
+              },
+              "parameters": [
+                "player",
+                "Health",
+                "3",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "PlaySound"
               },
               "parameters": [
@@ -536,7 +613,7 @@
                 "51_Flee_02.wav",
                 "",
                 "75",
-                "1"
+                "0.5"
               ]
             },
             {
@@ -545,7 +622,73 @@
               },
               "parameters": [
                 "",
-                "BasicExplosionEnergy",
+                "BasicExplosionEnergy2",
+                "Boss.CenterX()",
+                "Boss.CenterY()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::Heal"
+              },
+              "parameters": [
+                "player",
+                "Health",
+                "3",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "CameraShake::ShakeCamera"
+              },
+              "parameters": [
+                "",
+                "0.75",
+                "0",
+                "0.5",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::Heal"
+              },
+              "parameters": [
+                "player",
+                "Health",
+                "3",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "51_Flee_02.wav",
+                "",
+                "75",
+                "0.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "BasicExplosionEnergy2",
                 "Boss.CenterX()",
                 "Boss.CenterY()",
                 ""
@@ -561,34 +704,37 @@
             },
             {
               "type": {
-                "value": "PlaySound"
+                "value": "CameraShake::SetLayerTranslationAmplitude"
               },
               "parameters": [
                 "",
-                "51_Flee_02.wav",
+                "25",
+                "25",
                 "",
-                "75",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "BasicExplosionEnergy",
-                "Boss.CenterX()",
-                "Boss.CenterY()",
                 ""
               ]
             },
             {
               "type": {
-                "value": "Wait"
+                "value": "CameraShake::ShakeCamera"
               },
               "parameters": [
-                "1"
+                "",
+                "1.5",
+                "0",
+                "1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::Heal"
+              },
+              "parameters": [
+                "player",
+                "Health",
+                "3",
+                ""
               ]
             },
             {
@@ -651,43 +797,6 @@
             },
             {
               "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "Sparks",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "Sparks2",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "Boss_Sparks",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "CameraShake::StopShaking"
-              },
-              "parameters": [
-                "",
-                "0.15\n",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "Wait"
               },
               "parameters": [
@@ -724,6 +833,44 @@
                 "CameraCanMove",
                 "False",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "StarSparks",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Boss_projectile",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Health::Health::IsDead"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "Health",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Boss_projectile",
+                    ""
+                  ]
+                }
               ]
             }
           ]
@@ -1334,7 +1481,7 @@
                 "Boss",
                 "FireBullet",
                 "=",
-                "15",
+                "11",
                 ""
               ]
             },
@@ -1698,6 +1845,11 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
     }
   ]
 }

@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4950840073749021,
+    "zoomFactor": 0.49508400737490216,
     "windowMask": false
   },
   "objectsGroups": [
@@ -3491,6 +3491,53 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "additive": true,
+      "assetStoreId": "0313bde459d2aa5257fbd978abe8ced6c994ae649f95adefa900388b5a7f2e4e",
+      "destroyWhenNoParticles": true,
+      "emitterAngleA": 0,
+      "emitterAngleB": 360,
+      "emitterForceMax": 90,
+      "emitterForceMin": 50,
+      "flow": 100,
+      "jumpForwardInTimeOnCreation": 0,
+      "maxParticleNb": 300,
+      "name": "BasicExplosionEnergy2",
+      "particleAlpha1": 204,
+      "particleAlpha2": 0,
+      "particleAlphaRandomness1": 0,
+      "particleAlphaRandomness2": 0,
+      "particleAngle1": 0,
+      "particleAngle2": 0,
+      "particleAngleRandomness1": 0,
+      "particleAngleRandomness2": 0,
+      "particleBlue1": 255,
+      "particleBlue2": 0,
+      "particleColor1": "234;0;255",
+      "particleColor2": "0;0;0",
+      "particleGravityX": 0,
+      "particleGravityY": 0,
+      "particleGreen1": 0,
+      "particleGreen2": 0,
+      "particleLifeTimeMax": 1.5,
+      "particleLifeTimeMin": 0.5,
+      "particleRed1": 234,
+      "particleRed2": 0,
+      "particleSize1": 100,
+      "particleSize2": 0,
+      "particleSizeRandomness1": 0,
+      "particleSizeRandomness2": 0,
+      "rendererParam1": 500,
+      "rendererParam2": 1,
+      "rendererType": "Quad",
+      "tank": 30,
+      "textureParticleName": "ExplosionFog-Texture-2.png",
+      "type": "ParticleSystem::ParticleEmitter",
+      "zoneRadius": 360,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -3590,6 +3637,9 @@
       },
       {
         "objectName": "BasicExplosionEnergy"
+      },
+      {
+        "objectName": "BasicExplosionEnergy2"
       },
       {
         "objectName": "Sparks"
@@ -4078,6 +4128,16 @@
         },
         {
           "type": {
+            "value": "CameraShake::StopShaking"
+          },
+          "parameters": [
+            "",
+            "0.25",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "Create"
           },
           "parameters": [
@@ -4154,7 +4214,7 @@
             "Boss",
             "Scale",
             "=",
-            "1.10"
+            "1.05"
           ]
         },
         {
@@ -4216,16 +4276,6 @@
           "parameters": [
             "Boss",
             "\"BossAttackCooldown\""
-          ]
-        },
-        {
-          "type": {
-            "value": "CameraShake::StopShaking"
-          },
-          "parameters": [
-            "",
-            "0.25",
-            ""
           ]
         },
         {
