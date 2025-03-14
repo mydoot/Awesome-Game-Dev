@@ -2426,6 +2426,16 @@
         "name": "pixel-landscape-2f68t4t9xy73gxn0.jpg",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "013_Confirm_03.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "013_Confirm_03.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -6068,14 +6078,6 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/level-3"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/level-3-5"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/ryle-test-scene"
     }
   ],
   "externalEvents": [
@@ -6144,6 +6146,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/camerashake"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/flashtransitionpainter"
     }
   ],
   "externalLayouts": [

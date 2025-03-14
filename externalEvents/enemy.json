@@ -1,5 +1,5 @@
 {
-  "associatedLayout": "Ryle test scene",
+  "associatedLayout": "Level 1",
   "name": "Enemy",
   "events": [
     {
@@ -149,6 +149,12 @@
                 "Health",
                 "="
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -171,6 +177,16 @@
                 "",
                 "100",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Enemieskilled",
+                "+",
+                "1"
               ]
             }
           ]
@@ -295,6 +311,12 @@
                 "Health",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -330,7 +352,7 @@
               "parameters": [
                 "Enemy",
                 "staff.AngleToObject(Enemy)",
-                "250",
+                "100",
                 "1"
               ]
             },

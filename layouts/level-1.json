@@ -100,6 +100,11 @@
       "name": "QuestLine",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "Enemieskilled",
+      "type": "number",
+      "value": 0
     }
   ],
   "instances": [
@@ -1769,6 +1774,16 @@
           "name": "MaxHealth",
           "type": "number",
           "value": 3
+        },
+        {
+          "name": "AmountKilled",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "=",
+          "type": "number",
+          "value": 0
         }
       ],
       "effects": [],
@@ -3709,6 +3724,16 @@
             "1",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "Enemieskilled",
+            "=",
+            "0"
+          ]
         }
       ]
     },
@@ -3867,7 +3892,7 @@
             "SideUItext2",
             "Text",
             "=",
-            "\"Defeat the enemies ahead.\""
+            "\"Defeat the enemies ahead. (\" + Enemieskilled+ \"/4)\""
           ]
         }
       ]
@@ -3883,6 +3908,34 @@
             "QuestLine",
             "=",
             "3"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "SideUItext2",
+            "Text",
+            "=",
+            "\"Return to the Weapon's Master.\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "QuestLine",
+            "=",
+            "4"
           ]
         }
       ],
@@ -3923,6 +3976,58 @@
             "player",
             "",
             "",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "Enemieskilled",
+            "=",
+            "4"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "QuestLine",
+            "=",
+            "3"
+          ]
+        },
+        {
+          "type": {
+            "value": "DialogueTree::LoadDialogueFromJsonFile"
+          },
+          "parameters": [
+            "",
+            "assets\\NewDialogue.json"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "LevelComplete",
+            "True",
             ""
           ]
         }
@@ -3979,25 +4084,6 @@
           },
           "parameters": [
             "BeginSpawningEnemyDetector",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "DialogueTree::LoadDialogueFromJsonFile"
-          },
-          "parameters": [
-            "",
-            "assets\\NewDialogue.json"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "LevelComplete",
-            "True",
             ""
           ]
         }
@@ -4183,6 +4269,33 @@
             "100",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "controltext1",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "controltext2",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "controltext3",
+            ""
+          ]
         }
       ]
     },
@@ -4366,7 +4479,7 @@
               "parameters": [
                 "QuestLine",
                 "=",
-                "3"
+                "4"
               ]
             }
           ]

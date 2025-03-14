@@ -101,6 +101,11 @@
       "name": "LevelComplete",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "Enemieskilled",
+      "type": "number",
+      "value": 0
     }
   ],
   "instances": [
@@ -3650,6 +3655,16 @@
           },
           "parameters": [
             "Portal_2"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "Enemieskilled",
+            "=",
+            "0"
           ]
         }
       ]
