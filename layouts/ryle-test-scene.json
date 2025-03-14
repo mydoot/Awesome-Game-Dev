@@ -1039,7 +1039,7 @@
       "isLocked": false,
       "name": "Front Layer 2",
       "renderingType": "",
-      "visibility": false,
+      "visibility": true,
       "cameras": [],
       "effects": [
         {

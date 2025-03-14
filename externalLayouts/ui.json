@@ -174,7 +174,7 @@
       "depth": 16,
       "height": 1450,
       "keepRatio": true,
-      "layer": "Front Layer 2",
+      "layer": "UI",
       "name": "NewPanelSprite",
       "opacity": 0,
       "persistentUuid": "fb7e276a-ef03-472e-ab1e-01877c71afd7",
@@ -300,7 +300,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.604083874998888,
+    "zoomFactor": 0.4633111824513987,
     "windowMask": false
   }
 }

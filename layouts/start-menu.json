@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5843784410740928,
+    "zoomFactor": 0.4789341884535246,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -35,7 +35,7 @@
       "width": 0,
       "x": 501,
       "y": 401,
-      "zOrder": 1,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -65,9 +65,26 @@
       "name": "Start_Menu_Text2",
       "persistentUuid": "a2c1805f-3e57-45cd-affd-d45df87ce3e0",
       "width": 0,
-      "x": 242,
-      "y": 292,
+      "x": 330,
+      "y": 288,
       "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 869,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NewPanelSprite3",
+      "persistentUuid": "30dafa73-b832-4064-b749-988059174051",
+      "width": 1508,
+      "x": -114,
+      "y": -80,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -203,7 +220,7 @@
     {
       "assetStoreId": "",
       "bold": false,
-      "italic": false,
+      "italic": true,
       "name": "Start_Menu_Text2",
       "smoothed": true,
       "type": "TextObject::Text",
@@ -211,7 +228,7 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Press \"E\" to interact with NPCs",
+      "string": "BEGIN YOUR MAGE JOURNEY",
       "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
       "textAlignment": "left",
       "characterSize": 25,
@@ -224,7 +241,7 @@
         "bold": false,
         "isOutlineEnabled": false,
         "isShadowEnabled": false,
-        "italic": false,
+        "italic": true,
         "outlineColor": "255;255;255",
         "outlineThickness": 2,
         "shadowAngle": 90,
@@ -234,13 +251,29 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Press \"E\" to interact with NPCs",
+        "text": "BEGIN YOUR MAGE JOURNEY",
         "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
         "characterSize": 25,
         "color": "0;0;0"
       }
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 0,
+      "height": 32,
+      "leftMargin": 0,
+      "name": "NewPanelSprite3",
+      "rightMargin": 0,
+      "texture": "pixel-landscape-2f68t4t9xy73gxn0.jpg",
+      "tiled": false,
+      "topMargin": 0,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -254,6 +287,9 @@
       },
       {
         "objectName": "Start_Menu_Text2"
+      },
+      {
+        "objectName": "NewPanelSprite3"
       }
     ]
   },
@@ -272,6 +308,18 @@
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "13_Ice_explosion_01.wav",
+            "",
+            "80",
+            "0.90"
+          ]
+        },
         {
           "type": {
             "value": "Scene"
