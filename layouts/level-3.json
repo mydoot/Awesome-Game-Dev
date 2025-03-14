@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.4307927813134744,
+    "zoomFactor": 0.37971210019480617,
     "windowMask": false
   },
   "objectsGroups": [
@@ -362,7 +362,7 @@
       "layer": "UI",
       "name": "bossname",
       "persistentUuid": "e3f61145-d9c5-4157-8383-d6afa00e84f2",
-      "width": 1183,
+      "width": 1978,
       "x": 240,
       "y": 262,
       "zOrder": 39,
@@ -481,7 +481,7 @@
       "width": 0,
       "x": 1500,
       "y": 264,
-      "zOrder": 43,
+      "zOrder": 100,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1663,7 +1663,12 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
       "animations": [
         {
           "name": "",
@@ -3531,7 +3536,7 @@
       "particleSizeRandomness1": 0,
       "particleSizeRandomness2": 0,
       "rendererParam1": 1,
-      "rendererParam2": 1,
+      "rendererParam2": 30,
       "rendererType": "Quad",
       "tank": -1,
       "textureParticleName": "Sparks.png",
@@ -3578,7 +3583,7 @@
       "particleSizeRandomness1": 0,
       "particleSizeRandomness2": 0,
       "rendererParam1": 1,
-      "rendererParam2": 1,
+      "rendererParam2": 30,
       "rendererType": "Quad",
       "tank": -1,
       "textureParticleName": "Sparks.png",
@@ -4266,6 +4271,29 @@
             "False",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "3"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+          },
+          "parameters": [
+            "Portal",
+            "Tween",
+            "\"scaler\"",
+            "0.01",
+            "\"easeOutQuint\"",
+            "3.5",
+            "yes",
+            "yes"
+          ]
         }
       ]
     },
@@ -4330,7 +4358,7 @@
             "SideUItext2",
             "Text",
             "=",
-            "\"Face your challenge ahead.\""
+            "\"Face [???].\""
           ]
         }
       ]
@@ -4358,7 +4386,35 @@
             "SideUItext2",
             "Text",
             "=",
-            "\"Defeat the FALLEN ANGEL.\""
+            "\"This is a little ridiculous...\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "QuestLine",
+            "=",
+            "2.5"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "SideUItext2",
+            "Text",
+            "=",
+            "\"Defeat the [FALLEN ANGEL].\""
           ]
         }
       ]
@@ -4805,7 +4861,7 @@
             "1",
             "",
             "\"easeOutQuad\"",
-            "0.75"
+            "1"
           ]
         },
         {
@@ -4822,7 +4878,7 @@
           },
           "parameters": [
             "",
-            "0.15",
+            "0",
             ""
           ]
         },
@@ -4831,7 +4887,27 @@
             "value": "Wait"
           },
           "parameters": [
-            "3"
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "CameraShake::SetLayerTranslationAmplitude"
+          },
+          "parameters": [
+            "",
+            "10",
+            "10",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "1"
           ]
         },
         {
@@ -4864,7 +4940,7 @@
             "",
             "1",
             "0",
-            "1",
+            "0.5",
             ""
           ]
         },
@@ -5312,6 +5388,16 @@
           },
           "parameters": [
             "you_text"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "QuestLine",
+            "=",
+            "2.5"
           ]
         }
       ]
@@ -6182,6 +6268,10 @@
     {
       "name": "FireBullet",
       "type": "FireBullet::FireBullet"
+    },
+    {
+      "name": "FlashTransitionPainter",
+      "type": "FlashTransitionPainter::FlashTransitionPainter"
     },
     {
       "name": "Flippable",

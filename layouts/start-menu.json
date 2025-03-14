@@ -305,40 +305,6 @@
       "variables": [],
       "effects": [],
       "behaviors": []
-    },
-    {
-      "assetStoreId": "",
-      "name": "Transition",
-      "type": "PrimitiveDrawing::Drawer",
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "FlashTransitionPainter",
-          "type": "FlashTransitionPainter::FlashTransitionPainter",
-          "Progress": 0,
-          "Duration": 0,
-          "Type": "",
-          "Direction": "",
-          "MaxOpacity": 255
-        }
-      ],
-      "fillOpacity": 255,
-      "outlineSize": 1,
-      "outlineOpacity": 255,
-      "absoluteCoordinates": false,
-      "clearBetweenFrames": true,
-      "antialiasing": "none",
-      "fillColor": {
-        "r": 255,
-        "g": 255,
-        "b": 255
-      },
-      "outlineColor": {
-        "r": 0,
-        "g": 0,
-        "b": 0
-      }
     }
   ],
   "objectsFolderStructure": {
@@ -355,9 +321,6 @@
       },
       {
         "objectName": "NewPanelSprite3"
-      },
-      {
-        "objectName": "Transition"
       }
     ]
   },

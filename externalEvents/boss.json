@@ -885,7 +885,7 @@
                 "Tween",
                 "\"eventui\"",
                 "150",
-                "\"easeOutSine\"",
+                "\"easeInOutQuart\"",
                 "0.50",
                 ""
               ]
@@ -929,7 +929,7 @@
                 "Tween",
                 "\"eventui\"",
                 "-1700",
-                "\"easeOutSine\"",
+                "\"easeInOutQuart\"",
                 "0.5",
                 ""
               ]
@@ -1102,6 +1102,38 @@
           "parameters": [
             "Boss",
             "\"BossAttackCooldown\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectColorTween2"
+          },
+          "parameters": [
+            "bossname",
+            "Tween",
+            "\"color\"",
+            "\"255;0;4\"",
+            "\"easeInOutQuint\"",
+            "5",
+            "",
+            "yes"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddColorEffectPropertyTween"
+          },
+          "parameters": [
+            "bossname",
+            "Tween",
+            "Effect",
+            "\"color2\"",
+            "\"0;0;0\"",
+            "\"Effect\"",
+            "\"color\"",
+            "\"easeInOutQuart\"",
+            "5",
+            ""
           ]
         }
       ]

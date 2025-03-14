@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.6672773998330029,
+    "zoomFactor": 0.4633111824514016,
     "windowMask": false
   },
   "objectsGroups": [
@@ -1598,8 +1598,8 @@
       "name": "Dialoguebox",
       "persistentUuid": "816a875b-9133-423d-886d-238c6fa0132d",
       "width": 756,
-      "x": 271,
-      "y": 345,
+      "x": 276,
+      "y": 343,
       "zOrder": 31,
       "numberProperties": [],
       "stringProperties": [],
@@ -1722,6 +1722,22 @@
       "x": 360,
       "y": 1350,
       "zOrder": 38,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "Transition",
+      "persistentUuid": "4d88d8e6-d15a-41e7-8319-d420cb25004a",
+      "width": 0,
+      "x": 631,
+      "y": 296,
+      "zOrder": 39,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -3575,7 +3591,7 @@
             "\"levelui\"",
             "6",
             "\"easeOutQuad\"",
-            "0.5",
+            "1",
             ""
           ]
         },
@@ -4134,6 +4150,38 @@
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "Transition",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+          },
+          "parameters": [
+            "Transition",
+            "FlashTransitionPainter",
+            "\"0;0;0\"",
+            "0.5",
+            "\"Circular\"",
+            "\"Forward\"",
+            "255",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "1"
+          ]
+        },
         {
           "type": {
             "value": "Scene"

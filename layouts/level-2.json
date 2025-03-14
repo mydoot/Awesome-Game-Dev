@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.40575189059438815,
+    "zoomFactor": 0.44819780454104224,
     "windowMask": false
   },
   "objectsGroups": [
@@ -104,6 +104,11 @@
     },
     {
       "name": "Enemieskilled",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "QuestLine",
       "type": "number",
       "value": 0
     }
@@ -1641,15 +1646,16 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 82,
       "keepRatio": true,
       "layer": "",
       "name": "Portal_2",
       "persistentUuid": "2a38fac4-eb73-4d43-a7de-e122987f16f1",
-      "width": 0,
-      "x": 464,
-      "y": 192,
+      "width": 82,
+      "x": 482,
+      "y": 257,
       "zOrder": 43,
       "numberProperties": [],
       "stringProperties": [],
@@ -1668,6 +1674,22 @@
       "x": 367,
       "y": 217,
       "zOrder": 44,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "Transition",
+      "persistentUuid": "6b9a95dd-bfda-4985-aea6-fa301d1d330e",
+      "width": 0,
+      "x": 665,
+      "y": 301,
+      "zOrder": 45,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2848,7 +2870,12 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
       "animations": [
         {
           "name": "",
@@ -3124,7 +3151,12 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
       "animations": [
         {
           "name": "",
@@ -3140,8 +3172,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 32,
+                    "y": 32
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -3176,8 +3208,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 32,
+                    "y": 32
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -3212,8 +3244,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 32,
+                    "y": 32
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -3248,8 +3280,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 32,
+                    "y": 32
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -3284,8 +3316,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 32,
+                    "y": 32
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -3320,8 +3352,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 32,
+                    "y": 32
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -3356,8 +3388,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 32,
+                    "y": 32
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -3446,6 +3478,30 @@
         "characterSize": 30,
         "color": "0;0;0"
       }
+    },
+    {
+      "assetStoreId": "",
+      "name": "NewShapePainter",
+      "type": "PrimitiveDrawing::Drawer",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "fillOpacity": 255,
+      "outlineSize": 1,
+      "outlineOpacity": 255,
+      "absoluteCoordinates": false,
+      "clearBetweenFrames": true,
+      "antialiasing": "none",
+      "fillColor": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "outlineColor": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -3488,6 +3544,9 @@
       },
       {
         "objectName": "Portal_2"
+      },
+      {
+        "objectName": "NewShapePainter"
       },
       {
         "objectName": "House"
@@ -3665,6 +3724,50 @@
             "Enemieskilled",
             "=",
             "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "QuestLine",
+            "=",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+          },
+          "parameters": [
+            "Portal",
+            "Tween",
+            "\"scaler\"",
+            "0.01",
+            "\"easeOutQuint\"",
+            "3.5",
+            "yes",
+            "yes"
+          ]
+        },
+        {
+          "type": {
+            "value": "ScalableCapability::ScalableBehavior::SetValue"
+          },
+          "parameters": [
+            "Portal_2",
+            "Scale",
+            "=",
+            "0.1"
           ]
         }
       ]
@@ -3853,15 +3956,6 @@
         },
         {
           "type": {
-            "value": "DialogueTree::LoadDialogueFromJsonFile"
-          },
-          "parameters": [
-            "",
-            "assets\\Witchdialogue2.json"
-          ]
-        },
-        {
-          "type": {
             "value": "SetBooleanVariable"
           },
           "parameters": [
@@ -3899,6 +3993,16 @@
         },
         {
           "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "QuestLine",
+            "=",
+            "4"
+          ]
+        },
+        {
+          "type": {
             "value": "BuiltinCommonInstructions::Once"
           },
           "parameters": []
@@ -3907,11 +4011,207 @@
       "actions": [
         {
           "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "Transition",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+          },
+          "parameters": [
+            "Transition",
+            "FlashTransitionPainter",
+            "\"0;0;0\"",
+            "1",
+            "\"Circular\"",
+            "\"Forward\"",
+            "255",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "1"
+          ]
+        },
+        {
+          "type": {
             "value": "Scene"
           },
           "parameters": [
             "",
             "\"Level 3\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "QuestLine",
+            "=",
+            "1"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "SideUItext2",
+            "Text",
+            "=",
+            "\"Speak to the Forest Witch.\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "QuestLine",
+            "=",
+            "2"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "SideUItext2",
+            "Text",
+            "=",
+            "\"Defeat the enemies ahead. (\" + Enemieskilled+ \"/2)\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "QuestLine",
+            "=",
+            "3"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "SideUItext2",
+            "Text",
+            "=",
+            "\"Return to the Forest Witch.\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "QuestLine",
+            "=",
+            "4"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "SideUItext2",
+            "Text",
+            "=",
+            "\"Enter the portal and face [???]\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "Enemieskilled",
+            "=",
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "QuestLine",
+            "=",
+            "3"
+          ]
+        },
+        {
+          "type": {
+            "value": "DialogueTree::LoadDialogueFromJsonFile"
+          },
+          "parameters": [
+            "",
+            "assets\\Witchdialogue2.json"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "LevelComplete",
+            "True",
             ""
           ]
         }
@@ -4113,6 +4413,16 @@
             "TopDownMovement",
             "yes"
           ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "QuestLine",
+            "=",
+            "2"
+          ]
         }
       ],
       "events": [
@@ -4215,6 +4525,31 @@
               "parameters": [
                 "Portal_2",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "Portal_2",
+                "Tween",
+                "\"scaler\"",
+                "1.2",
+                "\"easeOutQuint\"",
+                "3.5",
+                "no",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "QuestLine",
+                "=",
+                "4"
               ]
             }
           ]
