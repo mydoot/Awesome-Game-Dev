@@ -7,7 +7,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "Enemy",
+      "name": "Boss",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
@@ -383,6 +383,18 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Boss Death "
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -789,6 +801,16 @@
             },
             {
               "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "BossAlive",
+                "False",
+                "="
+              ]
+            },
+            {
+              "type": {
                 "value": "Cache"
               },
               "parameters": [
@@ -821,7 +843,7 @@
                 "\"camerazoom\"",
                 "2.5",
                 "",
-                "\"linear\"",
+                "\"easeOutQuad\"",
                 "1.5"
               ]
             },
@@ -841,6 +863,74 @@
               },
               "parameters": [
                 "StarSparks",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "QuestLine",
+                "=",
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+              },
+              "parameters": [
+                "eventname",
+                "Tween",
+                "\"eventui\"",
+                "150",
+                "\"easeOutSine\"",
+                "0.50",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.40"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+              },
+              "parameters": [
+                "eventname",
+                "Tween",
+                "\"eventui\"",
+                "125",
+                "\"linear\"",
+                "3",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+              },
+              "parameters": [
+                "eventname",
+                "Tween",
+                "\"eventui\"",
+                "-1700",
+                "\"easeOutSine\"",
+                "0.5",
                 ""
               ]
             }
@@ -879,6 +969,18 @@
       "parameters": []
     },
     {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Boss behavior\n"
+    },
+    {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -914,6 +1016,17 @@
         },
         {
           "type": {
+            "value": "SetNumberObjectVariable"
+          },
+          "parameters": [
+            "Boss",
+            "MinimumAttacks",
+            "=",
+            "2"
+          ]
+        },
+        {
+          "type": {
             "value": "PlaySound"
           },
           "parameters": [
@@ -931,7 +1044,7 @@
           "parameters": [
             "Boss",
             "BoidsMovement",
-            "35",
+            "20",
             ""
           ]
         },
@@ -980,6 +1093,15 @@
             "180",
             "0",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "Boss",
+            "\"BossAttackCooldown\""
           ]
         }
       ]
@@ -1068,6 +1190,18 @@
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Boss attacks"
+    },
+    {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -1091,7 +1225,7 @@
             "Boss",
             "BossAttacks",
             "=",
-            "RandomInRange(1,Boss.Variable(PossibleAttacks))"
+            "RandomInRange(Boss.Variable(MinimumAttacks),Boss.Variable(PossibleAttacks))"
           ]
         }
       ],
@@ -1108,6 +1242,101 @@
                 "BossAttacks",
                 "=",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::SetBulletQuantityOp"
+              },
+              "parameters": [
+                "Boss",
+                "FireBullet",
+                "=",
+                "10",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::SetFiringArcOp"
+              },
+              "parameters": [
+                "Boss",
+                "FireBullet",
+                "=",
+                "360",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "13_Ice_explosion_01.wav",
+                "",
+                "30",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::Fire"
+              },
+              "parameters": [
+                "Boss",
+                "FireBullet",
+                "Boss.CenterX()",
+                "Boss.CenterY()",
+                "Boss_projectile",
+                "90",
+                "435",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Boss",
+                "\"BossAttackCooldown\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Boss",
+                "BossAttacks",
+                "=",
+                "RandomInRange(1,3)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "Boss",
+                "BossAttacks",
+                "=",
+                "2"
               ]
             },
             {
@@ -1236,101 +1465,6 @@
                 "Boss_projectile",
                 "player",
                 "210",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "Boss",
-                "\"BossAttackCooldown\""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberObjectVariable"
-              },
-              "parameters": [
-                "Boss",
-                "BossAttacks",
-                "=",
-                "RandomInRange(1,3)"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberObjectVariable"
-              },
-              "parameters": [
-                "Boss",
-                "BossAttacks",
-                "=",
-                "2"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::SetBulletQuantityOp"
-              },
-              "parameters": [
-                "Boss",
-                "FireBullet",
-                "=",
-                "10",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::SetFiringArcOp"
-              },
-              "parameters": [
-                "Boss",
-                "FireBullet",
-                "=",
-                "360",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "13_Ice_explosion_01.wav",
-                "",
-                "30",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::Fire"
-              },
-              "parameters": [
-                "Boss",
-                "FireBullet",
-                "Boss.CenterX()",
-                "Boss.CenterY()",
-                "Boss_projectile",
-                "90",
-                "435",
                 ""
               ]
             },
@@ -1753,6 +1887,18 @@
                 "FireBullet",
                 "=",
                 "360",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::SetBulletQuantityOp"
+              },
+              "parameters": [
+                "Boss",
+                "FireBullet",
+                "=",
+                "1",
                 ""
               ]
             }

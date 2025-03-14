@@ -1999,6 +1999,26 @@
                 "",
                 "61_Hit_03.wav"
               ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "player",
+                "NumofPotion",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "attackhitbox",
+                ""
+              ]
             }
           ],
           "events": [

@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 224,
+    "build": 226,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -2371,6 +2371,53 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/1f6e6d07c3a6894600d328198b30db216eb6b8c727a919fbd545a1bf1cee8377_OpenSans-VariableFont_wdth,wght.ttf",
           "name": "gdevelop-asset-store"
         }
+      },
+      {
+        "file": "30_Earth_02.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "30_Earth_02.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "thumb sfx.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "thumb sfx.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NotoSansKR-Normal.otf",
+        "kind": "font",
+        "metadata": "",
+        "name": "86ab46ce5f441ab7ade525b0ace1347d0b26a77303cde9f11c68c772431e9ce1_NotoSansKR-Normal.otf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/Korean/86ab46ce5f441ab7ade525b0ace1347d0b26a77303cde9f11c68c772431e9ce1_NotoSansKR-Normal.otf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "you marker.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "you marker.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "you marker2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "you marker2.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2410,6 +2457,11 @@
         },
         {
           "name": "Manaval2",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Unnamed",
           "type": "number",
           "value": 0
         }
@@ -2483,10 +2535,10 @@
         {
           "name": "SmoothCamera",
           "type": "SmoothCamera::SmoothCamera",
-          "LeftwardSpeed": 0.95,
-          "RightwardSpeed": 0.95,
-          "UpwardSpeed": 0.95,
-          "DownwardSpeed": 0.95,
+          "LeftwardSpeed": 0.99,
+          "RightwardSpeed": 0.99,
+          "UpwardSpeed": 0.99,
+          "DownwardSpeed": 0.99,
           "FollowOnX": true,
           "FollowOnY": true,
           "FollowFreeAreaLeft": 0,
@@ -2574,6 +2626,11 @@
                       "name": "Attack Pos",
                       "x": 291.5,
                       "y": 292
+                    },
+                    {
+                      "name": "you text point",
+                      "x": 246.5,
+                      "y": 521
                     }
                   ],
                   "originPoint": {
@@ -2621,6 +2678,11 @@
                       "name": "Attack Pos",
                       "x": 291.5,
                       "y": 292
+                    },
+                    {
+                      "name": "you text point",
+                      "x": 246.5,
+                      "y": 521
                     }
                   ],
                   "originPoint": {
@@ -2668,6 +2730,11 @@
                       "name": "Attack Pos",
                       "x": 291.5,
                       "y": 292
+                    },
+                    {
+                      "name": "you text point",
+                      "x": 246.5,
+                      "y": 521
                     }
                   ],
                   "originPoint": {
@@ -2715,6 +2782,11 @@
                       "name": "Attack Pos",
                       "x": 291.5,
                       "y": 292
+                    },
+                    {
+                      "name": "you text point",
+                      "x": 246.5,
+                      "y": 521
                     }
                   ],
                   "originPoint": {
@@ -2775,6 +2847,11 @@
                       "name": "Attack Pos",
                       "x": 291.5,
                       "y": 292
+                    },
+                    {
+                      "name": "you text point",
+                      "x": 246.5,
+                      "y": 521
                     }
                   ],
                   "originPoint": {
@@ -2822,6 +2899,11 @@
                       "name": "Attack Pos",
                       "x": 291.5,
                       "y": 292
+                    },
+                    {
+                      "name": "you text point",
+                      "x": 246.5,
+                      "y": 521
                     }
                   ],
                   "originPoint": {
@@ -2869,6 +2951,11 @@
                       "name": "Attack Pos",
                       "x": 291.5,
                       "y": 292
+                    },
+                    {
+                      "name": "you text point",
+                      "x": 246.5,
+                      "y": 521
                     }
                   ],
                   "originPoint": {
@@ -2916,6 +3003,11 @@
                       "name": "Attack Pos",
                       "x": 291.5,
                       "y": 292
+                    },
+                    {
+                      "name": "you text point",
+                      "x": 246.5,
+                      "y": 521
                     }
                   ],
                   "originPoint": {
@@ -2976,6 +3068,11 @@
                       "name": "Attack Pos",
                       "x": 291.5,
                       "y": 292
+                    },
+                    {
+                      "name": "you text point",
+                      "x": 246.5,
+                      "y": 521
                     }
                   ],
                   "originPoint": {
@@ -3023,6 +3120,11 @@
                       "name": "Attack Pos",
                       "x": 291.5,
                       "y": 292
+                    },
+                    {
+                      "name": "you text point",
+                      "x": 246.5,
+                      "y": 521
                     }
                   ],
                   "originPoint": {
@@ -3070,6 +3172,11 @@
                       "name": "Attack Pos",
                       "x": 291.5,
                       "y": 292
+                    },
+                    {
+                      "name": "you text point",
+                      "x": 246.5,
+                      "y": 521
                     }
                   ],
                   "originPoint": {
@@ -3117,6 +3224,11 @@
                       "name": "Attack Pos",
                       "x": 291.5,
                       "y": 292
+                    },
+                    {
+                      "name": "you text point",
+                      "x": 246.5,
+                      "y": 521
                     }
                   ],
                   "originPoint": {
@@ -3188,6 +3300,11 @@
                       "name": "Attack Pos",
                       "x": 291.5,
                       "y": 292
+                    },
+                    {
+                      "name": "you text point",
+                      "x": 246.5,
+                      "y": 521
                     }
                   ],
                   "originPoint": {
@@ -3235,6 +3352,11 @@
                       "name": "Attack Pos",
                       "x": 291.5,
                       "y": 292
+                    },
+                    {
+                      "name": "you text point",
+                      "x": 246.5,
+                      "y": 521
                     }
                   ],
                   "originPoint": {
@@ -3282,6 +3404,11 @@
                       "name": "Attack Pos",
                       "x": 291.5,
                       "y": 292
+                    },
+                    {
+                      "name": "you text point",
+                      "x": 246.5,
+                      "y": 521
                     }
                   ],
                   "originPoint": {
@@ -3329,6 +3456,11 @@
                       "name": "Attack Pos",
                       "x": 291.5,
                       "y": 292
+                    },
+                    {
+                      "name": "you text point",
+                      "x": 246.5,
+                      "y": 521
                     }
                   ],
                   "originPoint": {
@@ -3376,6 +3508,11 @@
                       "name": "Attack Pos",
                       "x": 291.5,
                       "y": 292
+                    },
+                    {
+                      "name": "you text point",
+                      "x": 246.5,
+                      "y": 521
                     }
                   ],
                   "originPoint": {
@@ -3423,6 +3560,11 @@
                       "name": "Attack Pos",
                       "x": 291.5,
                       "y": 292
+                    },
+                    {
+                      "name": "you text point",
+                      "x": 246.5,
+                      "y": 521
                     }
                   ],
                   "originPoint": {
@@ -3482,6 +3624,11 @@
                       "name": "Attack Pos",
                       "x": 291.5,
                       "y": 292
+                    },
+                    {
+                      "name": "you text point",
+                      "x": 246.5,
+                      "y": 521
                     }
                   ],
                   "originPoint": {
@@ -5573,6 +5720,132 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "SideUItext2",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Effect",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 0.15
+          },
+          "stringParameters": {
+            "color": "0;0;0"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [],
+      "string": "Defeat the enemies ahead.",
+      "font": "1bee9bddf3765d016ea29c21d418cdb0e958d1cd9c0aaa8743f9e174cb486e71_Kenney Pixel Square.ttf",
+      "textAlignment": "left",
+      "characterSize": 17,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Defeat the enemies ahead.",
+        "font": "1bee9bddf3765d016ea29c21d418cdb0e958d1cd9c0aaa8743f9e174cb486e71_Kenney Pixel Square.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 17,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "SideUItext1",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Effect",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 2
+          },
+          "stringParameters": {
+            "color": "255;255;255"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [],
+      "string": "QUEST",
+      "font": "1bee9bddf3765d016ea29c21d418cdb0e958d1cd9c0aaa8743f9e174cb486e71_Kenney Pixel Square.ttf",
+      "textAlignment": "left",
+      "characterSize": 30,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "QUEST",
+        "font": "1bee9bddf3765d016ea29c21d418cdb0e958d1cd9c0aaa8743f9e174cb486e71_Kenney Pixel Square.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 30,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 0,
+      "height": 32,
+      "leftMargin": 0,
+      "name": "NewPanelSprite2",
+      "rightMargin": 0,
+      "texture": "black-screen_39.png",
+      "tiled": false,
+      "topMargin": 0,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -5672,6 +5945,15 @@
       },
       {
         "objectName": "Heal_effect_"
+      },
+      {
+        "objectName": "SideUItext1"
+      },
+      {
+        "objectName": "NewPanelSprite2"
+      },
+      {
+        "objectName": "SideUItext2"
       }
     ]
   },
@@ -5702,6 +5984,15 @@
         },
         {
           "name": "Stam_full_fluff_text"
+        },
+        {
+          "name": "SideUItext2"
+        },
+        {
+          "name": "SideUItext1"
+        },
+        {
+          "name": "NewPanelSprite2"
         }
       ]
     },

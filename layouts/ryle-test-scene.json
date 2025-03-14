@@ -1001,7 +1001,6 @@
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 3,
       "cameraType": "",
-      "defaultCameraBehavior": "do-nothing",
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
@@ -1040,7 +1039,7 @@
       "isLocked": false,
       "name": "Front Layer 2",
       "renderingType": "",
-      "visibility": true,
+      "visibility": false,
       "cameras": [],
       "effects": [
         {

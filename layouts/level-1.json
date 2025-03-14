@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4481978045410392,
+    "zoomFactor": 0.645510570331153,
     "windowMask": false
   },
   "objectsGroups": [
@@ -95,6 +95,11 @@
       "name": "LevelComplete",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "QuestLine",
+      "type": "number",
+      "value": 0
     }
   ],
   "instances": [
@@ -3374,6 +3379,16 @@
             "=",
             "\"LEVEL 1\nCALM FOREST\""
           ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "QuestLine",
+            "=",
+            "1"
+          ]
         }
       ]
     },
@@ -3477,6 +3492,90 @@
           },
           "parameters": [
             "PotionText"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "QuestLine",
+            "=",
+            "1"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "SideUItext2",
+            "Text",
+            "=",
+            "\"Speak to the Weapon's Master\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "QuestLine",
+            "=",
+            "2"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "SideUItext2",
+            "Text",
+            "=",
+            "\"Defeat the enemies ahead.\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "QuestLine",
+            "=",
+            "3"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "SideUItext2",
+            "Text",
+            "=",
+            "\"Enter the portal to meet the Forest Witch.\""
           ]
         }
       ]
@@ -3837,6 +3936,16 @@
             "TopDownMovement",
             "yes"
           ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "QuestLine",
+            "=",
+            "2"
+          ]
         }
       ],
       "events": [
@@ -3928,6 +4037,16 @@
               "parameters": [
                 "Portal",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "QuestLine",
+                "=",
+                "3"
               ]
             }
           ]
