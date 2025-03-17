@@ -250,7 +250,7 @@
           "type": "Tween::TweenBehavior"
         }
       ],
-      "string": "Your not too sure what happened...",
+      "string": "You're not too sure what happened...",
       "font": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
       "textAlignment": "center",
       "characterSize": 100,
@@ -273,7 +273,7 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Your not too sure what happened...",
+        "text": "You're not too sure what happened...",
         "font": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
         "textAlignment": "center",
         "verticalTextAlignment": "top",
@@ -928,7 +928,7 @@
             "value": "Wait"
           },
           "parameters": [
-            "0.5"
+            "0.25"
           ]
         },
         {
@@ -938,8 +938,8 @@
           "parameters": [
             "",
             "2",
-            "75",
-            "0.5"
+            "60",
+            "0.75"
           ]
         },
         {
