@@ -42,7 +42,7 @@
 	{
 		"title": "Yes11",
 		"tags": "",
-		"body": "Take this potion. It is full of a regenerative substance and will recover any damage dealt to you once consumed.\n[[ Sounds OP... |Yes2]] \n[[ Sounds incredibly useful. I'll take it. |Yes2]]",
+		"body": "Take this potion, full of a regenerative substance. Press the [R] Key to consume it and heal yourself of any damage.\n[[ Sounds OP... |Yes2]] \n[[ Sounds incredibly useful. I'll take it. |Yes2]]",
 		"position": {
 			"x": -72,
 			"y": -378

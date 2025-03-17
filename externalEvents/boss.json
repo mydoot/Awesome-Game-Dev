@@ -868,16 +868,6 @@
             },
             {
               "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "QuestLine",
-                "=",
-                "3"
-              ]
-            },
-            {
-              "type": {
                 "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
               },
               "parameters": [
@@ -888,6 +878,39 @@
                 "\"easeInOutQuart\"",
                 "0.50",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "QuestLine",
+                "=",
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.40"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "Portal2",
+                "Tween",
+                "\"scaler\"",
+                "1.5",
+                "\"easeOutQuint\"",
+                "3.5",
+                "no",
+                "yes"
               ]
             },
             {
@@ -931,6 +954,16 @@
                 "-1700",
                 "\"easeInOutQuart\"",
                 "0.5",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "LevelComplete",
+                "True",
                 ""
               ]
             }

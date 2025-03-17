@@ -4167,7 +4167,7 @@
             "Transition",
             "FlashTransitionPainter",
             "\"0;0;0\"",
-            "0.5",
+            "0.75",
             "\"Circular\"",
             "\"Forward\"",
             "255",
@@ -4939,6 +4939,10 @@
     {
       "name": "FireBullet",
       "type": "FireBullet::FireBullet"
+    },
+    {
+      "name": "FlashTransitionPainter",
+      "type": "FlashTransitionPainter::FlashTransitionPainter"
     },
     {
       "name": "Flippable",

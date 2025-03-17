@@ -12,7 +12,7 @@
 	{
 		"title": "Yes",
 		"tags": "",
-		"body": "Left Click to perform a melee attack.\n[[ Ok. |yes2]] \n[[ But I'm a mage... |yes2]]",
+		"body": "[Left Click] to perform a melee attack.\n[[ Ok. |yes2]] \n[[ But I'm a mage... |yes2]]",
 		"position": {
 			"x": 164,
 			"y": 14
@@ -32,10 +32,10 @@
 	{
 		"title": "yes2",
 		"tags": "",
-		"body": "Right click to perform a dodge roll.\n[[ That will be useful. |Yes3]] \n[[ What about magic spells?? |Yes3]]",
+		"body": "[Right Click] to perform a dodging maneuver.\n[[ That will be useful. |Yes3]] \n[[ What about magic spells?? |Yes3]]",
 		"position": {
 			"x": 162,
-			"y": -212
+			"y": -213
 		},
 		"colorID": 0
 	},

@@ -1456,7 +1456,7 @@
         "disablePreload": false,
         "file": "assets/WitchDialogue.json",
         "kind": "json",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/WitchDialogue.json\",\"extension\":\".json\"}",
         "name": "assets\\WitchDialogue.json",
         "userAdded": false
       },
@@ -6115,6 +6115,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/level-3"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/end-credits"
     }
   ],
   "externalEvents": [

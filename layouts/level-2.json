@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.44819780454104224,
+    "zoomFactor": 0.5290357402156919,
     "windowMask": false
   },
   "objectsGroups": [
@@ -1687,7 +1687,7 @@
       "name": "Transition",
       "persistentUuid": "6b9a95dd-bfda-4985-aea6-fa301d1d330e",
       "width": 0,
-      "x": 665,
+      "x": 631,
       "y": 301,
       "zOrder": 45,
       "numberProperties": [],
@@ -4026,7 +4026,7 @@
             "Transition",
             "FlashTransitionPainter",
             "\"0;0;0\"",
-            "1",
+            "0.75",
             "\"Circular\"",
             "\"Forward\"",
             "255",
@@ -4942,6 +4942,10 @@
     {
       "name": "FireBullet",
       "type": "FireBullet::FireBullet"
+    },
+    {
+      "name": "FlashTransitionPainter",
+      "type": "FlashTransitionPainter::FlashTransitionPainter"
     },
     {
       "name": "Flippable",

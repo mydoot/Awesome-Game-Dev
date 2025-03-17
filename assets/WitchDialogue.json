@@ -12,10 +12,10 @@
 	{
 		"title": "Yes",
 		"tags": "",
-		"body": "Press Q to fire a Fireball projectile.\n[[ Awesome. |yes2]] \n[[ Can I learn a death ray? |yes2]]",
+		"body": "Press the [Q] Key to fire a fireball.\n[[ Awesome. |yes2]] \n[[ Can I learn a death ray? |yes2]]",
 		"position": {
-			"x": 164,
-			"y": 14
+			"x": 162,
+			"y": 13
 		},
 		"colorID": 0
 	},
@@ -32,7 +32,7 @@
 	{
 		"title": "yes2",
 		"tags": "",
-		"body": "Make sure to manage your Mana resource. Otherwise you cannot use any magical attacks.\n[[ True... |Yes3]] \n[[ I'd rather use my staff as a sword. |Yes3]]",
+		"body": "Make sure to manage your Mana resource. If you run out, you can't use your fireball.\n[[ True... |Yes3]] \n[[ I'd rather use my staff as a sword. |Yes3]]",
 		"position": {
 			"x": 162,
 			"y": -212
