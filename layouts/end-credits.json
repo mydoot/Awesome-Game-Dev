@@ -136,8 +136,8 @@
       "opacity": 0,
       "persistentUuid": "9e635639-a9d9-46b7-9471-373c068c471d",
       "width": 1210,
-      "x": 38,
-      "y": 40,
+      "x": 30,
+      "y": 38,
       "zOrder": 16,
       "numberProperties": [],
       "stringProperties": [],
@@ -423,10 +423,10 @@
           "type": "Tween::TweenBehavior"
         }
       ],
-      "string": "[CREDITS]\nDEVELOPED BY: Ryle, Claire, and Richie\nART: Claire\nPROGRAMMING: Richie and Ryle\nGAME DESIGN: Richie, Claire, and Ryle\n\n[FREE ASSETS USED]\nRPG Essentials Free - Leohpaz (sound effects)\nPixel RPG Music pack - alkakrab (Start menu, Level 1, 2, and 3)\nLegendary JRPG Battle Music Pack FREE - YouFulca (FALLEN ANGEL boss music & end credits\nPixel Art Top Down - Basic - Cainos (Level 1 tileset)\nJungle Tileset - finalbossblues (Level 2 tileset)\nAshlands Tileset - finalbossblues (Level 3 tileset)\nPixel Art Portal - Frostwindz (portal asset)\nPixel Art VFX - Slashes - Frostwindz (melee attack vfx)\nFree - Raven Fantasy Icons - Caio \nPixel Magic Effects - Foozle (fireball vfx)\n",
+      "string": "[CREDITS]\nDEVELOPED BY: Ryle, Claire, and Richie\nART: Claire\nPROGRAMMING: Richie and Ryle\nGAME DESIGN: Richie, Claire, and Ryle\n\n[FREE ASSETS USED]\nRPG Essentials Free - Leohpaz (sound effects)\nPixel RPG Music pack - alkakrab (Start menu, Level 1, 2, and 3)\nLegendary JRPG Battle Music Pack FREE - YouFulca (FALLEN ANGEL boss music & end credits\nPixel Art Top Down - Basic - Cainos (Level 1 tileset)\nJungle Tileset - finalbossblues (Level 2 tileset)\nAshlands Tileset - finalbossblues (Level 3 tileset)\nPixel Art Portal - Frostwindz (portal asset)\nPixel Art VFX - Slashes - Frostwindz (melee attack vfx)\nFree - Raven Fantasy Icons - Caio \nPixel Magic Effects - Foozle (fireball vfx)\nhttps://wallpapers.com/wallpapers/pixel-landscape-2f68t4t9xy73gxn0.html (Title screen and game thumbnail art)\nFree Pixel Effects Pack #15 - Magic Arrows - XYEzawr (boss projectile art)\nAll other assets were supplied with GDevelop.",
       "font": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
       "textAlignment": "center",
-      "characterSize": 50,
+      "characterSize": 45,
       "color": {
         "b": 255,
         "g": 255,
@@ -446,11 +446,11 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "[CREDITS]\nDEVELOPED BY: Ryle, Claire, and Richie\nART: Claire\nPROGRAMMING: Richie and Ryle\nGAME DESIGN: Richie, Claire, and Ryle\n\n[FREE ASSETS USED]\nRPG Essentials Free - Leohpaz (sound effects)\nPixel RPG Music pack - alkakrab (Start menu, Level 1, 2, and 3)\nLegendary JRPG Battle Music Pack FREE - YouFulca (FALLEN ANGEL boss music & end credits\nPixel Art Top Down - Basic - Cainos (Level 1 tileset)\nJungle Tileset - finalbossblues (Level 2 tileset)\nAshlands Tileset - finalbossblues (Level 3 tileset)\nPixel Art Portal - Frostwindz (portal asset)\nPixel Art VFX - Slashes - Frostwindz (melee attack vfx)\nFree - Raven Fantasy Icons - Caio \nPixel Magic Effects - Foozle (fireball vfx)\n",
+        "text": "[CREDITS]\nDEVELOPED BY: Ryle, Claire, and Richie\nART: Claire\nPROGRAMMING: Richie and Ryle\nGAME DESIGN: Richie, Claire, and Ryle\n\n[FREE ASSETS USED]\nRPG Essentials Free - Leohpaz (sound effects)\nPixel RPG Music pack - alkakrab (Start menu, Level 1, 2, and 3)\nLegendary JRPG Battle Music Pack FREE - YouFulca (FALLEN ANGEL boss music & end credits\nPixel Art Top Down - Basic - Cainos (Level 1 tileset)\nJungle Tileset - finalbossblues (Level 2 tileset)\nAshlands Tileset - finalbossblues (Level 3 tileset)\nPixel Art Portal - Frostwindz (portal asset)\nPixel Art VFX - Slashes - Frostwindz (melee attack vfx)\nFree - Raven Fantasy Icons - Caio \nPixel Magic Effects - Foozle (fireball vfx)\nhttps://wallpapers.com/wallpapers/pixel-landscape-2f68t4t9xy73gxn0.html (Title screen and game thumbnail art)\nFree Pixel Effects Pack #15 - Magic Arrows - XYEzawr (boss projectile art)\nAll other assets were supplied with GDevelop.",
         "font": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
         "textAlignment": "center",
         "verticalTextAlignment": "top",
-        "characterSize": 50,
+        "characterSize": 45,
         "color": "255;255;255"
       }
     }
