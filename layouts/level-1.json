@@ -1100,8 +1100,8 @@
       "name": "EnemySpawner",
       "persistentUuid": "42357451-f83f-4588-843e-6b4d57aecd7c",
       "width": 84,
-      "x": 2092,
-      "y": 335,
+      "x": 1837,
+      "y": 301,
       "zOrder": 19,
       "numberProperties": [],
       "stringProperties": [],
@@ -1117,8 +1117,8 @@
       "name": "EnemySpawner",
       "persistentUuid": "770b6855-d224-45ca-a560-5a6179b2e745",
       "width": 84,
-      "x": 2060,
-      "y": 495,
+      "x": 2030,
+      "y": 502,
       "zOrder": 19,
       "numberProperties": [],
       "stringProperties": [],
@@ -1134,8 +1134,8 @@
       "name": "EnemySpawner",
       "persistentUuid": "744870d0-6fb4-4c89-a59b-2902260b5a66",
       "width": 84,
-      "x": 1900,
-      "y": 495,
+      "x": 1803,
+      "y": 471,
       "zOrder": 19,
       "numberProperties": [],
       "stringProperties": [],
@@ -1151,8 +1151,8 @@
       "name": "EnemySpawner",
       "persistentUuid": "dcf92326-b4b1-42df-ba26-05f96628b543",
       "width": 84,
-      "x": 2028,
-      "y": 704,
+      "x": 2034,
+      "y": 682,
       "zOrder": 19,
       "numberProperties": [],
       "stringProperties": [],
@@ -3524,6 +3524,21 @@
       "actions": [
         {
           "type": {
+            "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+          },
+          "parameters": [
+            "Transition",
+            "FlashTransitionPainter",
+            "\"0;0;0\"",
+            "0.5",
+            "\"Circular\"",
+            "\"Backward\"",
+            "255",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
           },
           "parameters": [
@@ -3571,6 +3586,24 @@
         },
         {
           "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "QuestLine",
+            "=",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "0.25"
+          ]
+        },
+        {
+          "type": {
             "value": "PlayMusic"
           },
           "parameters": [
@@ -3613,16 +3646,6 @@
             "Text",
             "=",
             "\"LEVEL 1\nCALM FOREST\""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "QuestLine",
-            "=",
-            "1"
           ]
         },
         {
@@ -4168,7 +4191,7 @@
             "FlashTransitionPainter",
             "\"0;0;0\"",
             "0.75",
-            "\"Circular\"",
+            "\"Horizontal\"",
             "\"Forward\"",
             "255",
             ""

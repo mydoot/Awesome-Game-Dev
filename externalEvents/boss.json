@@ -836,47 +836,10 @@
             },
             {
               "type": {
-                "value": "Tween::TweenCameraZoom2"
-              },
-              "parameters": [
-                "",
-                "\"camerazoom\"",
-                "2.5",
-                "",
-                "\"easeOutQuad\"",
-                "1.5"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "CameraCanMove",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "Delete"
               },
               "parameters": [
                 "StarSparks",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
-              },
-              "parameters": [
-                "eventname",
-                "Tween",
-                "\"eventui\"",
-                "150",
-                "\"easeInOutQuart\"",
-                "0.50",
                 ""
               ]
             },
@@ -892,10 +855,11 @@
             },
             {
               "type": {
-                "value": "Wait"
+                "value": "Montre"
               },
               "parameters": [
-                "0.40"
+                "Portal2",
+                ""
               ]
             },
             {
@@ -906,11 +870,56 @@
                 "Portal2",
                 "Tween",
                 "\"scaler\"",
-                "1.5",
+                "4",
                 "\"easeOutQuint\"",
-                "3.5",
+                "2",
                 "no",
                 "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "CameraCanMove",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenCameraZoom2"
+              },
+              "parameters": [
+                "",
+                "\"camerazoom\"",
+                "2.5",
+                "",
+                "\"easeOutQuad\"",
+                "1.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+              },
+              "parameters": [
+                "eventname",
+                "Tween",
+                "\"eventui\"",
+                "150",
+                "\"easeInOutQuart\"",
+                "0.50",
+                ""
               ]
             },
             {

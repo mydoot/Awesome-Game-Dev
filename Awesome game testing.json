@@ -2436,6 +2436,16 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "Battle-rapier.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Battle-rapier.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

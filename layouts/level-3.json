@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5468750000000192,
+    "zoomFactor": 0.41943397827592055,
     "windowMask": false
   },
   "objectsGroups": [
@@ -538,8 +538,8 @@
       "name": "Portal2",
       "persistentUuid": "a3de0537-0901-422b-ac9b-4e3f71dba437",
       "width": 283,
-      "x": 489,
-      "y": -2124,
+      "x": 635,
+      "y": -1728,
       "zOrder": 101,
       "numberProperties": [],
       "stringProperties": [],
@@ -4018,8 +4018,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 32,
+                    "y": 32
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -4054,8 +4054,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 32,
+                    "y": 32
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -4090,8 +4090,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 32,
+                    "y": 32
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -4126,8 +4126,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 32,
+                    "y": 32
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -4162,8 +4162,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 32,
+                    "y": 32
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -4198,8 +4198,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 32,
+                    "y": 32
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -4234,8 +4234,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 32,
+                    "y": 32
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -4452,6 +4452,30 @@
       "actions": [
         {
           "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "Transition",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+          },
+          "parameters": [
+            "Transition",
+            "FlashTransitionPainter",
+            "\"0;0;0\"",
+            "0.5",
+            "\"Horizontal\"",
+            "\"Backward\"",
+            "255",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
           },
           "parameters": [
@@ -4486,42 +4510,6 @@
           "parameters": [
             "LevelComplete",
             "False",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
-          },
-          "parameters": [
-            "LevelUItext",
-            "Tween",
-            "\"levelui\"",
-            "6",
-            "\"easeOutQuad\"",
-            "0.5",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "ResetTimer"
-          },
-          "parameters": [
-            "",
-            "\"levelUI\" "
-          ]
-        },
-        {
-          "type": {
-            "value": "PlayMusicCanal"
-          },
-          "parameters": [
-            "",
-            "Pixel6.mp3",
-            "1",
-            "yes",
-            "75",
             ""
           ]
         },
@@ -4594,6 +4582,50 @@
             "value": "Wait"
           },
           "parameters": [
+            "0.25"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+          },
+          "parameters": [
+            "LevelUItext",
+            "Tween",
+            "\"levelui\"",
+            "6",
+            "\"easeOutQuad\"",
+            "0.5",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlayMusicCanal"
+          },
+          "parameters": [
+            "",
+            "Pixel6.mp3",
+            "1",
+            "yes",
+            "75",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"levelUI\" "
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
             "3"
           ]
         },
@@ -4618,6 +4650,17 @@
           },
           "parameters": [
             "Portal2"
+          ]
+        },
+        {
+          "type": {
+            "value": "ScalableCapability::ScalableBehavior::SetValue"
+          },
+          "parameters": [
+            "Portal2",
+            "Scale",
+            "=",
+            "0.1"
           ]
         }
       ]
@@ -5783,7 +5826,7 @@
           "parameters": [
             "QuestLine",
             "=",
-            "4"
+            "3"
           ]
         },
         {
@@ -5812,7 +5855,7 @@
             "FlashTransitionPainter",
             "\"0;0;0\"",
             "0.75",
-            "\"Circular\"",
+            "\"Flash\"",
             "\"Forward\"",
             "255",
             ""
@@ -5823,7 +5866,7 @@
             "value": "Wait"
           },
           "parameters": [
-            "1"
+            "3"
           ]
         },
         {

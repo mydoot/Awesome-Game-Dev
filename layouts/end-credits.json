@@ -42,15 +42,17 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 515,
       "keepRatio": true,
       "layer": "",
       "name": "Start_Menu_Text",
+      "opacity": 0,
       "persistentUuid": "f315bd9c-147a-4e95-bb4a-e171a7d954b6",
-      "width": 0,
-      "x": 40,
-      "y": -350,
+      "width": 1067,
+      "x": 103,
+      "y": 151,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -58,15 +60,16 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 119,
       "keepRatio": true,
       "layer": "",
       "name": "Start_Menu_Text2",
       "persistentUuid": "a2c1805f-3e57-45cd-affd-d45df87ce3e0",
-      "width": 0,
-      "x": 343,
-      "y": -250,
+      "width": 1442,
+      "x": -78,
+      "y": 282,
       "zOrder": 15,
       "numberProperties": [],
       "stringProperties": [],
@@ -101,6 +104,41 @@
       "x": 611,
       "y": 343,
       "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 876,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NewPanelSprite4",
+      "persistentUuid": "2ac61199-37ec-4f2a-9d76-4f8380356df4",
+      "width": 1514,
+      "x": -117,
+      "y": -85,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 561,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Start_Menu_Text3",
+      "opacity": 0,
+      "persistentUuid": "9e635639-a9d9-46b7-9471-373c068c471d",
+      "width": 1210,
+      "x": 38,
+      "y": 40,
+      "zOrder": 16,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -212,14 +250,14 @@
           "type": "Tween::TweenBehavior"
         }
       ],
-      "string": "Awesome Game",
-      "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
-      "textAlignment": "left",
+      "string": "Your not too sure what happened...",
+      "font": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
+      "textAlignment": "center",
       "characterSize": 100,
       "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
+        "b": 255,
+        "g": 255,
+        "r": 255
       },
       "content": {
         "bold": false,
@@ -235,17 +273,17 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Awesome Game",
-        "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
-        "textAlignment": "left",
+        "text": "Your not too sure what happened...",
+        "font": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
+        "textAlignment": "center",
         "verticalTextAlignment": "top",
         "characterSize": 100,
-        "color": "0;0;0"
+        "color": "255;255;255"
       }
     },
     {
       "assetStoreId": "",
-      "bold": false,
+      "bold": true,
       "italic": true,
       "name": "Start_Menu_Text2",
       "smoothed": true,
@@ -259,17 +297,17 @@
           "type": "Tween::TweenBehavior"
         }
       ],
-      "string": "BEGIN YOUR MAGE JOURNEY",
+      "string": "AWESOME GAME",
       "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
       "textAlignment": "center",
-      "characterSize": 25,
+      "characterSize": 80,
       "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
+        "b": 255,
+        "g": 255,
+        "r": 255
       },
       "content": {
-        "bold": false,
+        "bold": true,
         "isOutlineEnabled": false,
         "isShadowEnabled": false,
         "italic": true,
@@ -282,12 +320,12 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "BEGIN YOUR MAGE JOURNEY",
+        "text": "AWESOME GAME",
         "font": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
         "textAlignment": "center",
         "verticalTextAlignment": "top",
-        "characterSize": 25,
-        "color": "0;0;0"
+        "characterSize": 80,
+        "color": "255;255;255"
       }
     },
     {
@@ -305,6 +343,116 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "name": "New3DBox",
+      "type": "Scene3D::Cube3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "width": 100,
+        "height": 100,
+        "depth": 100,
+        "enableTextureTransparency": false,
+        "facesOrientation": "Y",
+        "frontFaceResourceName": "",
+        "backFaceResourceName": "",
+        "backFaceUpThroughWhichAxisRotation": "X",
+        "leftFaceResourceName": "",
+        "rightFaceResourceName": "",
+        "topFaceResourceName": "",
+        "bottomFaceResourceName": "",
+        "frontFaceVisible": true,
+        "backFaceVisible": false,
+        "leftFaceVisible": true,
+        "rightFaceVisible": true,
+        "topFaceVisible": true,
+        "bottomFaceVisible": true,
+        "frontFaceResourceRepeat": false,
+        "backFaceResourceRepeat": false,
+        "leftFaceResourceRepeat": false,
+        "rightFaceResourceRepeat": false,
+        "topFaceResourceRepeat": false,
+        "bottomFaceResourceRepeat": false,
+        "materialType": "Basic",
+        "tint": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "NewTiledSprite",
+      "texture": "",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 0,
+      "height": 32,
+      "leftMargin": 0,
+      "name": "NewPanelSprite4",
+      "rightMargin": 0,
+      "texture": "black-screen_39.png",
+      "tiled": false,
+      "topMargin": 0,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Start_Menu_Text3",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "string": "[CREDITS]\nDEVELOPED BY: Ryle, Claire, and Richie\nART: Claire\nPROGRAMMING: Richie and Ryle\nGAME DESIGN: Richie, Claire, and Ryle\n\n[FREE ASSETS USED]\nRPG Essentials Free - Leohpaz (sound effects)\nPixel RPG Music pack - alkakrab (Start menu, Level 1, 2, and 3)\nLegendary JRPG Battle Music Pack FREE - YouFulca (FALLEN ANGEL boss music & end credits\nPixel Art Top Down - Basic - Cainos (Level 1 tileset)\nJungle Tileset - finalbossblues (Level 2 tileset)\nAshlands Tileset - finalbossblues (Level 3 tileset)\nPixel Art Portal - Frostwindz (portal asset)\nPixel Art VFX - Slashes - Frostwindz (melee attack vfx)\nFree - Raven Fantasy Icons - Caio \nPixel Magic Effects - Foozle (fireball vfx)\n",
+      "font": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
+      "textAlignment": "center",
+      "characterSize": 50,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "[CREDITS]\nDEVELOPED BY: Ryle, Claire, and Richie\nART: Claire\nPROGRAMMING: Richie and Ryle\nGAME DESIGN: Richie, Claire, and Ryle\n\n[FREE ASSETS USED]\nRPG Essentials Free - Leohpaz (sound effects)\nPixel RPG Music pack - alkakrab (Start menu, Level 1, 2, and 3)\nLegendary JRPG Battle Music Pack FREE - YouFulca (FALLEN ANGEL boss music & end credits\nPixel Art Top Down - Basic - Cainos (Level 1 tileset)\nJungle Tileset - finalbossblues (Level 2 tileset)\nAshlands Tileset - finalbossblues (Level 3 tileset)\nPixel Art Portal - Frostwindz (portal asset)\nPixel Art VFX - Slashes - Frostwindz (melee attack vfx)\nFree - Raven Fantasy Icons - Caio \nPixel Magic Effects - Foozle (fireball vfx)\n",
+        "font": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 50,
+        "color": "255;255;255"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -317,10 +465,22 @@
         "objectName": "Start_Menu_Text"
       },
       {
+        "objectName": "Start_Menu_Text3"
+      },
+      {
         "objectName": "Start_Menu_Text2"
       },
       {
         "objectName": "NewPanelSprite3"
+      },
+      {
+        "objectName": "New3DBox"
+      },
+      {
+        "objectName": "NewTiledSprite"
+      },
+      {
+        "objectName": "NewPanelSprite4"
       }
     ]
   },
@@ -340,134 +500,107 @@
       "actions": [
         {
           "type": {
-            "value": "PlayMusic"
+            "value": "Cache"
+          },
+          "parameters": [
+            "Start_Menu_Text2"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Start_Menu_Text3"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlayMusicCanal"
           },
           "parameters": [
             "",
             "Pixel 3.mp3",
+            "1",
             "yes",
-            "75",
+            "0",
             ""
           ]
         },
         {
           "type": {
-            "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+            "value": "Wait"
+          },
+          "parameters": [
+            "0.25"
+          ]
+        },
+        {
+          "type": {
+            "value": "FadeMusicVolume"
+          },
+          "parameters": [
+            "",
+            "1",
+            "75",
+            "0.25"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
           },
           "parameters": [
             "Start_Menu_Text",
             "Tween",
-            "\"scaler2\"",
-            "110",
+            "\"opacity\"",
+            "255",
             "\"easeOutQuint\"",
-            "1",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "0.25"
-          ]
-        },
-        {
-          "type": {
-            "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
-          },
-          "parameters": [
-            "Start_Menu_Text2",
-            "Tween",
-            "\"scaler2\"",
-            "240",
-            "\"easeOutQuint\"",
-            "1",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "0.25"
-          ]
-        },
-        {
-          "type": {
-            "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
-          },
-          "parameters": [
-            "BlueButton",
-            "Tween",
-            "\"scaler2\"",
-            "401",
-            "\"easeInOutQuint\"",
             "0.75",
             ""
           ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+        },
         {
           "type": {
-            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+            "value": "Wait"
           },
           "parameters": [
-            "BlueButton",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "ModVolumeSoundCanal"
-          },
-          "parameters": [
-            "",
-            "1",
-            "=",
-            "0"
+            "3"
           ]
         },
         {
           "type": {
-            "value": "PlaySound"
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
           },
           "parameters": [
-            "",
-            "13_Ice_explosion_01.wav",
-            "",
-            "80",
-            "0.90"
-          ]
-        },
-        {
-          "type": {
-            "value": "Montre"
-          },
-          "parameters": [
-            "Transition",
+            "Start_Menu_Text",
+            "Tween",
+            "\"opacity\"",
+            "0",
+            "\"easeOutQuint\"",
+            "0.75",
             ""
           ]
         },
         {
           "type": {
-            "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+            "value": "Wait"
           },
           "parameters": [
-            "Transition",
-            "FlashTransitionPainter",
-            "\"0;0;0\"",
-            "0.5",
-            "\"Circular\"",
-            "\"Forward\"",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "Start_Menu_Text",
+            "Tween",
+            "\"opacity\"",
             "255",
+            "\"easeOutQuint\"",
+            "0.75",
             ""
           ]
         },
@@ -476,10 +609,226 @@
             "value": "TextContainerCapability::TextContainerBehavior::SetValue"
           },
           "parameters": [
-            "Start_Menu_Text2",
+            "Start_Menu_Text",
             "Text",
             "=",
-            "\"YOUR MAGE JOURNEY HAS BEGUN\""
+            "\"You went from slaying, to be completely honest, brainless crab creatures, to fighting a hellish abomination...\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "7"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "Start_Menu_Text",
+            "Tween",
+            "\"opacity\"",
+            "0",
+            "\"easeOutQuint\"",
+            "0.75",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "Start_Menu_Text",
+            "Tween",
+            "\"opacity\"",
+            "255",
+            "\"easeOutQuint\"",
+            "0.75",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "Start_Menu_Text",
+            "Text",
+            "=",
+            "\"The Forest Witch says that someone brought it here, but no one wanted to deal with it.\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "5"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "Start_Menu_Text",
+            "Tween",
+            "\"opacity\"",
+            "0",
+            "\"easeOutQuint\"",
+            "0.75",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "Start_Menu_Text",
+            "Tween",
+            "\"opacity\"",
+            "255",
+            "\"easeOutQuint\"",
+            "0.75",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "Start_Menu_Text",
+            "Text",
+            "=",
+            "\"You wonder why it had to be you...\nOh well, it's gone now anyways...\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "5"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "Start_Menu_Text",
+            "Tween",
+            "\"opacity\"",
+            "0",
+            "\"easeOutQuint\"",
+            "0.75",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "Start_Menu_Text",
+            "Tween",
+            "\"opacity\"",
+            "255",
+            "\"easeOutQuint\"",
+            "0.75",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "Start_Menu_Text",
+            "Text",
+            "=",
+            "\"You just wanted to learn how to be a mage at a normal pace... Not fight an angel...\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "6"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "Start_Menu_Text",
+            "Tween",
+            "\"opacity\"",
+            "0",
+            "\"easeOutQuint\"",
+            "0.75",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "thumb sfx.wav",
+            "",
+            "80",
+            "0.5"
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "Start_Menu_Text2",
+            ""
           ]
         },
         {
@@ -490,20 +839,11 @@
             "Start_Menu_Text2",
             "Tween",
             "\"scaler\"",
-            "1.35",
+            "1.30",
             "\"easeOutQuint\"",
-            "1.35",
+            "10",
             "",
-            "yes"
-          ]
-        },
-        {
-          "type": {
-            "value": "TextObject::ChangeColor"
-          },
-          "parameters": [
-            "Start_Menu_Text2",
-            "\"255;255;255\""
+            ""
           ]
         },
         {
@@ -511,7 +851,191 @@
             "value": "Wait"
           },
           "parameters": [
-            "1.65"
+            "5"
+          ]
+        },
+        {
+          "type": {
+            "value": "FadeMusicVolume"
+          },
+          "parameters": [
+            "",
+            "1",
+            "0",
+            "3"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "Start_Menu_Text2",
+            "Tween",
+            "\"opacity\"",
+            "0",
+            "\"easeOutQuint\"",
+            "3",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "3.25"
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "Start_Menu_Text3",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "Start_Menu_Text3",
+            "Tween",
+            "\"opacity\"",
+            "255",
+            "\"easeOutQuint\"",
+            "1",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlayMusicCanal"
+          },
+          "parameters": [
+            "",
+            "Battle-rapier.mp3",
+            "2",
+            "yes",
+            "0",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "0.5"
+          ]
+        },
+        {
+          "type": {
+            "value": "FadeMusicVolume"
+          },
+          "parameters": [
+            "",
+            "2",
+            "75",
+            "0.5"
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "15"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "Start_Menu_Text3",
+            "Tween",
+            "\"opacity\"",
+            "0",
+            "\"easeOutQuint\"",
+            "0.75",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "Start_Menu_Text2",
+            "Text",
+            "=",
+            "\"Thanks for playing!\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "Start_Menu_Text2",
+            "Tween",
+            "\"opacity\"",
+            "255",
+            "\"easeOutQuint\"",
+            "0.75",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "3"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "Start_Menu_Text2",
+            "Tween",
+            "\"opacity\"",
+            "0",
+            "\"easeOutQuint\"",
+            "5",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "FadeMusicVolume"
+          },
+          "parameters": [
+            "",
+            "2",
+            "0",
+            "5"
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "5"
           ]
         },
         {
@@ -520,43 +1044,8 @@
           },
           "parameters": [
             "",
-            "\"Level 1\"",
+            "\"Start menu\"",
             ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
-          },
-          "parameters": [
-            "BlueButton",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "PlaySoundCanal"
-          },
-          "parameters": [
-            "",
-            "013_Confirm_03.wav",
-            "1",
-            "70",
-            "70",
-            "1.2"
           ]
         }
       ]
@@ -633,6 +1122,10 @@
     {
       "name": "Health",
       "type": "Health::Health"
+    },
+    {
+      "name": "Object3D",
+      "type": "Scene3D::Base3DBehavior"
     },
     {
       "name": "Opacity",

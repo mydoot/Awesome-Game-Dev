@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5290357402156919,
+    "zoomFactor": 0.8993607583666758,
     "windowMask": false
   },
   "objectsGroups": [
@@ -3625,6 +3625,21 @@
       "actions": [
         {
           "type": {
+            "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+          },
+          "parameters": [
+            "Transition",
+            "FlashTransitionPainter",
+            "\"0;0;0\"",
+            "0.5",
+            "\"Horizontal\"",
+            "\"Backward\"",
+            "255",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
           },
           "parameters": [
@@ -3654,47 +3669,12 @@
         },
         {
           "type": {
-            "value": "PlayMusic"
-          },
-          "parameters": [
-            "",
-            "Pixel 11.mp3",
-            "yes",
-            "75",
-            ""
-          ]
-        },
-        {
-          "type": {
             "value": "SetBooleanVariable"
           },
           "parameters": [
             "LevelComplete",
             "False",
             ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
-          },
-          "parameters": [
-            "LevelUItext",
-            "Tween",
-            "\"levelui\"",
-            "6",
-            "\"easeOutQuad\"",
-            "0.5",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "ResetTimer"
-          },
-          "parameters": [
-            "",
-            "\"levelUI\" "
           ]
         },
         {
@@ -3734,6 +3714,49 @@
             "QuestLine",
             "=",
             "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "0.25"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlayMusic"
+          },
+          "parameters": [
+            "",
+            "Pixel 11.mp3",
+            "yes",
+            "75",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+          },
+          "parameters": [
+            "LevelUItext",
+            "Tween",
+            "\"levelui\"",
+            "6",
+            "\"easeOutQuad\"",
+            "0.5",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"levelUI\" "
           ]
         },
         {
@@ -4027,7 +4050,7 @@
             "FlashTransitionPainter",
             "\"0;0;0\"",
             "0.75",
-            "\"Circular\"",
+            "\"Horizontal\"",
             "\"Forward\"",
             "255",
             ""
